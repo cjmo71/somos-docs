@@ -1,5 +1,5 @@
 ---
-title: "How Somos InControl Uses Your Network and Data"
+title: "Somos InControl Network and Data Use — Plain English"
 sidebarTitle: "Data & Network"
 description: "A plain-English breakdown of every network request Somos InControl makes, what Bluetooth is used for, and exactly where your settings are stored."
 ---
@@ -59,26 +59,26 @@ A small slice of this storage is shared with the Somos InControl widget and Live
 
 Somos InControl has none of the data-collection infrastructure common in modern apps:
 
-<CardGroup cols={2}>
-  <Card title="No Analytics" icon="chart-bar">
+<AccordionGroup>
+  <Accordion title="No Analytics" icon="chart-bar">
     The app sends no usage events, screen views, or behavioral data to any analytics platform — not even anonymised data.
-  </Card>
-  <Card title="No Crash Reporting" icon="bug">
+  </Accordion>
+  <Accordion title="No Crash Reporting" icon="bug">
     There is no crash-reporting SDK. No stack traces or device info are sent anywhere when something goes wrong.
-  </Card>
-  <Card title="No Advertising" icon="megaphone">
+  </Accordion>
+  <Accordion title="No Advertising" icon="megaphone">
     The app contains no ad networks and no advertising identifiers are read or transmitted.
-  </Card>
-  <Card title="No Third-Party SDKs" icon="code">
+  </Accordion>
+  <Accordion title="No Third-Party SDKs" icon="code">
     The app is built entirely on Apple's own frameworks. There is no third-party code that could phone home.
-  </Card>
-  <Card title="No Cloud Account" icon="cloud">
+  </Accordion>
+  <Accordion title="No Cloud Account" icon="cloud">
     No sign-in, no registration, and no server-side profile. The app works without any account.
-  </Card>
-  <Card title="Zero Servers" icon="server">
+  </Accordion>
+  <Accordion title="Zero Servers" icon="server">
     We operate no backend infrastructure. There is nothing for your data to be sent to.
-  </Card>
-</CardGroup>
+  </Accordion>
+</AccordionGroup>
 
 <Note>
   For the complete formal statement of our data practices, read the full [Privacy Policy](/legal/privacy-policy).
