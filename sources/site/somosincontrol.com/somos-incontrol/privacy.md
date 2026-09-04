@@ -1,0 +1,98 @@
+# Source: https://somosincontrol.com/somos-incontrol/privacy.html
+
+[🔊Somos InControl](https://somosincontrol.com/somos-incontrol/index.html)
+
+[![The room page, with the Atmos badge](https://somosincontrol.com/somos-incontrol/assets/shots/1-room-page.png)](https://somosincontrol.com/somos-incontrol/assets/shots/1-room-page.png) [![Home Theater Setup — front speakers](https://somosincontrol.com/somos-incontrol/assets/shots/2-home-theater.png)](https://somosincontrol.com/somos-incontrol/assets/shots/2-home-theater.png) [![The music page — EQ and presets](https://somosincontrol.com/somos-incontrol/assets/shots/3-music-page.png)](https://somosincontrol.com/somos-incontrol/assets/shots/3-music-page.png) [![The menu](https://somosincontrol.com/somos-incontrol/assets/shots/4-menu.png)](https://somosincontrol.com/somos-incontrol/assets/shots/4-menu.png)
+
+## See it in action
+
+ Your browser does not support the video tag.
+
+🔊
+
+# Privacy Policy
+
+Somos InControl · Last updated: April 2026
+
+On this page
+
+- [The short version](https://somosincontrol.com/somos-incontrol/privacy.html#summary)
+- [What we collect](https://somosincontrol.com/somos-incontrol/privacy.html#collect)
+- [Local network access](https://somosincontrol.com/somos-incontrol/privacy.html#network)
+- [Bluetooth access](https://somosincontrol.com/somos-incontrol/privacy.html#bluetooth)
+- [The one internet request we make](https://somosincontrol.com/somos-incontrol/privacy.html#internet)
+- [Where your settings live](https://somosincontrol.com/somos-incontrol/privacy.html#storage)
+- [Relationship with Sonos®](https://somosincontrol.com/somos-incontrol/privacy.html#sonos)
+- [Children's privacy](https://somosincontrol.com/somos-incontrol/privacy.html#children)
+- [Third parties](https://somosincontrol.com/somos-incontrol/privacy.html#third-parties)
+- [Changes to this policy](https://somosincontrol.com/somos-incontrol/privacy.html#changes)
+- [Contact](https://somosincontrol.com/somos-incontrol/privacy.html#contact)
+
+## The short version
+
+Somos InControl is designed to stay on your local network and mind its own business. We don't collect any data, we don't have any servers that see your activity, and the only thing the app talks to on the internet is Sonos® own public image library (to show you photos of your speakers). No account. No analytics. No ads.
+
+## What we collect
+
+**Nothing.** Somos InControl does not collect, transmit, or store any personal information on our servers — in fact, we don't operate any servers. We do not use analytics, tracking pixels, advertising identifiers, crash reporting SDKs, or any third-party code that phones home. The app contains zero third-party libraries; it's built entirely on Apple's own frameworks.
+
+**The website is a separate thing, and it is entirely opt-in.** The forms on this site — support, suggestions, and the Speaker Check questionnaires — send us whatever you choose to type into them, and nothing else. **Every field is optional, including your email address:** leave it blank and we simply have no way to write back. The app never fills any of this in for you. When a speaker refuses a setting, Somos only opens a link to this site; whether you answer anything after that is entirely your choice.
+
+## Local network access
+
+To find your Sonos® speakers, the app uses two standard local discovery methods on the Wi-Fi network your device is connected to:
+
+- **Bonjour (mDNS)** — the same kind of discovery Apple's AirPlay, Apple TV, and the official Sonos® app use. The app listens for Sonos® speakers advertising the `_sonos._tcp` Bonjour service.
+- **A direct subnet probe** — as a fallback, the app sends a short HTTP request to each address on your local subnet asking "are you a Sonos® speaker?". Any address that responds is added to your speaker list. Nothing is sent beyond the asking.
+
+Once speakers are found, the app controls them using the publicly documented local control protocol Sonos® speakers expose on their own network port. All discovery and control traffic stays on your Wi-Fi network.
+
+When you first launch the app, iOS will ask permission to use the local network. This permission is required for the app to find your speakers. If you decline, the app will have nothing to control.
+
+## Bluetooth access
+
+The app also uses Bluetooth for one purpose: detecting Sonos® speakers that are nearby but **not yet on your Wi-Fi network** — for example, a brand-new speaker you're about to set up, or one that's temporarily offline. iOS will ask for Bluetooth permission on first launch.
+
+The app only looks at the advertising name of nearby devices and filters for Sonos® speakers. It does not pair with anything, does not send any data over Bluetooth, and does not identify you or your device. If you decline Bluetooth permission, the app still works for speakers already on your Wi-Fi.
+
+## The one internet request we make
+
+We want to be upfront about this: when the app displays your speakers, it fetches each speaker's product photo from Sonos® public image library at `media.sonos.com`. This is a plain HTTPS request for a static image, the same kind of request your browser makes when loading any website's logo. **No personal information is sent** — not your IP address beyond what any HTTPS request reveals, not your speaker names, not your network, nothing. It's purely "please send me the picture of this speaker model."
+
+If Sonos® image library is unreachable, the app falls back to the low-resolution icon served by your speaker itself on the local network, so the app still works fully offline.
+
+Beyond this one image fetch, the app makes no other internet requests. No telemetry, no "analytics," no "product improvement" pings. You can verify this yourself by putting your iPhone in Airplane Mode with Wi-Fi on — everything except the speaker images still works.
+
+## Where your settings live
+
+Your preferences — selected speakers, presets, EQ settings, and tutorial state — are stored in the app's local storage on your device (iOS `UserDefaults`), the same way any iOS app stores its settings. A small piece of this storage is shared with the Somos InControl widget and Live Activity so they can show the same speaker you're controlling. Everything stays on your device.
+
+The app does not use iCloud, iCloud Drive, or CloudKit for your data. Nothing syncs to any cloud.
+
+Uninstalling the app removes all of its local data.
+
+## Relationship with Sonos®
+
+Somos InControl is an independent, unofficial third-party app. It is not affiliated with, endorsed by, or sponsored by Sonos, Inc. Sonos® is a registered trademark of Sonos, Inc., used here only for the factual purpose of describing which speakers the app works with.
+
+The app communicates with your Sonos® speakers using the same publicly documented local control protocol that Sonos® speakers expose on the local network.
+
+## Children's privacy
+
+Somos InControl does not knowingly collect data from anyone, including children. The app is safe for all ages. Since we don't collect anything at all, there's nothing child-specific to protect against.
+
+## Third parties
+
+We do not share, sell, or disclose any data to third parties, because we don't collect any data to begin with. The app does not include any third-party advertising networks, analytics services, or tracking SDKs.
+
+## Changes to this policy
+
+If this policy ever changes, we'll update the date at the top of this page. Continued use of the app after a change means you accept the updated policy. Material changes will also be called out in the app's release notes.
+
+## Contact
+
+Questions about privacy? Visit the [Support page](https://somosincontrol.com/somos-incontrol/support.html) and send a message through the contact form. A real human reads every message.
+
+Somos InControl · © 2026 Chris Moore · [Home](https://somosincontrol.com/somos-incontrol/index.html) · [How to Use](https://somosincontrol.com/somos-incontrol/how-to.html) · [Questions](https://somosincontrol.com/somos-incontrol/questions.html) · [Polls](https://somosincontrol.com/somos-incontrol/polls.html) · [Suggestions](https://somosincontrol.com/somos-incontrol/suggestions.html) · [Support](https://somosincontrol.com/somos-incontrol/support.html) · [Privacy](https://somosincontrol.com/somos-incontrol/privacy.html)
+
+×

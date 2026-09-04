@@ -1,0 +1,76 @@
+---
+title: "Somos InControl: Troubleshooting Common App Issues"
+sidebarTitle: "Troubleshooting"
+description: "Step-by-step fixes for the most common Somos InControl problems — speakers not found, EQ settings not sticking, app crashes, and more."
+---
+
+This page covers the issues users run into most often and walks you through how to resolve each one. Work through the relevant section below; most problems have a straightforward fix. If none of these steps resolve your issue, the [contact form](/support/contact) goes straight to the developer.
+
+<Note>
+  If none of the steps below fix your problem, head to [Contact Support](/support/contact) and send a message. Every report is read by a real person and helps improve the app for everyone.
+</Note>
+
+<AccordionGroup>
+
+  <Accordion title="The app can't find my speakers">
+    The most common cause is a network mismatch or a missing permission. Work through these four steps in order:
+
+    1. **Check you're on the same Wi-Fi network.** Your iPhone or iPad and your Sonos® speakers must be on the same network. Many routers broadcast separate SSIDs for 2.4 GHz and 5 GHz bands — your speakers might be on one and your phone on the other. Connect both to the same SSID.
+    2. **Verify Local Network permission.** Somos InControl needs this iOS permission to discover speakers. If you declined the prompt when the app first launched, go to **Settings → Somos InControl → Local Network** and turn it on.
+    3. **Test with the official Sonos® app.** Open the official Sonos® app on the same device. If it can't find your speakers either, the problem is with the network itself — try restarting your router and speakers, then test again.
+    4. **Force-quit Somos InControl and reopen it.** Speaker discovery runs fresh on every launch. Swipe the app away from the App Switcher and tap the icon to reopen it.
+
+    If your speakers appear in the official app but not in Somos InControl after completing all four steps, use the dedicated [Speakers Not Found questionnaire](/support/contact#speakers-not-found) to send the developer the details needed to investigate.
+  </Accordion>
+
+  <Accordion title="Volume or EQ changes aren't sticking">
+    Somos InControl sends changes directly to your speaker over the local network — there is no intermediate server. If a change doesn't seem to take effect, your Wi-Fi signal is the most likely culprit. Brief drops in the connection can cause a command to be lost before the speaker receives it.
+
+    Check your Wi-Fi signal strength and try the change again once the connection is steady. Moving your iPhone closer to the router or speaker can help confirm whether signal is the issue.
+  </Accordion>
+
+  <Accordion title="The tutorial keeps popping up">
+    The tutorial is designed to run once when you first open the app, then never appear again. If it keeps reappearing, there is likely an issue with local storage on your device.
+
+    Uninstall Somos InControl and reinstall it from TestFlight. This clears the stored state and the tutorial will behave correctly after a fresh install.
+  </Accordion>
+
+  <Accordion title="The app crashes on launch">
+    Start with the simplest fixes first:
+
+    1. **Force-quit the app.** Swipe it away in the App Switcher, then tap the icon to reopen.
+    2. **Restart your device.** If force-quitting doesn't help, a full device restart often will.
+    3. **Contact support.** If the app still crashes after a restart, [send a message](/support/contact) with your device model and iOS version. The developer will follow up.
+  </Accordion>
+
+  <Accordion title="Speech Boost won't change">
+    Somos InControl tried to change Speech Boost, read the value back from your speaker, and found the speaker hadn't accepted the change. The app told you rather than silently pretending it worked.
+
+    Speech Boost behaviour varies across Sonos® soundbar models — some expose it as a toggle, others as a level selector — and the team doesn't own every model. The fastest way to get this fixed is to fill in the dedicated questionnaire. Every question is optional, including your email address.
+
+    <Card title="Speech Boost questionnaire" icon="message-question" href="https://somosincontrol.com/somos-incontrol/speech-boost.html">
+      Answer a few quick questions about how Speech Boost behaves on your soundbar so the developer can reproduce and fix the issue.
+    </Card>
+  </Accordion>
+
+  <Accordion title="Crossover won't change">
+    Somos InControl tried to change the crossover setting, read it back, and found it hadn't taken. The crossover control is only available for the **Sonos Amp** — it won't appear for other speaker models, and that's by design.
+
+    If you do have a Sonos Amp and the crossover control appears but changes don't stick, the developer needs a few details to reproduce the issue. Fill in the dedicated questionnaire — every question is optional.
+
+    <Card title="Crossover questionnaire" icon="message-question" href="https://somosincontrol.com/somos-incontrol/crossover.html">
+      Answer a few quick questions about your Sonos Amp setup so the developer can track down why the crossover isn't changing.
+    </Card>
+  </Accordion>
+
+  <Accordion title="A speaker or an entire system didn't show up">
+    If some rooms are missing — especially if you have multiple Sonos® systems or a mix of S1 and S2 hardware — these are the most common causes:
+
+    - **Same Wi-Fi requirement.** Your phone and all speakers must be on the same Wi-Fi network. See the "app can't find my speakers" section above for the full checklist.
+    - **S1 and S2 split systems.** If you have both an S1 system and an S2 system, Somos InControl needs to identify them correctly. Build 34 (currently in beta) includes improved support for split S1 + S2 households. If missing rooms are your issue, this fix may already be in the beta — [request a TestFlight invite](/support/contact).
+    - **Second address.** If you manage Sonos® systems at more than one address, make sure your phone is on the same local network as the speakers you want to control.
+
+    If you've checked all of the above and speakers are still missing, the [Speakers Not Found questionnaire](https://somosincontrol.com/somos-incontrol/speakers-not-found.html) is the best next step.
+  </Accordion>
+
+</AccordionGroup>

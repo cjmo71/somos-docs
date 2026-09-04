@@ -1,0 +1,99 @@
+---
+title: "App Permissions: Local Network and Bluetooth"
+sidebarTitle: "Permissions"
+description: "What Local Network and Bluetooth permissions do in Somos InControl, why each is needed, and how to re-enable them in iOS Settings if you declined."
+---
+
+Somos InControl asks for two iOS permissions on first launch: Local Network and Bluetooth. Neither permission is used for tracking, analytics, or anything that leaves your home network. They exist for a single practical reason — finding and talking to your Sonos® speakers. Here's exactly what each permission does, what happens if you decline it, and how to turn it back on if you change your mind.
+
+## Local Network Permission
+
+### What it does
+
+iOS requires any app that discovers or communicates with devices on your Wi-Fi to request Local Network permission. Somos InControl uses this permission for two things:
+
+- **Bonjour (mDNS) discovery** — the app listens for Sonos® speakers advertising the `_sonos._tcp` service on your network, the same discovery method used by AirPlay and the official Sonos® app.
+- **Direct subnet probe** — as a fallback, the app sends a short request to each address on your local subnet asking "are you a Sonos® speaker?" Any Sonos® device that responds is added to your room list.
+
+Once speakers are discovered, all control traffic — volume changes, EQ adjustments, presets, home theater commands — also travels over your local Wi-Fi using this permission.
+
+### What it does NOT do
+
+Local Network permission only covers devices on the Wi-Fi network your phone is currently connected to. It does not give the app access to the internet, to your router's admin interface, or to any device on a different network.
+
+<Note>
+  Local Network permission is **required**. If you decline it, the app cannot find any Sonos® speakers and will have nothing to control. Bluetooth is optional — the app works fully without it for speakers already on your Wi-Fi.
+</Note>
+
+### What happens if you decline
+
+If you tap **Don't Allow** when iOS asks for Local Network permission, the app opens but finds no rooms. No speakers will appear, and no controls will be available.
+
+### How to re-enable Local Network permission
+
+If you declined Local Network permission and want to grant it later:
+
+<Steps>
+  <Step title="Open iOS Settings">
+    Open the **Settings** app on your iPhone or iPad.
+  </Step>
+  <Step title="Find Somos InControl">
+    Scroll down the Settings list until you see **Somos InControl** and tap it.
+  </Step>
+  <Step title="Enable Local Network">
+    Tap the toggle next to **Local Network** to turn it on.
+  </Step>
+  <Step title="Return to the app">
+    Switch back to Somos InControl. Force-quit and reopen the app if your rooms don't appear immediately — the app runs discovery fresh on each launch.
+  </Step>
+</Steps>
+
+---
+
+## Bluetooth Permission
+
+### What it does
+
+The app uses Bluetooth for one specific purpose: detecting Sonos® speakers that are **nearby but not yet connected to your Wi-Fi network** — for example, a brand-new speaker you're in the process of setting up, or a speaker that has temporarily gone offline.
+
+When the permission is granted, the app only reads the advertising name broadcast by nearby Bluetooth devices and filters for names that match Sonos® hardware. It does not:
+
+- Pair with any device
+- Send any data over Bluetooth
+- Identify you, your device, or your location
+- Track movement or proximity over time
+
+### What happens if you decline
+
+If you decline Bluetooth permission, the app continues to work normally for every speaker that is already on your Wi-Fi. You simply won't see the detection prompt for nearby speakers that aren't yet on the network.
+
+<Note>
+  Bluetooth permission is **optional**. All core features — volume, EQ, presets, home theater controls, Live Activity — work without it.
+</Note>
+
+### How to re-enable Bluetooth permission
+
+<Steps>
+  <Step title="Open iOS Settings">
+    Open the **Settings** app on your iPhone or iPad.
+  </Step>
+  <Step title="Find Somos InControl">
+    Scroll down to **Somos InControl** and tap it.
+  </Step>
+  <Step title="Enable Bluetooth">
+    Tap the toggle next to **Bluetooth** to turn it on.
+  </Step>
+</Steps>
+
+---
+
+## Permission Summary
+
+| Permission | Required? | Used for | Works without it? |
+|---|---|---|---|
+| Local Network | **Yes** | Discovering and controlling Sonos® speakers on your Wi-Fi | ❌ No speakers will be found |
+| Bluetooth | No | Detecting nearby Sonos® speakers not yet on Wi-Fi | ✅ Yes, for speakers already on the network |
+
+<Info>
+  Somos InControl contains zero third-party libraries and makes no analytics or telemetry requests. The only outbound internet traffic is a single image fetch from Sonos®'s public photo library (`media.sonos.com`) to display speaker photos. See the full [Privacy Policy](https://somosincontrol.com/somos-incontrol/privacy.html) for details.
+</Info>

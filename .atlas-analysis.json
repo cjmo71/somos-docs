@@ -1,11 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "name": "Somos InControl",
+  "projectType": "saas",
+  "projectName": "Somos InControl",
+  "projectDescription": "A fast, focused iOS remote control app for Sonos® speakers that works entirely on your local network — no account, no cloud, no tracking.",
   "theme": "almond",
-  "colors": {
-    "primary": "#2563eb"
-  },
-  "favicon": "/favicon.svg",
+  "primaryColor": "#2563eb",
+  "lightColor": null,
+  "darkColor": null,
   "navigation": {
     "tabs": [
       {
@@ -61,11 +61,23 @@
       }
     ]
   },
-  "navbar": {
-    "primary": {
-      "type": "button",
-      "label": "Download Beta",
-      "href": "https://testflight.apple.com/join/2D778AXH"
-    }
-  }
+  "keyFeatures": [
+    "Instant volume control with a single large slider",
+    "Sound presets that save EQ, Night Sound, and Speech Boost",
+    "Full EQ controls: bass, treble, subwoofer, loudness, and Trueplay",
+    "Home theater controls: height channel, Speech Boost, Night Sound, TV source, audio-format badge",
+    "Live Activity: volume control on the Lock Screen and Dynamic Island",
+    "Up to 4 favorite rooms pinned to the bottom tab bar",
+    "No account, no sign-up, no analytics, no ads",
+    "Works entirely on local Wi-Fi — no cloud round-trips",
+    "Max volume limit per room",
+    "Stereo-pair balance slider"
+  ],
+  "publicApiSurface": [
+    "Local Network discovery via Bonjour (mDNS) using _sonos._tcp",
+    "Direct subnet probe fallback for speaker discovery",
+    "Sonos local control protocol (HTTP on local network port)",
+    "Bluetooth advertising scan for offline/new speaker detection",
+    "Sonos public image library (media.sonos.com) for speaker photos"
+  ]
 }

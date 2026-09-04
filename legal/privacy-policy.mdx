@@ -1,0 +1,76 @@
+---
+title: "Privacy Policy — Somos InControl"
+sidebarTitle: "Privacy Policy"
+description: "Somos InControl's full privacy policy: what data the app collects, how your network is used, where settings are stored, and how to contact us."
+---
+
+Somos InControl is built to stay on your local network and mind its own business. The app collects no personal data, operates no servers, and contains zero third-party tracking code. The only outside contact the app ever makes is fetching a static product photo from Sonos®'s own public image library — nothing more.
+
+<Note>
+  **Last updated: April 2026**
+</Note>
+
+## The Short Version
+
+Somos InControl does not collect any data. We have no servers that see your activity. No account is required to use the app. There are no analytics, no ads, and no third-party SDKs. The one and only internet request the app makes is fetching product photos of your speakers from Sonos®'s public image library. Everything else — discovery, control, and settings — stays entirely on your device and your local Wi-Fi network.
+
+## What We Collect
+
+**Nothing.** Somos InControl does not collect, transmit, or store any personal information on our servers — in fact, we don't operate any servers. We do not use analytics, tracking pixels, advertising identifiers, crash-reporting SDKs, or any third-party code that phones home. The app contains zero third-party libraries; it is built entirely on Apple's own frameworks.
+
+**The website is a separate thing, and it is entirely opt-in.** The forms on this site — support, suggestions, and the Speaker Check questionnaires — send us whatever you choose to type into them, and nothing else. Every field is optional, including your email address: leave it blank and we simply have no way to write back. The app never fills any of this in for you. When a speaker refuses a setting, Somos InControl only opens a link to this site; whether you answer anything after that is entirely your choice.
+
+## Local Network Access
+
+To find your Sonos® speakers, the app uses two standard local-discovery methods on the Wi-Fi network your device is connected to:
+
+- **Bonjour (mDNS)** — the same kind of discovery used by Apple's AirPlay, Apple TV, and the official Sonos® app. The app listens for Sonos® speakers advertising the `_sonos._tcp` Bonjour service.
+- **A direct subnet probe** — as a fallback, the app sends a short HTTP request to each address on your local subnet asking "are you a Sonos® speaker?". Any address that responds is added to your speaker list. Nothing is sent beyond the asking.
+
+Once speakers are found, the app controls them using the publicly documented local control protocol that Sonos® speakers expose on their own network port. All discovery and control traffic stays entirely on your Wi-Fi network.
+
+When you first launch the app, iOS will ask permission to use the local network. This permission is required for the app to find your speakers. If you decline, the app will have nothing to control.
+
+## Bluetooth Access
+
+The app uses Bluetooth for one purpose only: detecting Sonos® speakers that are nearby but **not yet on your Wi-Fi network** — for example, a brand-new speaker you are about to set up, or one that is temporarily offline. iOS will ask for Bluetooth permission on first launch.
+
+The app only looks at the advertising name of nearby devices and filters for Sonos® speakers. It does not pair with anything, does not send any data over Bluetooth, and does not identify you or your device in any way. If you decline Bluetooth permission, the app still works fully for speakers already on your Wi-Fi network.
+
+## The One Internet Request We Make
+
+We want to be upfront about this: when the app displays your speakers, it fetches each speaker's product photo from Sonos®'s public image library at `media.sonos.com`. This is a plain HTTPS request for a static image — the same kind of request your browser makes when loading any website's logo. **No personal information is sent** — not your speaker names, not your network details, nothing beyond the IP address that any standard HTTPS request reveals. The request amounts to: "please send me the picture of this speaker model."
+
+If Sonos®'s image library is unreachable, the app falls back to the low-resolution icon served by your speaker itself on the local network, so the app continues to work fully offline.
+
+Beyond this one image fetch, the app makes no other internet requests. No telemetry, no "analytics," no "product-improvement" pings.
+
+## Where Your Settings Live
+
+Your preferences — selected speakers, presets, EQ settings, and tutorial state — are stored in the app's local storage on your device (iOS `UserDefaults`), the same way any iOS app stores its settings. A small portion of this storage is shared with the Somos InControl widget and Live Activity so they can show the same speaker you are controlling. Everything stays on your device.
+
+The app does not use iCloud, iCloud Drive, or CloudKit. Nothing syncs to any cloud service.
+
+Uninstalling the app removes all of its local data.
+
+## Relationship with Sonos®
+
+<Info>
+  Somos InControl is an independent, unofficial third-party app. It is not affiliated with, endorsed by, or sponsored by Sonos, Inc. Sonos® is a registered trademark of Sonos, Inc., used here only for the factual purpose of describing which speakers the app works with. The app communicates with your Sonos® speakers using the same publicly documented local control protocol that Sonos® speakers expose on the local network.
+</Info>
+
+## Children's Privacy
+
+Somos InControl does not knowingly collect data from anyone, including children. The app is safe for all ages. Because we collect nothing at all, there is nothing child-specific to protect against.
+
+## Third Parties
+
+We do not share, sell, or disclose any data to third parties, because we don't collect any data to begin with. The app does not include any third-party advertising networks, analytics services, or tracking SDKs.
+
+## Changes to This Policy
+
+If this policy ever changes, we will update the date at the top of this page. Continued use of the app after a change means you accept the updated policy. Material changes will also be called out in the app's release notes.
+
+## Contact
+
+Questions about privacy? Visit the [Support page](/support/contact) and send a message through the contact form. A real human reads every message.
