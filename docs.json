@@ -48,7 +48,12 @@
             "pages": [
               "support/faq",
               "support/troubleshooting",
-              "support/contact"
+              "support/contact",
+              {
+                "anchor": "Contact Support",
+                "href": "https://somosincontrol.com/somos-incontrol/support.html",
+                "icon": "envelope"
+              }
             ]
           }
         ]
