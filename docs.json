@@ -72,6 +72,12 @@
       "type": "button",
       "label": "Download Beta",
       "href": "https://testflight.apple.com/join/2D778AXH"
-    }
+    },
+    "links": [
+      {
+        "label": "Support",
+        "href": "https://docs.somosincontrol.com/support/contact"
+      }
+    ]
   }
 }
