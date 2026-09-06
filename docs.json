@@ -42,19 +42,6 @@
               "rooms/favorites",
               "rooms/multiple-systems"
             ]
-          },
-          {
-            "group": "Support",
-            "pages": [
-              "support/faq",
-              "support/troubleshooting",
-              "support/contact",
-              {
-                "anchor": "Contact Support",
-                "href": "https://somosincontrol.com/somos-incontrol/support.html",
-                "icon": "envelope"
-              }
-            ]
           }
         ]
       },
@@ -69,6 +56,19 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Support",
+        "groups": [
+          {
+            "group": "Support",
+            "pages": [
+              "support/faq",
+              "support/troubleshooting",
+              "support/contact"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -77,12 +77,6 @@
       "type": "button",
       "label": "Download Beta",
       "href": "https://testflight.apple.com/join/2D778AXH"
-    },
-    "links": [
-      {
-        "label": "Support",
-        "href": "https://docs.somosincontrol.com/support/contact"
-      }
-    ]
+    }
   }
 }
