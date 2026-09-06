@@ -1,45 +1,76 @@
 ---
 title: "Sound Presets: Save Your Sound and Recall It Instantly"
 sidebarTitle: "Sound Presets"
-description: "Save your ideal EQ, Night Sound, and Speech Boost settings into a preset, then recall everything at once with a single tap — for any listening mood."
+description: "Save a room's EQ levels — plus, if you tick them, volume, Night Sound, Speech Boost and Loudness — into a preset, then bring it all back with a single tap."
 ---
 
-Sound presets let you lock in exactly how a room should sound for a given situation — movie night, background music, late-night listening — and bring it all back instantly with a single tap. Each preset is a complete snapshot of the room's sound at the moment you save it, so you never have to re-dial the same settings twice.
+Sound presets let you lock in exactly how a room should sound for a given situation — movie night, background music, late-night listening — and bring it all back instantly with a single tap. Every room has its own presets: three on the room page (TV presets) and three more on the Music sheet (music presets).
+
+## Where the presets live
+
+- **Room page** — the **Sound Presets** row sits between the volume card and the EQ card. These three slots are the room's *TV* presets and carry a small TV badge once saved.
+- **Music sheet** — tap **Music** in the source row at the top of a room to open it. It has its own **Sound Presets** row with three *music* slots (music-note badge), which can also capture the Music Level and Ambient/Full setting that only exist on that sheet.
+
+All six start out named **Preset 1**, **Preset 2** and **Preset 3**. A preset is stored per room — saving "Movies" in the Living Room does not change the Bedroom's presets.
 
 ## What a preset captures
 
-When you save a preset, it stores the current values of:
+<Tabs>
+  <Tab title="Always saved">
+    The sound itself is always captured — you cannot leave these out:
 
-- **Bass** level
-- **Treble** level
-- **Night Sound** toggle state (on or off)
-- **Speech Boost** toggle state (on or off)
+    - **Bass** and **Treble**
+    - **Surround** level (rooms with surrounds)
+    - **Height** level (height-capable soundbars and Era 300 satellites)
+    - **Subwoofer** level (rooms with a Sub)
+    - **Crossover** (Sonos Amp with a Sub)
+    - On the Music sheet only: **Music Level** and **Ambient / Full** playback mode
+  </Tab>
+  <Tab title="Only if you tick them">
+    The save sheet has an **Also save** list. Anything left unticked is simply not part of the preset, and loading it leaves that setting exactly as the room has it now:
+
+    - **Volume**
+    - **Night Sound** (soundbar rooms, room page only)
+    - **Speech Boost** (soundbar rooms, room page only)
+    - **Loudness**
+
+    An **All** row at the bottom ticks or clears every option offered for that room. The list only shows what the room can actually use — a music preset never offers Night Sound or Speech Boost, and a room without Loudness does not offer Loudness.
+  </Tab>
+</Tabs>
 
 ## Saving, loading, and renaming presets
 
 <Steps>
   <Step title="Dial in your sound">
-    Adjust the EQ sliders, Night Sound, and Speech Boost until the room sounds exactly the way you want.
+    Adjust the EQ sliders and toggles until the room sounds exactly the way you want. If you want the preset to set the volume too, set that as well.
   </Step>
-  <Step title="Hold a preset slot to save">
-    Press and hold any preset to write your current sound settings into it. The preset slot updates immediately.
+  <Step title="Hold a preset to save">
+    Press and hold any preset card for about half a second. The **Save Preset** sheet opens with the name field (up to 14 characters) and the **Also save** tick list. Tick what you want the preset to carry, then tap **Save**. The card highlights as the active preset and a toast confirms "*name* saved".
   </Step>
   <Step title="Tap a preset to load it">
-    Tap any saved preset to apply everything it captured at once — EQ levels and toggle states all change together.
+    Tap any card to apply everything it captured at once. The sliders move to the saved values and the speaker updates immediately. If the preset captured a volume, the room's volume changes too — so keep that in mind before ticking Volume on a preset you use late at night.
   </Step>
-  <Step title="Hold again to rename">
-    Press and hold a saved preset a second time to rename it. Give it a name that makes its purpose obvious, like "Movies" or "Late Night".
+  <Step title="Rename without re-saving">
+    Hold the card again, change only the name and leave the ticks alone — the button reads **Rename** instead of **Save**, and every stored value is kept exactly as it was. Change any tick and it becomes a full **Save** again, re-capturing the room's current settings.
   </Step>
 </Steps>
 
+<Note>
+  The tick list opens pre-filled with what the preset already holds, so a rename never silently drops Volume, Night Sound, Speech Boost or Loudness. Unticking something is a deliberate choice and clears it on Save.
+</Note>
+
 ## When a preset deactivates
 
-A preset stays active as long as none of its captured controls have changed. The moment you manually adjust any setting the preset owns — a slider, Night Sound, or Speech Boost — the preset deactivates automatically. A brief notification explains what happened, and your manual change stays in effect. To re-activate it, tap the preset again.
+The active highlight is worked out from what the speaker reports, not remembered: a preset stays highlighted only while every level it captured still matches the room. The moment you move a slider it captured — or flip Night Sound, Speech Boost, or Loudness on a preset that captured them — the highlight clears, and a toast tells you "*name* preset was disabled". Your manual change stays in effect. Changes made from the official Sonos® app clear the highlight the same way at the next background sync. To bring the preset back, tap it again.
 
-## Presets work in every room
+## Presets in music-only rooms
 
-Presets are available in both soundbar (home theater) rooms and music-only rooms. In rooms without a soundbar, Night Sound and Speech Boost are not present, so saved presets for those rooms capture EQ levels only.
+Presets work in every room, not just soundbar rooms. In a room without a soundbar, Night Sound and Speech Boost are never offered, so the presets there capture the EQ levels plus, optionally, Volume and Loudness.
+
+## Presets from Siri and the widget
+
+Once you name a preset, Siri knows it by that name — say "**Apply Movies in Somos InControl**" and it loads without any Shortcut setup. The Home Screen widget can also apply presets with one tap. See [Widget & Siri](/features/widget-and-siri).
 
 <Tip>
-  Consider saving four distinct presets per room: one tuned for **movies** (boosted dialogue), one for **music** (balanced EQ), one for **late-night** (Night Sound on, lower treble), and one for **kids' TV** (Speech Boost on, conservative bass). Switching between them takes one tap.
+  A good starting set for a soundbar room: **Movies** (Speech Boost on, a little extra bass), **Late Night** (Night Sound on, Volume ticked at a low level), and **Music** saved from the Music sheet with Loudness on.
 </Tip>

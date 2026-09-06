@@ -16,7 +16,8 @@
             "pages": [
               "introduction",
               "getting-started/first-launch",
-              "getting-started/permissions"
+              "getting-started/permissions",
+              "getting-started/menu"
             ]
           },
           {
@@ -26,7 +27,9 @@
               "features/sound-presets",
               "features/eq-and-trueplay",
               "features/home-theater",
-              "features/live-activity"
+              "features/music",
+              "features/live-activity",
+              "features/widget-and-siri"
             ]
           },
           {
@@ -34,7 +37,10 @@
             "pages": [
               "rooms/overview",
               "rooms/room-diagram",
-              "rooms/favorites"
+              "rooms/speaker-setup",
+              "rooms/groups",
+              "rooms/favorites",
+              "rooms/multiple-systems"
             ]
           },
           {

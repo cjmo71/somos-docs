@@ -1,7 +1,7 @@
 ---
 title: "Somos InControl: Answers to Frequently Asked Questions"
 sidebarTitle: "FAQ"
-description: "Quick answers about Somos InControl: compatibility, privacy, accounts, presets, Live Activity, Trueplay, and more — all in one place."
+description: "Quick answers about Somos InControl: compatibility, privacy, accounts, presets, Live Activity, Trueplay, grouping, widgets and more — all in one place."
 ---
 
 If you have a question about Somos InControl, you're in the right place. These are the questions users ask most often, covering everything from how the app connects to your speakers to what it does (and doesn't) do with your data. If your question isn't answered here, head to [Troubleshooting](/support/troubleshooting) for step-by-step fixes, or [contact support](/support/contact) directly.
@@ -13,63 +13,75 @@ If you have a question about Somos InControl, you're in the right place. These a
   </Accordion>
 
   <Accordion title="Which Sonos® speakers does it work with?">
-    Somos InControl works with most current and recent Sonos® speakers that support local control on the network. Every room appears in the app — home theater (soundbar) rooms, stereo pairs, and single speakers. As a general rule: if your speaker shows up in the official Sonos® app on the same Wi-Fi, it should show up here too.
+    Somos InControl works with Sonos® speakers that support local control on the network — S2 systems and S1 systems alike. Every room appears in the app — home theater (soundbar) rooms, stereo pairs, single speakers, and portables such as Move and Roam. As a general rule: if your speaker shows up in the official Sonos® app on the same Wi-Fi, it should show up here too.
 
-    All rooms get volume, bass, treble, loudness, sound presets, Trueplay status, and music controls. Home-theater-only controls — height, Speech Boost, Night Sound, TV source, and the audio-format badge — appear only in rooms that include a soundbar. A subwoofer slider appears in any room that has a subwoofer bonded.
+    All rooms get volume, bass, treble, loudness, presets, Trueplay, Status Light, Touch Controls and the Music sheet. Home-theater-only controls — TV / Music source, the audio-format badge, Night Sound, Speech Boost, height and surround levels — appear only in rooms with a soundbar. Subwoofer controls appear in any room that has a Sub bonded; the crossover slider appears only on a Sonos Amp.
 
-    If a specific model isn't being discovered, contact support with the model name and the team will investigate.
+    If a specific model isn't being discovered, contact support with the model name.
   </Accordion>
 
   <Accordion title="Do I need a Sonos® account?">
-    No. Somos InControl does not use your Sonos® account and will never ask you to log in. It talks to your speakers directly over Wi-Fi — no credentials, no cloud, no sign-in.
+    No. Somos InControl does not use your Sonos® account and will never ask you to log in. It talks to your speakers directly over Wi-Fi — no credentials, no cloud, no sign-in. Even music playback works without a login, because the speaker streams from the service itself and your phone only sends the command.
   </Accordion>
 
   <Accordion title="Why does the app ask for Local Network permission?">
-    iOS requires any app that discovers and communicates with devices on your local Wi-Fi to request Local Network permission. Somos InControl needs this permission to find your Sonos® speakers. Without it, the app has nothing to control. The permission only lets the app see devices on the Wi-Fi network you're currently connected to — nothing else.
+    iOS requires any app that discovers and communicates with devices on your local Wi-Fi to request Local Network permission. Somos InControl needs it to find your Sonos® speakers. Without it, the app has nothing to control. The permission only lets the app see devices on the Wi-Fi network you're currently connected to — nothing else.
 
-    If you declined the prompt initially, re-enable it in **Settings → Somos InControl → Local Network**.
+    If you declined the prompt initially, re-enable it in **Settings → Somos InControl → Local Network** (the menu's **App Permissions in iPhone Settings** takes you straight there).
   </Accordion>
 
   <Accordion title="Does it work over cellular or when I'm away from home?">
     No. Somos InControl only works on the same local Wi-Fi network as your Sonos® speakers. This is a deliberate design choice — it's what keeps the app fast, private, and free of any account requirement. If you're away from home and need remote control, use the official Sonos® app.
   </Accordion>
 
-  <Accordion title="How do I save a preset?">
-    Dial in the sound you want, then **hold** a preset button to save your current settings into it. **Tap** a preset to load it, and **hold** it again to rename it. Presets capture your EQ levels along with the Night Sound and Speech Boost toggles.
+  <Accordion title="How do I save a preset, and what does it store?">
+    Dial in the sound you want, then **hold** a preset card. On the Save Preset sheet, name it and tick anything extra you want it to carry — **Volume**, **Night Sound**, **Speech Boost**, **Loudness** — then tap **Save**. Bass, treble and the surround, height, subwoofer and crossover levels are always saved. **Tap** a preset to load it. Hold it again and change only the name to **Rename** it without touching its values.
 
-    While a preset is active, changing any control it captured will deactivate it — a brief toast notification will explain what happened.
+    Each room has three TV presets on its page and three music presets on the Music sheet. While a preset is active, changing any control it captured clears its highlight and a toast says the preset was disabled. See [Sound Presets](/features/sound-presets).
   </Accordion>
 
   <Accordion title="Can I control more than one room?">
-    Yes. The tab bar at the bottom of the screen holds up to four favorite rooms — tap a tab to switch between them. The menu (top-left) lists all of your rooms: tap any room to switch to it, or hold and drag to reorder the list. Whatever sits in the top four positions of that list becomes the bottom tabs.
+    Yes, in two senses. The bottom bar holds up to four favourite rooms as tabs (plus a second page of saved groups) and you can swipe between room pages; the menu lists every room. And you can **group** rooms so they play the same audio: tap the group button at the top-right of a room, switch other rooms on, and each room's volume then appears on the page. See [Grouping Rooms](/rooms/groups).
   </Accordion>
 
   <Accordion title="Why isn't the Dynamic Island or Lock Screen control showing?">
-    The Live Activity — the Lock Screen and Dynamic Island volume control with **+** and **−** buttons and the current volume percentage — is off by default. Open the menu and enable **Live Activity** to make it appear.
+    The Live Activity is **off by default**. Open the menu and switch **Live Activity** on under Settings. If it still doesn't appear, iOS may have Live Activities disabled for the app — the menu shows an orange link that opens **Settings → Apps → Somos InControl → Live Activities**. Live Activities need iOS 16.2 or later, and the card ends about 30 minutes after you background the app; reopening the app brings it back.
   </Accordion>
 
   <Accordion title="What is Trueplay and should I enable it?">
-    Trueplay is Sonos®'s room calibration feature. It tunes your speaker's sound to match the acoustics of your room. If your speaker supports Trueplay, turning it on generally improves sound quality. Somos InControl shows the current Trueplay status in every room and lets you toggle it on or off.
+    Trueplay is Sonos®'s room calibration feature. It tunes your speaker's sound to match the acoustics of your room, and turning it on generally improves sound quality. The Trueplay tile in every room shows whether the room is tuned (then it's an on/off switch), untuned (**Tune in Sonos app** — calibration itself only runs in the official app), or blocked, with a **Why not?** explanation.
   </Accordion>
 
   <Accordion title="Why is Trueplay unavailable after I added front speakers?">
-    Whenever you set up a configuration that Sonos® doesn't officially support — such as separate front speakers — Trueplay becomes unavailable. This is a Sonos® firmware restriction, not something Somos InControl can work around. The trade-off is yours to make: a larger soundstage with your custom speaker configuration, or your original layout with Trueplay enabled.
+    Sonos® firmware can't tune a room with separate front speakers bonded to the soundbar, so Trueplay becomes unavailable — the app warns you about this before it bonds fronts. The trade-off is yours: a larger soundstage with the custom configuration, or your original layout with Trueplay. Port, Connect and Roam SL never support Trueplay at all.
   </Accordion>
 
   <Accordion title="Does Somos InControl update my speakers' firmware?">
-    No — firmware updates are handled exclusively by the official Sonos® app. What Somos InControl does do: if one of your speakers is running a different firmware version than the others, it tells you so (the speaker appears with a "needs a firmware update" note), giving you a heads-up before configuration issues occur. If all your speakers match each other, Somos stays quiet — it never nags you to update.
+    No — firmware updates are handled exclusively by the official Sonos® app. What Somos InControl does do: if a speaker is running older firmware than the rest of your system (Sonos® quarantines it), that room shows **Needs a firmware update** and its page has no controls until the Sonos® app has updated it. If all your speakers match, Somos stays quiet — it never nags you to update.
   </Accordion>
 
-  <Accordion title="Can I use a single speaker as a surround?">
-    Yes. The official Sonos® app requires surrounds in matched pairs, but Somos InControl lets you bond a single speaker as a surround for special circumstances. If you install it in the left surround position you'll receive only the left surround channel (and vice versa for the right). This is likely most useful for Era 300 owners, since that speaker has its own Atmos capability.
+  <Accordion title="Can I use Era 300s or other speakers as front speakers?">
+    Yes. Somos InControl lets you bond separate front left and right speakers to a soundbar, something the official Sonos® app doesn't offer. The soundbar becomes the centre channel and some of its own drivers go quiet, the fronts receive steered channels rather than their own Atmos feed, and Trueplay is unavailable while fronts are bonded. Fronts must be assigned as a matched pair. See [Speaker Setup](/rooms/speaker-setup).
+  </Accordion>
+
+  <Accordion title="Can I create a stereo pair in Somos InControl?">
+    Yes. On a single speaker's page, press and hold the room diagram to open the Stereo Pair sheet, pick a same-model partner, choose which is left, and apply. On an existing pair the same sheet has **Separate stereo pair**. See [Speaker Setup](/rooms/speaker-setup).
+  </Accordion>
+
+  <Accordion title="Do portable speakers (Move, Roam) work?">
+    Yes. They appear as normal rooms with their battery level next to the model name at the top of the page. If you switch a portable to Bluetooth it disappears from the app — and from the official Sonos® app — because on Bluetooth it only plays from the phone it's paired with. Turn Bluetooth off on the speaker and it comes back on its own.
   </Accordion>
 
   <Accordion title="Can Somos InControl send music to non-Sonos AirPlay speakers?">
-    Not from inside the app — Apple doesn't allow third-party apps to initiate AirPlay to external speakers. However, AirPlay-capable Sonos® speakers accept AirPlay directly from the iOS AirPlay picker, where they appear alongside any other AirPlay speakers in your home. So the mix-and-match you might be imagining is partly available at the iPhone level, just not from within Somos InControl itself.
+    Not from inside the app — Apple doesn't allow third-party apps to initiate AirPlay to external speakers. However, AirPlay-capable Sonos® speakers accept AirPlay directly from the iOS AirPlay picker, where they appear alongside any other AirPlay speakers in your home.
+  </Accordion>
+
+  <Accordion title="Is there a widget or Siri support?">
+    Both. The Home Screen widget (small, medium, large) offers preset buttons and volume/mute rows for up to two rooms. Siri applies presets by name — "Apply Movies in Somos InControl" — and can turn the volume up or down or switch room. See [Widget & Siri](/features/widget-and-siri).
   </Accordion>
 
   <Accordion title="Does Somos InControl collect any data about me or my speakers?">
-    No. Nothing leaves your device except the local control messages your speakers need to respond to your inputs. There is no analytics, no telemetry, and no account to send data to. See the [Privacy Policy](https://somosincontrol.com/somos-incontrol/privacy.html) for full details.
+    No. Nothing leaves your device except the local control messages your speakers need and one image request to Sonos®'s public photo library for speaker pictures. There is no analytics, no telemetry, no iCloud sync and no account to send data to. The questionnaires under Speaker Checks open a web page in your browser; the app itself sends nothing to it. See the [Privacy Policy](/legal/privacy-policy).
   </Accordion>
 
 </AccordionGroup>

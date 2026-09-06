@@ -1,0 +1,51 @@
+---
+title: "Home Screen Widget and Siri Shortcuts"
+sidebarTitle: "Widget & Siri"
+description: "Apply presets, change volume and mute rooms from a Home Screen widget, or ask Siri to apply a preset by name — no Shortcut setup required."
+---
+
+Somos InControl ships with a Home Screen widget and a set of Siri shortcuts, so the controls you reach for most don't need the app open at all. Both talk to your speakers over the same local Wi-Fi connection as the app.
+
+## Home Screen widget
+
+The **Somos InControl** widget comes in **small**, **medium** and **large** sizes. It's built from rows, and each row is one of four types:
+
+- **TV presets** — a room's three TV preset buttons, which apply the saved sound directly
+- **Music presets** — the same for the room's three music presets
+- **Volume + mute** — the room name with **−**, **Mute** and **+** buttons
+- **Favourite groups** — your saved groups, one tap to rebuild each
+
+**Small** holds one or two buttons, **medium** holds one or two rows, and **large** holds three rows in any combination — so a large widget can show TV presets for the living room, music presets for the kitchen, and volume for the bedroom.
+
+<Steps>
+  <Step title="Add the widget">
+    Long-press the Home Screen, tap **+**, search for **Somos InControl**, choose a size and tap **Add Widget**.
+  </Step>
+  <Step title="Choose what each row shows">
+    Long-press the widget and tap **Edit Widget**. For each row pick a **Type** and, for anything but favourite groups, a **Room**. The editor only asks about the rows the chosen size can hold. (Row configuration needs iOS 17 or later; on iOS 16 the widget shows a fixed preset layout.)
+  </Step>
+  <Step title="Open the app once">
+    Open Somos InControl at least once after installing so the widget has your rooms and presets — it refreshes every time you open the app.
+  </Step>
+</Steps>
+
+<Note>
+  Preset buttons apply exactly what the preset captured, including volume if you ticked it. The active preset lights up so you can see which one is loaded. The room's [max volume limit](/features/volume#setting-a-max-volume-limit) applies to the widget's volume buttons too.
+</Note>
+
+## Siri and Shortcuts
+
+The phrases below work as soon as the app is installed (iOS 16.4 or later) — nothing to set up in the Shortcuts app.
+
+| Say | What happens |
+|---|---|
+| "Apply **Movies** in Somos InControl" · "Switch to **Movies** in Somos InControl" | Applies the preset with that name to its room. Siri knows every preset by the name you gave it. |
+| "Turn up the volume on Somos InControl" · "Volume up on Somos InControl" | Raises the current room's volume by 2 |
+| "Turn down the volume on Somos InControl" · "Lower the volume on Somos InControl" | Lowers the current room's volume by 2 |
+| "Switch Somos InControl room" · "Next room on Somos InControl" | Moves to the next room |
+
+The same actions — **Apply Preset**, **Volume Up**, **Volume Down**, **Switch Room** — are available in the Shortcuts app for automations and Home Screen shortcuts. Search for Somos InControl when adding an action.
+
+<Tip>
+  Because presets are matched by name, give them distinct names. Two rooms each with a preset called "Movies" will make Siri ask which one you mean.
+</Tip>

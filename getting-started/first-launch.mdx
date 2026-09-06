@@ -1,16 +1,16 @@
 ---
 title: "First Launch: Set Up Somos InControl for Sonos® on iOS"
 sidebarTitle: "First Launch"
-description: "Download Somos InControl from TestFlight, grant Local Network permission, and discover your Sonos® rooms in under a minute — no account needed."
+description: "Install Somos InControl from TestFlight, tap Find My Speakers, grant Local Network permission, and take the short tour — no account needed."
 ---
 
-The first time you open Somos InControl, two things happen in quick succession: iOS asks for permission to access your local network, and then a short interactive tour walks you through every part of the app. From there the app scans your Wi-Fi and lists every Sonos® room it finds — the whole process takes under a minute, and you don't need a Sonos® account or any prior setup.
+The first time you open Somos InControl you land on a welcome screen with one big button: **Find My Speakers**. Tapping it is what triggers the iOS permission prompts, and the moment your speakers are found a short interactive tour walks you through the app. The whole thing takes under a minute, and you don't need a Sonos® account or any prior setup.
 
 <Note>
-  Somos InControl requires **Local Network** permission to find your Sonos® speakers. Without it, the app has nothing to control. See [App Permissions](/getting-started/permissions) for details on what the permission does and how to re-enable it if you declined.
+  Somos InControl requires **Local Network** permission to find your Sonos® speakers. Without it, the app has nothing to control. See [App Permissions](/getting-started/permissions) for what each permission does and how to re-enable it if you declined.
 </Note>
 
-## Download and Set Up
+## Download and set up
 
 <Steps>
   <Step title="Install TestFlight">
@@ -21,64 +21,61 @@ The first time you open Somos InControl, two things happen in quick succession: 
 
     Tap **Accept** on the TestFlight page, then tap **Install** to download Somos InControl. TestFlight will notify you when updates are available.
   </Step>
+  <Step title="Tap Find My Speakers">
+    Open the app. The welcome screen explains that you'll be asked to allow Local Network (and Bluetooth). Tap **Find My Speakers** to start. If you just want to look around without any Sonos® hardware, tap **Explore Demo Mode** instead — three demo rooms appear, and an **Exit Demo** button at the top of each page takes you back.
+  </Step>
   <Step title="Grant Local Network permission">
-    The first time you open Somos InControl, iOS will show a prompt asking whether to allow the app to find and connect to devices on your local network.
+    iOS asks whether to allow the app to find and connect to devices on your local network. Tap **Allow**.
 
-    Tap **Allow**.
-
-    This permission lets the app discover your Sonos® speakers over Wi-Fi. It does not give the app access to the internet or to any device outside your home network. If you tap **Don't Allow** by mistake, you can re-enable it in **Settings → Somos InControl → Local Network** — see [App Permissions](/getting-started/permissions).
+    This lets the app discover and control your Sonos® speakers over Wi-Fi. It does not give the app access to the internet or to any device outside your home network. If you tap **Don't Allow** by mistake, the app shows you how to re-enable it in **Settings → Privacy & Security → Local Network**, with a **Try Again** button.
   </Step>
   <Step title="Grant Bluetooth permission (optional)">
-    iOS will also ask for Bluetooth permission. This is used only to detect Sonos® speakers that are nearby but not yet connected to your Wi-Fi — for example, a new speaker you're about to set up.
-
-    Tap **Allow** if you want that detection, or **Don't Allow** to skip it. Bluetooth is entirely optional — the app works fully without it for any speaker already on your network.
+    iOS also asks for Bluetooth. This is used only to spot Sonos® speakers that are nearby but not yet on your Wi-Fi — a new speaker you're about to set up. Tap **Allow** for that, or **Don't Allow** to skip it. The app works fully without it for any speaker already on your network.
+  </Step>
+  <Step title="Discovery">
+    The app searches your subnet and listens for Bonjour at the same time. On most home networks this takes a few seconds. Every Sonos® room appears — soundbar rooms, stereo pairs, single and portable speakers — and the first one opens.
   </Step>
   <Step title="Take the interactive tour">
-    After you grant permissions, a short interactive tour starts automatically. It walks you through the app step by step with highlighted callouts:
+    As soon as your rooms are on screen, a nine-step tour starts with highlighted callouts:
 
     **Welcome → The Menu → Volume → Sound Presets → Fine-tune EQ → Build Your Home Theater → Music & Favorites → Your Rooms → You're All Set**
 
-    You can tap **Skip** at any point and come back to the tour later. Nothing is locked until you finish it.
-  </Step>
-  <Step title="Discover your rooms">
-    Once the tour is complete (or skipped), the app scans your Wi-Fi and lists every Sonos® room it finds — home theater soundbar rooms, stereo pairs, and single speakers alike. Discovery usually takes a couple of seconds.
-
-    Tap any room to open it and start controlling it.
+    Tap **Next** and **Back** to move through it, or **Skip** at any point. Nothing is locked until you finish it.
   </Step>
 </Steps>
 
-## Replay the Tour Anytime
+After the tour, you may see two one-time notices: **Before you start**, which explains the optional Speaker Checks questionnaires, and — if discovery found two systems or suspects one is missing — **Did we find everything?** See [Multiple Systems](/rooms/multiple-systems).
 
-If you skipped the tour or want to see it again, you can replay it from the menu at any time.
+## Replay the tour anytime
 
 <Steps>
   <Step title="Open the menu">
     Tap the menu button in the **top-left corner** of the app.
   </Step>
   <Step title="Tap Take the Tour">
-    Under the **Help** section, tap **Take the Tour**. The full interactive walkthrough starts from the beginning — Welcome through You're All Set — with the same highlighted callouts as the first time.
+    Under **Help**, tap **Take the Tour**. The full walkthrough starts from the beginning. The same section holds **Getting Started** (a short guide) and **Feature Reference** (the detailed in-app setup guide with its own FAQ).
   </Step>
 </Steps>
 
-## What Gets Discovered
+## What gets discovered
 
-Every Sonos® room on your Wi-Fi network appears in the app automatically — you don't choose rooms manually. What you can control depends on what's in each room:
+Every Sonos® room on your Wi-Fi appears automatically — you don't choose rooms manually. What you can control depends on what's in each room:
 
 <CardGroup cols={2}>
   <Card title="All rooms" icon="sliders" href="/rooms/overview">
-    Volume, bass, treble, loudness, sound presets, Trueplay status, and now-playing info.
+    Volume, mute, bass, treble, loudness, presets, Trueplay, Status Light, Touch Controls, the Music sheet, grouping and rename.
   </Card>
   <Card title="Soundbar rooms" icon="tv" href="/features/home-theater">
-    Everything above, plus height channel, Speech Boost, Night Sound, TV source, and the audio-format badge.
+    Everything above, plus TV / Music source, the audio-format badge, Night Sound, Speech Boost, height, surround and home theater setup.
   </Card>
   <Card title="Rooms with a subwoofer" icon="volume-high" href="/features/eq-and-trueplay">
-    Any room with a bonded subwoofer also shows a subwoofer level slider, regardless of whether it has a soundbar.
+    Any room with a bonded Sub — soundbar or not — adds the subwoofer level, on/off, and crossover on an Amp.
   </Card>
   <Card title="Your 4 favourite rooms" icon="star" href="/rooms/favorites">
-    The bottom bar holds up to 4 rooms as quick-access tabs. Reorder rooms from the menu (hold and drag) to choose which 4 appear there.
+    The bottom bar holds the top 4 rooms of your menu order as tabs, plus a second page of saved groups. Hold and drag in the menu to choose which 4 appear.
   </Card>
 </CardGroup>
 
 <Tip>
-  If a room isn't appearing, make sure your iPhone or iPad is on the **same Wi-Fi network** as your Sonos® speakers. Many routers broadcast separate 2.4 GHz and 5 GHz networks — your speakers may be on one and your phone on the other.
+  If a room isn't appearing, make sure your iPhone or iPad is on the **same Wi-Fi network** as your Sonos® speakers — not a guest network or an IoT VLAN. Then open the menu and use **Advanced → Rescan My Network**.
 </Tip>

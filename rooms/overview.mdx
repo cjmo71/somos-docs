@@ -1,56 +1,68 @@
 ---
 title: "Your Rooms in Somos InControl: Controls and Navigation"
 sidebarTitle: "Overview"
-description: "Learn how rooms work in Somos InControl — what controls each room type unlocks, and how to switch between rooms using the tab bar and menu."
+description: "How rooms work in Somos InControl — what each room page contains, which controls each room type unlocks, and how to switch between rooms."
 ---
 
-In Somos InControl, a "room" maps directly to a Sonos® room on your home network. Every room you've set up in your Sonos® system — whether it's a full home theater with a soundbar and surrounds, a stereo pair, or a single standalone speaker — appears in the app as its own room. What you can control in each room depends on the hardware in it: all rooms share a common set of controls, and certain room types unlock additional ones.
+In Somos InControl, a "room" maps directly to a Sonos® room on your home network. Every room in your Sonos® system — a home theater with a soundbar and surrounds, a stereo pair, a single standalone speaker, a portable Move or Roam — gets its own page. What you can control in each room depends on the hardware in it: all rooms share a common set of controls, and certain room types unlock more.
 
 <Note>
-  Somos InControl discovers every Sonos® room on your Wi-Fi automatically each time the app launches. You don't need to add or configure rooms — they appear as soon as the app finds them, usually within a couple of seconds.
+  Somos InControl discovers every Sonos® room on your Wi-Fi automatically each time the app launches. You don't need to add or configure rooms — they appear as soon as the app finds them, usually within a few seconds.
 </Note>
+
+## Anatomy of a room page
+
+From top to bottom:
+
+1. **Room name** — press and hold it to rename the room. The new name applies everywhere, including the Sonos® app.
+2. **Status line** — connection state and the model ("Era 100 · Stereo Pair", "Move 2 · 87% ⚡" for a portable with its battery level), or "Grouped with …" when the room is in a group. The **group** button in the top-right opens [Group Rooms](/rooms/groups).
+3. **Source row** (soundbars) — TV / Music pills and the audio-format badge. On other rooms, the **Music** button opens the [Music sheet](/features/music).
+4. **Volume card** — pinned as you scroll. See [Volume](/features/volume).
+5. **Sound Presets** — three TV presets. See [Sound Presets](/features/sound-presets).
+6. **EQ card** — sliders, toggles and the max volume row. See [EQ & Trueplay](/features/eq-and-trueplay).
+7. **Room diagram** — what's bonded to the room; press and hold to set up speakers. See [Room Diagram](/rooms/room-diagram).
+
+Pull down anywhere on the page to force a refresh; the app also resyncs in the background about every 30 seconds.
 
 ## What each room type supports
 
-Every room type gets the full set of core audio controls. Soundbar rooms and rooms with a bonded subwoofer each gain an additional layer of controls on top of that foundation.
-
-<CardGroup cols={3}>
-  <Card title="All Rooms" icon="speaker">
-    Every room on your network — home theaters, stereo pairs, and single speakers — gets these controls:
-
-    - Volume slider
-    - Bass and treble EQ
-    - Loudness toggle
-    - Sound presets
-    - Trueplay status and toggle
-    - Music
+<CardGroup cols={2}>
+  <Card title="All rooms" icon="speaker">
+    - Volume, − / +, mute
+    - Bass, treble, Loudness
+    - Three TV presets and three music presets
+    - Trueplay, Status Light, Touch Controls
+    - Music sheet (favorites, playlists, queue)
+    - Grouping, rename, room diagram
   </Card>
-  <Card title="Soundbar Rooms" icon="tv">
-    Rooms built around a soundbar (home theater rooms) include everything above, plus the home-theater-exclusive controls:
-
-    - Height channel level
-    - Speech Boost toggle
-    - Night Sound toggle
-    - TV source switch
-    - Audio-format badge
+  <Card title="Soundbar rooms" icon="tv">
+    Everything above, plus:
+    - TV / Music source pills and the audio-format badge
+    - Night Sound and Speech Boost (a level slider on the Arc Ultra)
+    - Height level on height-capable bars
+    - Surround level and Surrounds on/off (with surrounds bonded)
+    - Music Level and Ambient / Full on the Music sheet
+    - Group Audio Delay (while grouped)
+    - Home Theater Setup from the diagram
   </Card>
-  <Card title="Rooms with a Subwoofer" icon="waveform">
-    Any room that has a subwoofer bonded — whether it's attached to a soundbar or a non-soundbar speaker — adds one extra control on top of its room type:
-
-    - Subwoofer level slider
+  <Card title="Stereo pairs" icon="circle-half-stroke">
+    Everything in "All rooms", plus a **Balance** slider, and the option to separate the pair from the diagram's setup sheet.
+  </Card>
+  <Card title="Rooms with a Sub" icon="waveform">
+    Any room with a bonded Sub — soundbar, stereo pair or single — adds the **Subwoofer** level, an on/off switch, and on a Sonos Amp the **Crossover** slider.
+  </Card>
+  <Card title="Portable speakers" icon="battery-half">
+    Move, Move 2 and Roam appear as normal rooms with their battery level (and a ⚡ while charging) in the status line. A portable switched to Bluetooth disappears from the app — and from the Sonos® app — until Bluetooth is turned off again.
+  </Card>
+  <Card title="Rooms that need attention" icon="triangle-exclamation">
+    A speaker running older firmware than the rest of the household shows **Needs a firmware update** and its page has no controls until the Sonos® app updates it. A Sub that isn't bonded to anything gets a page explaining where to bond it.
   </Card>
 </CardGroup>
 
 ## Switching rooms
 
-The bar at the bottom of the screen shows up to **4 favorite rooms** as tabs. Tap any tab to switch to that room instantly. To see and access all of your rooms, tap the menu button in the top-left corner — every room on your network appears there. Tap any room in the menu to switch to it.
+- **Swipe** left or right on a room page to move between rooms.
+- **Bottom bar** — the top 4 rooms in your menu order sit here as tabs. Tap to switch instantly. A button at the end flips the bar to your **Saved Groups**. See [Favorite Rooms](/rooms/favorites).
+- **Menu** — tap the menu button in the top-left; every room on the current system is listed. Tap a room to switch to it, hold and drag to reorder, or swipe left on a room to rename it.
 
-To control which rooms appear as bottom tabs, reorder the list in the menu. Hold and drag any room to a new position — whatever sits in the top 4 slots becomes the four bottom tabs.
-
-## Room types at a glance
-
-Somos InControl handles all three Sonos® room configurations without any setup on your part:
-
-- **Home theater rooms** — a soundbar, optionally with surround speakers and/or a subwoofer. Gets the full home theater control set.
-- **Stereo pairs** — two matching speakers grouped together. Gets core controls, plus a subwoofer slider if one is bonded.
-- **Single speakers** — one standalone speaker. Gets core controls, plus a subwoofer slider if one is bonded.
+If you have more than one Sonos® system (an S1 and an S2 household, or two homes), the menu's **System** section lets you switch between them. See [Multiple Systems](/rooms/multiple-systems).

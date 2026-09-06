@@ -1,0 +1,55 @@
+---
+title: "Speaker Setup: Home Theater Bonding and Stereo Pairs"
+sidebarTitle: "Speaker Setup"
+description: "Bond surrounds, separate front speakers and up to two Subs to a soundbar, or create and separate stereo pairs — all from inside Somos InControl."
+---
+
+Somos InControl can build your rooms as well as control them. Press and hold the room diagram on any room page to open the setup sheet for that room: **Home Theater Setup** on a soundbar, or the **Stereo Pair** sheet on a single speaker or an existing pair.
+
+<Warning>
+  Before assigning a speaker, make sure it is completely standalone — not in a group, not in a stereo pair, and not bonded to another soundbar. Sonos® refuses to bond a speaker that is still attached to something else. If a configuration fails, the app automatically returns your system to its previous setup.
+</Warning>
+
+## Home Theater Setup (soundbars)
+
+<Steps>
+  <Step title="Open the sheet">
+    On the soundbar's page, press and hold the room diagram.
+  </Step>
+  <Step title="Fill the slots you have">
+    The sheet lists six slots: **Front Left**, **Front Right**, **Surround Left**, **Surround Right**, **Subwoofer** and **Subwoofer 2**. Tap a slot and choose from the standalone speakers on your network. Sub slots only offer Subs. The **flash** button beside each candidate pulses that speaker's status light so you can tell which is which; by default it also plays a short identify tone, which you can turn off with **Play a tone when identifying**.
+  </Step>
+  <Step title="Mind the front-speaker rule">
+    Fronts must be assigned as a pair — both or neither — and the app checks this when you apply. Surrounds and Subs can be assigned on their own. Tapping **×** on an assignment clears just that slot.
+  </Step>
+  <Step title="Apply and wait">
+    Tap **Apply**. The app sends the configuration and waits roughly 75 seconds while the firmware rebonds the speakers — the sheet shows the countdown. The room diagram updates when it settles.
+  </Step>
+</Steps>
+
+To take everything off the bar, tap **Remove All Speakers**, or remove speakers one at a time with **×** and then **Apply**. Released speakers reappear as their own rooms (Sonos® can take up to a minute), and the app offers to rename them as they come back.
+
+### Separate front speakers
+
+Somos InControl lets you bond separate front left and right speakers to a soundbar — something the official Sonos® app doesn't offer. Know the trade-off before you do: the soundbar becomes the centre channel and some of its own drivers go quiet, the fronts receive steered channels rather than their own Atmos feed, and **Trueplay becomes unavailable** while fronts are bonded. The app shows a **Before You Add Fronts** warning the first time; you can tick *don't show again*.
+
+## Stereo pairs
+
+<Tabs>
+  <Tab title="Create a pair">
+    On a single speaker's page, press and hold the diagram. The **Stereo Pair** sheet seeds the held speaker and lets you pick a partner from the standalone speakers of the **same model** on your network. The two appear as cards — the top card is the **left** channel; drag to swap them. Tap **Apply** to pair.
+  </Tab>
+  <Tab title="Separate a pair">
+    On a stereo pair's page, press and hold the diagram and tap **Separate stereo pair**. Both speakers come back as their own rooms, and the app offers to rename them.
+  </Tab>
+</Tabs>
+
+<Note>
+  The hold does nothing on a single speaker that has no same-model partner available on the network — there's nothing to pair it with.
+</Note>
+
+## Things to know
+
+- **Trueplay after bonding.** Sonos® firmware blocks Trueplay on a bar with separate fronts. Run Trueplay in the official Sonos® app before adding fronts if you want it, and expect it to read *Unavailable* afterwards.
+- **A released speaker doesn't come back.** Sonos® can hold a stale bond until the speaker restarts. Unplug it for 10 seconds and plug it back in.
+- **The diagram didn't update.** Pull down on the room page; the app also resyncs every 30 seconds or so.

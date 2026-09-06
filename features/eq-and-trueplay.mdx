@@ -1,39 +1,72 @@
 ---
 title: "EQ, Loudness, and Trueplay: Fine-Tune Your Room Sound"
 sidebarTitle: "EQ & Trueplay"
-description: "Adjust bass, treble, subwoofer, loudness, and Trueplay calibration for every Sonos® room — all in one card, with no nested menus to dig through."
+description: "Bass, treble, balance, surround, height, subwoofer, crossover, loudness, Trueplay, status light and touch controls — every room's sound controls in one card."
 ---
 
-The EQ card in Somos InControl gives you direct control over how every room sounds — not just soundbar rooms, but every Sonos® room in your home. All tone controls and calibration toggles live in a single place, so there's nothing to hunt for.
+The EQ card in Somos InControl gives you direct control over how every room sounds — not just soundbar rooms, but every Sonos® room in your home. All tone controls and toggles live in a single card below the presets, so there's nothing to hunt for. Controls that the room's hardware doesn't have simply don't appear.
 
-## EQ controls
+## Sliders
+
+| Slider | Range | Appears when |
+|---|---|---|
+| **Bass** | −10 to +10 | Every room |
+| **Treble** | −10 to +10 | Every room |
+| **Balance** | left ↔ right | Stereo pairs |
+| **Surround** | −15 to +15 | Surround speakers are bonded |
+| **Speech Boost** (level) | Off / Low / Medium / High / Max | Soundbars that support dialogue levels (Arc Ultra); other soundbars get the on/off tile below |
+| **Height** | −10 to +10 | A height-capable soundbar (Arc family, Beam Gen 2) or Era 300 satellites |
+| **Subwoofer** | −15 to +15 | A Sub is bonded |
+| **Crossover** | 50–110 Hz | Sonos Amp with a Sub (the only Sonos® product with an adjustable crossover) |
+
+Sliders update the speaker live as you drag. If a slider snaps back, the speaker rejected the value — usually because Trueplay is active for that control, the room is in a group, or the connection dropped for a moment.
+
+Rooms with surrounds also get a **Surrounds** on/off switch under the Surround slider, and rooms with a Sub get a **Subwoofer** on/off switch that silences the Sub without unbonding it.
+
+## Toggles
 
 <CardGroup cols={2}>
-  <Card title="Bass" icon="chevrons-down">
-    Boosts or cuts the low end. Drag negative to reduce bass, positive to add it. Available in every room.
+  <Card title="Loudness" icon="volume-high">
+    Applies a gentle EQ curve at low listening volumes so quiet music still sounds full. Available in every room that reports it.
   </Card>
-  <Card title="Treble" icon="chevrons-up">
-    Adjusts high frequencies. Negative values give a warmer sound; positive values make it brighter. Available in every room.
+  <Card title="Night Sound" icon="moon">
+    Soundbar rooms only. Tames loud peaks for late-night viewing. See [Home Theater](/features/home-theater).
   </Card>
-  <Card title="Subwoofer" icon="circle-dot">
-    Sets the level of a bonded subwoofer. This slider only appears in rooms that have a subwoofer bonded — soundbar rooms or music rooms alike.
+  <Card title="Speech Boost" icon="comment">
+    Soundbar rooms only. Lifts dialogue above effects and music. On the Arc Ultra it is the level slider above instead of a tile.
   </Card>
-  <Card title="Loudness" icon="volume-2">
-    A toggle that applies a gentle EQ curve at low listening volumes so quiet music still sounds full and balanced. Most people leave this on.
+  <Card title="Trueplay" icon="waveform">
+    Shows the room's calibration state and lets you switch it on or off once the room has been tuned — see below.
+  </Card>
+  <Card title="Status Light" icon="lightbulb">
+    Turns the speaker's white status LED on or off. Applies to every unit in the room, so one flip covers a stereo pair or a whole home theater.
+  </Card>
+  <Card title="Touch Controls" icon="hand-pointer">
+    Enables or locks the touch/capacitive controls on the speakers in the room — handy with small children or curious cats.
   </Card>
 </CardGroup>
 
+Also in this card: the **Hold here to set max volume** row described under [Volume](/features/volume#setting-a-max-volume-limit), and — only while the room is grouped — a **Group Audio Delay** stepper for soundbars (see [Grouping Rooms](/rooms/groups)).
+
 ## Trueplay
 
-Trueplay is Sonos®'s room-calibration feature. When it's active, the speaker's sound is tuned to the specific acoustic properties of the room it's in — reflections, furniture, wall materials — so it sounds as accurate as possible in that space.
+Trueplay is Sonos®'s room-calibration feature. When it's active, the speaker's sound is tuned to the acoustic properties of the room it's in. The Trueplay tile in the toggle grid shows one of three states:
 
-If your speaker supports Trueplay and you've run the calibration through the official Sonos® app, you can see its status and toggle it on or off directly in Somos InControl.
+- **Tuned** — the room has been calibrated. The tile is an on/off switch, and flipping it applies immediately.
+- **Tune in Sonos app** — the speaker supports Trueplay but hasn't been calibrated yet. Tapping opens the official Sonos® app, which is the only place the microphone-based calibration can run.
+- **Unavailable — Why not?** — Trueplay is blocked. Tap for the reason: either the model has no room calibration at all (Port, Connect, Roam SL), or the room has **separate front speakers bonded**, which Sonos® firmware cannot tune.
 
 <Info>
-  Trueplay may become unavailable after certain hardware changes — in particular, custom front-speaker configurations that Sonos® does not officially support. This is a Sonos® firmware restriction that Somos InControl cannot work around. You have a choice: keep your custom layout for a wider soundstage, or return to the original configuration to re-enable Trueplay.
+  Bonding separate front speakers to a soundbar (something only Somos InControl offers) makes Trueplay unavailable for that room. This is a Sonos® firmware restriction that the app cannot work around. You can keep the wider soundstage, or remove the fronts to get Trueplay back — the app warns you about this trade-off before it bonds fronts.
 </Info>
 
-Trueplay **setup and calibration** must still be performed through the official Sonos® app. Somos InControl shows you the current status and lets you switch it, but it cannot run the microphone-based calibration process itself.
+## Sound settings follow the source
+
+On a soundbar, Somos InControl keeps a separate set of EQ values for **TV** and for **Music**. Switch the source with the pills at the top of the room page and the sliders move to the values you last used for that source; the TV presets on the room page and the music presets on the Music sheet are separate for the same reason.
+
+## Staying in sync
+
+Every control reads back from the speaker. A silent background resync runs about every 30 seconds so the app never drifts far from what the Sonos® app or your TV remote did, and you can pull down on the room page to force a full refresh.
 
 ## A note on graphic EQ
 

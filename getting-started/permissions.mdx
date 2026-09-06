@@ -1,21 +1,21 @@
 ---
-title: "Somos InControl Permissions: Local Network & Bluetooth"
+title: "Somos InControl Permissions: Local Network, Bluetooth & Live Activities"
 sidebarTitle: "Permissions"
-description: "What Local Network and Bluetooth permissions do in Somos InControl, why each is needed, and how to re-enable them in iOS Settings if you declined."
+description: "What Local Network and Bluetooth permissions do in Somos InControl, why each is needed, how Live Activities are enabled, and how to re-enable anything you declined."
 ---
 
-Somos InControl asks for two iOS permissions on first launch: Local Network and Bluetooth. Neither permission is used for tracking, analytics, or anything that leaves your home network. They exist for a single practical reason — finding and talking to your Sonos® speakers. Here's exactly what each permission does, what happens if you decline it, and how to turn it back on if you change your mind.
+Somos InControl asks for two iOS permissions when you tap **Find My Speakers** on first launch: Local Network and Bluetooth. Neither is used for tracking, analytics, or anything that leaves your home network. They exist for a single practical reason — finding and talking to your Sonos® speakers. A third iOS setting, Live Activities, only matters if you turn that feature on.
 
-## Local Network Permission
+## Local Network permission
 
 ### What it does
 
-iOS requires any app that discovers or communicates with devices on your Wi-Fi to request Local Network permission. Somos InControl uses this permission for two things:
+iOS requires any app that discovers or communicates with devices on your Wi-Fi to request Local Network permission. Somos InControl uses it for:
 
 - **Bonjour (mDNS) discovery** — the app listens for Sonos® speakers advertising the `_sonos._tcp` service on your network, the same discovery method used by AirPlay and the official Sonos® app.
-- **Direct subnet probe** — as a fallback, the app sends a short request to each address on your local subnet asking "are you a Sonos® speaker?" Any Sonos® device that responds is added to your room list.
+- **Subnet scan** — at the same time, the app sends a short request to each address on your local subnet asking "are you a Sonos® speaker?". Any Sonos® device that responds is added to your room list.
 
-Once speakers are discovered, all control traffic — volume changes, EQ adjustments, presets, home theater commands — also travels over your local Wi-Fi using this permission.
+Once speakers are discovered, all control traffic — volume changes, EQ adjustments, presets, home theater commands, music playback — also travels over your local Wi-Fi under this permission.
 
 ### What it does NOT do
 
@@ -27,34 +27,32 @@ Local Network permission only covers devices on the Wi-Fi network your phone is 
 
 ### What happens if you decline
 
-If you tap **Don't Allow** when iOS asks for Local Network permission, the app opens but finds no rooms. No speakers will appear, and no controls will be available.
+The app shows a screen explaining that Local Network is off, with the path to fix it and a **Try Again** button. No speakers will appear until you allow it.
 
 ### How to re-enable Local Network permission
 
-If you declined Local Network permission and want to grant it later:
-
 <Steps>
   <Step title="Open iOS Settings">
-    Open the **Settings** app on your iPhone or iPad.
+    Open the **Settings** app on your iPhone or iPad. From inside the app, the menu's **App Permissions in iPhone Settings** item (under Help) takes you straight there.
   </Step>
   <Step title="Find Somos InControl">
-    Scroll down the Settings list until you see **Somos InControl** and tap it.
+    Scroll down the Settings list until you see **Somos InControl** and tap it. (On some iOS versions the switch lives under **Settings → Privacy & Security → Local Network** instead.)
   </Step>
   <Step title="Enable Local Network">
     Tap the toggle next to **Local Network** to turn it on.
   </Step>
   <Step title="Return to the app">
-    Switch back to Somos InControl. Force-quit and reopen the app if your rooms don't appear immediately — the app runs discovery fresh on each launch.
+    Switch back to Somos InControl and tap **Try Again**, or open the menu and choose **Advanced → Rescan My Network**.
   </Step>
 </Steps>
 
 ---
 
-## Bluetooth Permission
+## Bluetooth permission
 
 ### What it does
 
-The app uses Bluetooth for one specific purpose: detecting Sonos® speakers that are **nearby but not yet connected to your Wi-Fi network** — for example, a brand-new speaker you're in the process of setting up, or a speaker that has temporarily gone offline.
+The app uses Bluetooth for one specific purpose: detecting Sonos® speakers that are **nearby but not yet connected to your Wi-Fi network** — a brand-new speaker you're setting up, or one that has dropped off the network. They appear in a **Nearby via Bluetooth** list so you know the speaker exists even though it can't be controlled yet.
 
 When the permission is granted, the app only reads the advertising name broadcast by nearby Bluetooth devices and filters for names that match Sonos® hardware. It does not:
 
@@ -65,17 +63,17 @@ When the permission is granted, the app only reads the advertising name broadcas
 
 ### What happens if you decline
 
-If you decline Bluetooth permission, the app continues to work normally for every speaker that is already on your Wi-Fi. You simply won't see the detection prompt for nearby speakers that aren't yet on the network.
+The app continues to work normally for every speaker that is already on your Wi-Fi. You simply won't see the nearby-speakers list.
 
 <Note>
-  Bluetooth permission is **optional**. All core features — volume, EQ, presets, home theater controls, Live Activity — work without it.
+  Bluetooth permission is **optional**. All core features — volume, EQ, presets, home theater controls, music, Live Activity — work without it.
 </Note>
 
 ### How to re-enable Bluetooth permission
 
 <Steps>
   <Step title="Open iOS Settings">
-    Open the **Settings** app on your iPhone or iPad.
+    Open the **Settings** app, or use **App Permissions in iPhone Settings** from the app's menu.
   </Step>
   <Step title="Find Somos InControl">
     Scroll down to **Somos InControl** and tap it.
@@ -87,13 +85,20 @@ If you decline Bluetooth permission, the app continues to work normally for ever
 
 ---
 
-## Permission Summary
+## Live Activities
+
+[Live Activity](/features/live-activity) is off by default and is switched on from the app's menu. iOS separately controls whether an app may show Live Activities at all; if that's off, the menu shows an orange **Live Activities are turned off in iOS Settings** link that opens **Settings → Apps → Somos InControl → Live Activities**. This requires iOS 16.2 or later.
+
+---
+
+## Permission summary
 
 | Permission | Required? | Used for | Works without it? |
 |---|---|---|---|
-| Local Network | **Yes** | Discovering and controlling Sonos® speakers on your Wi-Fi | ❌ No speakers will be found |
-| Bluetooth | No | Detecting nearby Sonos® speakers not yet on Wi-Fi | ✅ Yes, for speakers already on the network |
+| Local Network | **Yes** | Discovering and controlling Sonos® speakers on your Wi-Fi | No — no speakers will be found |
+| Bluetooth | No | Listing nearby Sonos® speakers not yet on Wi-Fi | Yes, for speakers already on the network |
+| Live Activities | No | Lock Screen / Dynamic Island controls | Yes — everything in the app works |
 
 <Info>
-  Somos InControl contains zero third-party libraries and makes no analytics or telemetry requests. The only outbound internet traffic is a single image fetch from Sonos®'s public photo library (`media.sonos.com`) to display speaker photos. See the full [Privacy Policy](https://somosincontrol.com/somos-incontrol/privacy.html) for details.
+  Somos InControl contains zero third-party libraries and makes no analytics or telemetry requests. The only outbound internet traffic is a single image fetch from Sonos®'s public photo library (`media.sonos.com`) to display speaker photos. See [Data & Network](/legal/data-and-network) for details.
 </Info>

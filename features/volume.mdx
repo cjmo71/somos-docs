@@ -1,39 +1,53 @@
 ---
 title: "Volume Control: Instant Room Volume in Somos InControl"
 sidebarTitle: "Volume"
-description: "Drag the volume slider to change a room's volume instantly, mute with one tap, and set a per-room max volume ceiling to prevent accidental loud playback."
+description: "Drag the volume slider or tap − and +, mute with the speaker icon, control every room in a group, and set a per-room max volume ceiling."
 ---
 
 The Volume card sits front and centre in Somos InControl — it's the first thing you see when you open a room, and every change you make applies to your Sonos® speaker the moment you make it. No confirmation step, no delay.
 
 ## Adjusting the volume
 
-Drag the slider left to lower the volume or right to raise it. The change goes straight to the speaker over your local Wi-Fi as you drag — you'll hear the room respond in real time.
+Drag the slider (0–100) or tap the **−** and **+** buttons at either end. The change goes straight to the speaker over your local Wi-Fi as you drag — you'll hear the room respond in real time. The card stays pinned at the top as you scroll down the page, collapsing to a slim bar that shows a percentage bubble while you drag.
+
+Changes made elsewhere — the official Sonos® app, your TV remote — show up in the slider within a couple of seconds.
 
 ## Muting a room
 
-To silence a room without moving the slider, tap the **speaker icon** next to the slider. Tap it again to unmute and restore the previous volume level.
+Tap the **speaker icon** on the left of the volume card. The icon changes to a slashed speaker and the room mutes; tap it again and the volume returns to the level it was at. Sliding the volume all the way to **0** also mutes the speaker (this is what the official Sonos® app does — your speaker's status light turns green while muted), and sliding back up restores sound.
+
+## Volume when rooms are grouped
+
+When a room is grouped with others, its page shows one labelled volume slider per room in the group, so you can balance each room directly while they keep playing in sync. See [Grouping Rooms](/rooms/groups).
 
 ## Setting a max volume limit
 
-You can place a ceiling on how loud a room will go — useful when you want to make sure a room never blasts past a safe level, no matter who's adjusting it.
+You can place a per-room ceiling on how loud a room will go — useful for a bedroom speaker that should never wake the household. The control lives in the room's **EQ card**, not on the volume slider itself.
 
 <Steps>
   <Step title="Open the room you want to limit">
     Tap the room tab at the bottom of the screen, or select it from the menu.
   </Step>
-  <Step title="Hold the volume bar">
-    Press and hold anywhere on the volume bar. A control appears that lets you set the maximum volume level for that room.
+  <Step title="Find the max volume row">
+    Scroll down to the EQ card. Below the sliders and toggles there is a row that reads **Hold here to set max volume**, with **Off** or **On** at the right-hand end.
+  </Step>
+  <Step title="Hold the row to reveal the limit slider">
+    Press and hold the row for about half a second. A slider slides out below it, running from **10** to **100** in steps of 5. Setting it to 100 turns the limit **Off**.
   </Step>
   <Step title="Drag to your preferred ceiling">
-    Move the limit to the level you want. The room will not go above this value, even if you drag the slider all the way to the right.
+    Set the limit you want. If the room is currently louder than the new limit, its volume is lowered to the limit straight away. The room cannot go above this value from the slider, the Lock Screen controls, the widget, or Siri. Tap the row (or the slider) to hide it again.
   </Step>
 </Steps>
 
+<Note>
+  The max volume limit applies only to changes made through Somos InControl. The official Sonos® app, your TV remote, and the buttons on the speaker are not limited by it.
+</Note>
+
 <Tip>
-  Max volume limit is a per-room setting — great for a bedroom speaker you never want waking the household, or a living room soundbar that shouldn't rattle the walls when a guest picks up the remote.
+  The developer is currently polling testers on whether this feature is used — you may see a one-tap **"Do you use the Max volume limit feature?"** question, and it is also listed under **Speaker Checks** in the menu. Answering helps decide whether it stays.
 </Tip>
 
-## Related feature
+## Related features
 
-Want to adjust volume without even picking up your phone? Enable [Live Activity](/features/live-activity) to put +/− volume buttons directly on your Lock Screen and in the Dynamic Island.
+- Enable [Live Activity](/features/live-activity) to put − / + volume buttons on your Lock Screen and in the Dynamic Island.
+- Add the [Home Screen widget](/features/widget-and-siri) for volume buttons and presets without opening the app, or ask Siri to "turn up the volume on Somos InControl".

@@ -6,18 +6,18 @@ description: "A plain-English breakdown of every network request Somos InControl
 
 This page is a plain-English summary of how Somos InControl interacts with your device's network and stores your data. Nothing here requires a legal background to understand — if you want the full formal version, see the [Privacy Policy](/legal/privacy-policy). The short answer: almost everything the app does happens locally on your Wi-Fi network, one narrow internet request exists (speaker photos), and no personal data ever leaves your device.
 
-## Local Network Discovery
+## Local network discovery
 
-When you open Somos InControl, it needs to find your Sonos® speakers on your Wi-Fi network. It uses two standard methods to do this, both of which stay entirely within your home network:
+When you open Somos InControl, it needs to find your Sonos® speakers on your Wi-Fi network. It uses two standard methods at the same time, both of which stay entirely within your home network:
 
 - **Bonjour (mDNS)** — the same zero-configuration discovery protocol used by AirPlay, Apple TV, and the official Sonos® app. The app listens for speakers advertising the `_sonos._tcp` Bonjour service on your subnet.
-- **Subnet probe** — as a fallback, the app sends a short HTTP request to each address on your local subnet to ask: "are you a Sonos® speaker?" Addresses that respond are added to your speaker list. No information is sent beyond the question itself.
+- **Subnet scan** — the app sends a short HTTP request to each address on your local subnet to ask: "are you a Sonos® speaker?" Addresses that respond are added to your speaker list. No information is sent beyond the question itself.
 
-Once your speakers are found, Somos InControl controls them using the publicly documented local control protocol that every Sonos® speaker exposes on the local network. Discovery and control traffic never leave your Wi-Fi network.
+Once your speakers are found, Somos InControl controls them using the publicly documented local control protocol (UPnP/SOAP on port 1400) that every Sonos® speaker exposes on the local network, and subscribes to the speakers' own event notifications so changes made elsewhere show up quickly. Discovery and control traffic never leave your Wi-Fi network.
 
-## Bluetooth Scanning
+## Bluetooth scanning
 
-Somos InControl uses Bluetooth for one narrow purpose: detecting Sonos® speakers that are **nearby but not yet on your Wi-Fi network** — for example, a new speaker you are setting up, or one that has temporarily gone offline.
+Somos InControl uses Bluetooth for one narrow purpose: listing Sonos® speakers that are **nearby but not yet on your Wi-Fi network** — for example, a new speaker you are setting up.
 
 The app reads only the advertising name broadcast by nearby Bluetooth devices and filters that list for Sonos® speakers. It does not:
 
@@ -27,7 +27,7 @@ The app reads only the advertising name broadcast by nearby Bluetooth devices an
 
 If you decline Bluetooth permission when iOS asks, the app continues to work normally for any speaker already on your Wi-Fi network.
 
-## The Only Internet Request
+## The only internet request
 
 There is exactly one type of request Somos InControl sends to the internet: fetching your speakers' product photos from Sonos®'s public image library at `media.sonos.com`.
 
@@ -39,23 +39,27 @@ This is a plain HTTPS request for a static image file — equivalent to your bro
 If `media.sonos.com` is unreachable, the app automatically falls back to the low-resolution icon served by your speaker directly over the local network. **The app works fully offline** — speaker images are the only thing that require an internet connection.
 
 <Tip>
-  Want to verify this yourself? Put your iPhone into Airplane Mode, then turn Wi-Fi back on without turning Airplane Mode off. Everything in Somos InControl — volume, EQ, presets, home theater controls — will continue to work normally. Only the speaker product photos will be missing (replaced by local icons). This confirms the app makes no internet traffic beyond those image fetches.
+  Want to verify this yourself? Put your iPhone into Airplane Mode, then turn Wi-Fi back on without turning Airplane Mode off. Everything in Somos InControl — volume, EQ, presets, home theater controls, music — will continue to work normally. Only the speaker product photos will be missing (replaced by local icons).
 </Tip>
 
-## Your Settings
+## Links the app opens
+
+A few menu items — **Support & Feedback**, **Suggest a Feature**, and the four **Speaker Checks** questionnaires — open a page on the Somos website in your browser. The app itself sends nothing to that site: it hands the URL to iOS and what you type into the web form afterwards is entirely up to you. The app also opens the official Sonos® app when you tap **Tune in Sonos app** on the Trueplay tile.
+
+## Your settings
 
 All of your preferences are stored locally on your device using iOS `UserDefaults` — the standard on-device storage mechanism Apple provides to every app. This includes:
 
-- Your selected speakers and room favorites
-- EQ settings and sound presets
-- Home theater configuration
-- Tutorial and onboarding state
+- Your room order, saved favourite groups and system names
+- Sound presets, per-room max volume limits and crossover values
+- Live Activity, Haptics and Appearance settings, and the identify-tone switch
+- Tutorial state and which Speaker Checks you've been shown
 
-A small slice of this storage is shared with the Somos InControl widget and Live Activity extension so they display the same speaker you are actively controlling.
+A small slice of this storage is shared with the Somos InControl widget and Live Activity extension so they display the same rooms and presets you are controlling.
 
-**No iCloud sync.** The app does not use iCloud, iCloud Drive, or CloudKit. Your settings never leave your device and are never synced to any cloud service. Uninstalling the app removes all of its stored data automatically.
+**No iCloud sync.** The app does not use iCloud, iCloud Drive, or CloudKit. Your settings never leave your device and are never synced to any cloud service — presets don't follow you to a new phone. Uninstalling the app removes all of its stored data automatically.
 
-## What We Don't Do
+## What we don't do
 
 Somos InControl has none of the data-collection infrastructure common in modern apps:
 
