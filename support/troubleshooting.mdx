@@ -48,9 +48,11 @@ This page covers the issues users run into most often and walks you through how 
   </Accordion>
 
   <Accordion title="Crossover won't change, or isn't there">
-    The crossover slider only appears for the **Sonos Amp** with a Sub — the only Sonos® product with an adjustable crossover. A Sub bonded to a soundbar or a pair of speakers has no crossover control, and that's correct.
+    From build 35.7.4, the crossover slider appears in **any room with a bonded Sub whose speaker answers for it** — not just a Sonos Amp. An earlier build limited it to the Amp, which took the control away from people who had been using it.
 
-    If you do have an Amp and the slider appears but changes don't stick, the app re-reads the value from the speaker and shows what it actually has. Fill in the questionnaire so the developer can track it down.
+    If the slider is there but a change doesn't stick, your speaker is refusing the value. Sonos only documents an adjustable crossover on the Amp, so on other hardware the control is offered where the speaker reports one, and some models accept the reading but not the change. The app re-reads the value and shows what the speaker actually has rather than what you set.
+
+    If the slider isn't there at all, the room's speaker didn't report a crossover when the app asked. Fill in the questionnaire either way — it's the only way this gets tracked down across hardware the developer doesn't own.
 
     <Card title="Crossover questionnaire" icon="message-question" href="https://somosincontrol.com/somos-incontrol/crossover.html">
       Answer a few quick questions about your Sonos Amp setup so the developer can track down why the crossover isn't changing.
