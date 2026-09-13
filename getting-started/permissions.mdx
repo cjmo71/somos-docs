@@ -1,14 +1,14 @@
 ---
-title: "Somos InControl Permissions: Local Network, Bluetooth & Live Activities"
+title: "Somos InControl Permissions: Local Network, Bluetooth, Media & Apple Music, and Live Activities"
 sidebarTitle: "Permissions"
-description: "What Local Network and Bluetooth permissions do in Somos InControl, why each is needed, how Live Activities are enabled, and how to re-enable anything you declined."
+description: "What the Local Network, Bluetooth and Media & Apple Music permissions do in Somos InControl, why each is needed, how Live Activities are enabled, and how to re-enable anything you declined."
 ---
 
-Somos InControl asks for two iOS permissions when you tap **Find My Speakers** on first launch: Local Network and Bluetooth. Neither is used for tracking, analytics, or anything that leaves your home network. They exist for a single practical reason — finding and talking to your Sonos® speakers. A third iOS setting, Live Activities, only matters if you turn that feature on.
+Somos InControl asks for two iOS permissions during first launch, each on its own screen — Local Network, then Bluetooth — before you ever reach the **Find My Speakers** screen. A third permission, **Media & Apple Music**, only comes up if Apple Music is linked on your Sonos® system and one of your Sonos® favorites plays from it — that's how Somos spots the account; if it's linked but the section is missing, add any Apple Music favorite in the Sonos® app. Its section on the Music sheet then shows a **Let Somos read your Apple Music** row, and tapping **Continue** there is what brings up the iOS prompt. None of the three is used for tracking or analytics; each exists for a single practical reason — finding and talking to your Sonos® speakers, or reading your Apple Music library so it can be played on them. A separate iOS setting, Live Activities, only matters if you turn that feature on.
 
 ## Before the permissions — what the Sonos® side needs
 
-The two iOS permissions below are only half of it. Somos also needs, in the Sonos® app and on your network: **UPnP on** (Sonos app › Account › Privacy & Security › UPnP), **no VPN** on the phone, the phone on the **same Wi-Fi** as the speakers, and **not a guest or IoT network**. The full list with paths is at the top of [First Launch](/getting-started/first-launch).
+The first-launch permissions below are only half of it. Somos also needs, in the Sonos® app and on your network: **UPnP on** (Sonos app › Account › Privacy & Security › UPnP), **no VPN** on the phone, the phone on the **same Wi-Fi** as the speakers, and **not a guest or IoT network**. The full list with paths is at the top of [First Launch](/getting-started/first-launch).
 
 ## Local Network permission
 
@@ -37,7 +37,7 @@ The app shows a screen explaining that Local Network is off, with the path to fi
 
 <Steps>
   <Step title="Open iOS Settings">
-    Open the **Settings** app on your iPhone or iPad. From inside the app, the menu's **App Permissions in iPhone Settings** item (under Help) takes you straight there.
+    Open the **Settings** app on your iPhone or iPad. From inside the app, the menu's **App Permissions** section has an **Open iOS Settings for Somos** button that takes you straight there.
   </Step>
   <Step title="Find Somos InControl">
     Scroll down the Settings list until you see **Somos InControl** and tap it. (On some iOS versions the switch lives under **Settings → Privacy & Security → Local Network** instead.)
@@ -77,13 +77,39 @@ The app continues to work normally for every speaker that is already on your Wi-
 
 <Steps>
   <Step title="Open iOS Settings">
-    Open the **Settings** app, or use **App Permissions in iPhone Settings** from the app's menu.
+    Open the **Settings** app, or tap **Open iOS Settings for Somos** in the app menu's **App Permissions** section.
   </Step>
   <Step title="Find Somos InControl">
     Scroll down to **Somos InControl** and tap it.
   </Step>
   <Step title="Enable Bluetooth">
     Tap the toggle next to **Bluetooth** to turn it on.
+  </Step>
+</Steps>
+
+---
+
+## Media & Apple Music permission
+
+### What it does
+
+When Apple Music is linked on your Sonos® system, its section on the Music sheet starts out as a single row: **Let Somos read your Apple Music**, with a **Continue** button. Tap **Continue** and iOS asks for the **Media & Apple Music** permission — Apple's own prompt, shown once, not a screen Somos designed. Allowing it lets the app read your Apple Music library — playlists and albums — directly from your phone, so it can show them on the Music sheet's Apple Music shelves and on the page its chip opens. The music itself still plays on the speaker, never on the phone; this permission only covers reading what's in your library.
+
+### What happens if you decline
+
+If you tap **Don't Allow**, the Apple Music section shows one line instead of your library — **Apple Music access is off — Settings › Somos InControl › Media & Apple Music** — and nothing else changes: every other music service and all speaker controls are unaffected. (If Screen Time or a device profile blocks Apple Music access altogether, the line points you at **Screen Time › Content & Privacy Restrictions** instead, because the per-app switch doesn't exist in that case.)
+
+### How to change it later
+
+<Steps>
+  <Step title="Open iOS Settings">
+    Open the **Settings** app, or tap **Open iOS Settings for Somos** in the app menu's **App Permissions** section.
+  </Step>
+  <Step title="Find Somos InControl">
+    Scroll down to **Somos InControl** and tap it.
+  </Step>
+  <Step title="Enable Media & Apple Music">
+    Turn on **Media & Apple Music**. Back in Somos, the Music sheet re-checks the switch and loads your library on its own.
   </Step>
 </Steps>
 
@@ -101,8 +127,9 @@ The app continues to work normally for every speaker that is already on your Wi-
 |---|---|---|---|
 | Local Network | **Yes** | Discovering and controlling Sonos® speakers on your Wi-Fi | No — no speakers will be found |
 | Bluetooth | No | Listing nearby Sonos® speakers not yet on Wi-Fi | Yes, for speakers already on the network |
+| Media & Apple Music | No | Reading your Apple Music library from the phone, for the Music sheet's Apple Music section | Yes — every other music service and all speaker controls work without it |
 | Live Activities | No | Lock Screen / Dynamic Island controls | Yes — everything in the app works |
 
 <Info>
-  Somos InControl contains zero third-party libraries and makes no analytics or telemetry requests. The only outbound internet traffic is a single image fetch from Sonos®'s public photo library (`media.sonos.com`) to display speaker photos. See [Data & Network](/legal/data-and-network) for details.
+  Somos InControl contains zero third-party libraries and makes no analytics or telemetry requests. On its own, the only outbound internet traffic is a single image fetch from Sonos®'s public photo library (`media.sonos.com`) to display speaker photos; beyond that, internet traffic only happens around a music service you've linked and are actively using. See [Data & Network](/legal/data-and-network) for details.
 </Info>

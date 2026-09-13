@@ -27,7 +27,7 @@ If you have a question about Somos InControl, you're in the right place. These a
   <Accordion title="Why does the app ask for Local Network permission?">
     iOS requires any app that discovers and communicates with devices on your local Wi-Fi to request Local Network permission. Somos InControl needs it to find your Sonos® speakers. Without it, the app has nothing to control. The permission only lets the app see devices on the Wi-Fi network you're currently connected to — nothing else.
 
-    If you declined the prompt initially, re-enable it in **Settings → Somos InControl → Local Network** (the menu's **App Permissions in iPhone Settings** takes you straight there).
+    If you declined the prompt initially, re-enable it in **Settings → Somos InControl → Local Network** (the menu's **App Permissions** section has an **Open iOS Settings for Somos** button that takes you straight there).
   </Accordion>
 
   <Accordion title="Does it work over cellular or when I'm away from home?">
@@ -81,7 +81,7 @@ If you have a question about Somos InControl, you're in the right place. These a
   </Accordion>
 
   <Accordion title="Does Somos InControl collect any data about me or my speakers?">
-    No. Nothing leaves your device except the local control messages your speakers need and one image request to Sonos®'s public photo library for speaker pictures. There is no analytics, no telemetry, no iCloud sync and no account to send data to. The questionnaires under Speaker Checks open a web page in your browser; the app itself sends nothing to it. See the [Privacy Policy](/legal/privacy-policy).
+    No. Nothing leaves your device except the local control messages your speakers need, one image request to Sonos®'s public photo library for speaker pictures, and, once you've linked a music service, that service's own traffic plus two small fetches from Sonos® (its listing and its layout file). There is no analytics, no telemetry, no iCloud sync and no account to send data to. A few menu items — the music-services poll, Support & Feedback, Suggest a Feature, and the Help rows Getting Started, Feature Reference and What's Coming — open a web page in your browser; the app itself sends nothing to it. Connecting a music service opens that service's own sign-in page in Safari, inside the app (Apple Music is the exception — it links from the Sonos® app instead). After that, opening the Music sheet at all loads every linked service's front page, so the stored sign-in token goes straight from your phone to that service as soon as the sheet opens — not only when you tap into the service; browsing and playing send more of the same — along with a random per-install device id and your Sonos® household id (on most services the sign-in adds your iPhone model, iOS version and the app's name) — loads its artwork images from the service, and fetches the service's listing and layout file from Sonos®'s servers, with no account details attached. Apple Music's section instead lists your library from the phone itself through Apple's own MusicKit (artwork from Apple's servers). See the [Privacy Policy](/legal/privacy-policy).
   </Accordion>
 
 </AccordionGroup>

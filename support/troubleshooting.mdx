@@ -12,11 +12,11 @@ This page covers the issues users run into most often and walks you through how 
     The most common cause is a network mismatch or a missing permission. Work through these steps in order:
 
     1. **Check you're on the same Wi-Fi network.** Your iPhone or iPad and your Sonos® speakers must be on the same network — not a guest network or a separate IoT VLAN. Many routers broadcast separate SSIDs for 2.4 GHz and 5 GHz bands; connect both to the same one.
-    2. **Verify Local Network permission.** If you declined the prompt when the app first launched, go to **Settings → Somos InControl → Local Network** and turn it on (the menu's **App Permissions in iPhone Settings** takes you there). Then tap **Try Again**.
+    2. **Verify Local Network permission.** If you declined the prompt when the app first launched, go to **Settings → Somos InControl → Local Network** and turn it on (the menu's **App Permissions** section has an **Open iOS Settings for Somos** button that takes you there). Then tap **Try Again**.
     3. **Rescan.** Open the menu and choose **Advanced → Rescan My Network**. Discovery also runs fresh on every launch, so force-quitting and reopening works too.
     4. **Test with the official Sonos® app.** If it can't find your speakers either, the problem is the network itself — restart your router and speakers, then test again.
 
-    If your speakers appear in the official app but not in Somos InControl, use the [Speakers Not Found questionnaire](https://somosincontrol.com/somos-incontrol/speakers-not-found.html) — also under **Speaker Checks** in the menu.
+    If your speakers appear in the official app but not in Somos InControl, [contact support](/support/contact) with your speaker models and iOS version.
   </Accordion>
 
   <Accordion title="A speaker or an entire system didn't show up">
@@ -26,7 +26,7 @@ This page covers the issues users run into most often and walks you through how 
     - **A second system.** Somos InControl keeps each Sonos® system separate. Open the menu: if more than one system is listed under **System**, tap the other one. If it isn't listed, use **Add a Home / New S1 or S2 System** or **Advanced → Rescan My Network**. See [Multiple Systems](/rooms/multiple-systems).
     - **A quarantined speaker.** A speaker on older firmware than the rest of the household shows **Needs a firmware update** and can't be controlled until the Sonos® app has updated it.
 
-    If speakers are still missing, the [Speakers Not Found questionnaire](https://somosincontrol.com/somos-incontrol/speakers-not-found.html) is the best next step.
+    If speakers are still missing, [contact support](/support/contact) — it's the fastest way to get help.
   </Accordion>
 
   <Accordion title="A slider snaps back when I drag it">
@@ -40,11 +40,7 @@ This page covers the issues users run into most often and walks you through how 
   <Accordion title="Speech Boost won't change">
     Somos InControl sets Speech Boost, reads the value back, and if the speaker hasn't accepted it the switch goes back and a toast says the speaker refused it — rather than pretending it worked. On the Arc Ultra, Speech Boost is a five-level slider (Off to Max) instead of a switch; if the slider doesn't hold a value, the speaker is reporting a different level than the one you set.
 
-    Behaviour varies across soundbar models and the developer doesn't own every one. The fastest way to get it fixed is the questionnaire — every question is optional, including your email.
-
-    <Card title="Speech Boost questionnaire" icon="message-question" href="https://somosincontrol.com/somos-incontrol/speech-boost.html">
-      Answer a few quick questions about how Speech Boost behaves on your soundbar so the developer can reproduce and fix the issue.
-    </Card>
+    Behaviour varies across soundbar models and the developer doesn't own every one. If it still won't hold a value after that, [contact support](/support/contact) with your soundbar model — every detail helps track it down.
   </Accordion>
 
   <Accordion title="Crossover won't change, or isn't there">
@@ -52,15 +48,13 @@ This page covers the issues users run into most often and walks you through how 
 
     If the slider is there but a change doesn't stick, your speaker is refusing the value. Sonos only documents an adjustable crossover on the Amp, so on other hardware the control is offered where the speaker reports one, and some models accept the reading but not the change. The app re-reads the value and shows what the speaker actually has rather than what you set.
 
-    If the slider isn't there at all, the room's speaker didn't report a crossover when the app asked. Fill in the questionnaire either way — it's the only way this gets tracked down across hardware the developer doesn't own.
-
-    <Card title="Crossover questionnaire" icon="message-question" href="https://somosincontrol.com/somos-incontrol/crossover.html">
-      Answer a few quick questions about your Sub and the room it's bonded to so the developer can track down why the crossover isn't changing or isn't there.
-    </Card>
+    If the slider isn't there at all, the room's speaker didn't report a crossover when the app asked — [contact support](/support/contact) with your Sub and the room it's bonded to, since this is hardware the developer doesn't own.
   </Accordion>
 
   <Accordion title="Home theater configuration failed">
     Every speaker you assign must be completely standalone — not in any group, stereo pair, or bonded to another soundbar. Even partial group membership makes bonding fail. Ungroup everything in the official Sonos® app first, then try again. When a configuration doesn't take, Somos InControl restores your previous setup automatically — your system is never left half-configured.
+
+    The failure message has a **What to check** button that opens the same **Check first** list as a failed pairing — UPnP, VPN, Wi-Fi, Local Network permission, guest/IoT network — plus an **Open iOS Settings for Somos** button.
 
     If a released speaker doesn't reappear as its own room after a minute, unplug it for 10 seconds and plug it back in — Sonos® firmware sometimes holds the old bond until the speaker restarts. See [Speaker Setup](/rooms/speaker-setup).
   </Accordion>

@@ -1,7 +1,7 @@
 ---
 title: "Music: Play Sonos® Favorites, Playlists and the Queue"
 sidebarTitle: "Music"
-description: "The Music sheet plays your Sonos® favorites and playlists, shows the queue and now-playing controls, and holds the music-only Music Level and Ambient / Full settings."
+description: "The Music sheet plays your Sonos® favorites, playlists and linked music services, shows the queue and now-playing controls, and holds the music-only Music Level and Ambient / Full settings."
 ---
 
 Every room has a **Music** sheet. Tap **Music** in the source row at the top of the room page to open it. From here you can start your Sonos® favorites and playlists on the speaker — no Sonos® login required, because the speaker streams straight from the service and your phone is only the remote.
@@ -11,6 +11,9 @@ Every room has a **Music** sheet. Tap **Music** in the source row at the top of 
 <CardGroup cols={2}>
   <Card title="Pinned volume" icon="volume-high">
     The room's volume slider stays pinned at the top and collapses to a slim bar as you scroll, just like the room page.
+  </Card>
+  <Card title="Music services strip" icon="music">
+    A row of chips above Now Playing — one per service linked through Somos, plus Apple Music when one of your Sonos® favorites plays from it, plus **Add** — each opening that service's own page inside the sheet. See [Music services](#music-services).
   </Card>
   <Card title="Now Playing" icon="play">
     Album art, track and artist, with **Previous**, **Play/Pause**, **Next**, **Shuffle** and **Repeat**. Play resumes the queue rather than just un-pausing, and Shuffle no longer knocks Repeat off.
@@ -35,6 +38,20 @@ Rooms with surrounds get two extra controls that only apply to music, matching t
 
 - **Music Level** — how loud the surround speakers play during music. Separate from the **Surround** level on the room page, which is for TV.
 - **Ambient / Full** — a two-position switch. **Full** plays the surrounds at full level for music; **Ambient** keeps them subtle.
+
+## Music services
+
+Above Now Playing, the Music sheet shows a strip of chips — one per service linked through Somos, plus Apple Music when one of your Sonos® favorites plays from it — that's how Somos spots the account; if it's linked but the chip is missing, add any Apple Music favorite in the Sonos® app — plus an **Add** chip. If nothing is linked yet, the strip just reads **Add a music service**. Tap a linked service's chip and it opens that service's own page inside the sheet — its own front page, browsable and playable without leaving the Music sheet — a tap on anything plays it on the speaker, the same as a Sonos® favorite. Each linked service's front page also appears as its own section further down the Music sheet, and loads as soon as the sheet opens. Apple Music's section lists the playlists and albums in your own library, read from the phone itself through Apple's own MusicKit rather than Sonos®'s service protocol; the artwork comes from Apple's servers, and playing goes through Sonos just like every other service. The first time, that section shows a **Let Somos read your Apple Music** row — tap **Continue** and iOS asks for the **Media & Apple Music** permission (see [Permissions](/getting-started/permissions#media--apple-music-permission)).
+
+### Connecting and disconnecting
+
+Tap the **Add** chip on the services strip to see the seven services Somos offers: **Apple Music, Amazon Music, Pandora, Spotify, iHeartRadio, TuneIn** and **Bandcamp**. Each row has one button that flips between **Connect** and **Disconnect**:
+
+- **Connect** on Amazon Music, Pandora, Spotify, iHeartRadio or Bandcamp signs you in through a Safari page inside the app — the same sign-in the Sonos® app itself uses. Somos never sees your password.
+- **Apple Music** can only be linked from the **Sonos® app** itself, so Connect shows a **Link Apple Music in the Sonos app** prompt with an **Open Sonos App** button instead of a sign-in page. Come back to Somos once it's linked there.
+- **Spotify** needs a Premium account — with a free account the link never completed when tested; Somos doesn't check either way.
+- **TuneIn** needs no account, so it has no sign-in — but Somos can't browse it yet. Its Connect button is on the list and hasn't been verified: expect it not to link. Skip this row for now.
+- **Disconnect** removes the service from Somos and from your Sonos® system. A toast confirms it; if Sonos still has the account for some reason, the toast tells you to remove it in the Sonos® app under **Settings › Services & Voice**. For Apple Music the toast adds **To link it again, use the Sonos app.**
 
 ## Managing favorites
 
