@@ -1,7 +1,7 @@
 ---
 title: "Somos InControl: Answers to Frequently Asked Questions"
 sidebarTitle: "FAQ"
-description: "Quick answers about Somos InControl: compatibility, privacy, accounts, presets, Live Activity, Trueplay, grouping, widgets and more — all in one place."
+description: "Quick answers about Somos InControl: compatibility, privacy, accounts, music services, favorites, presets, Live Activity, Trueplay, grouping, widgets, Apple Watch and more — all in one place."
 ---
 
 If you have a question about Somos InControl, you're in the right place. These are the questions users ask most often, covering everything from how the app connects to your speakers to what it does (and doesn't) do with your data. If your question isn't answered here, head to [Troubleshooting](/support/troubleshooting) for step-by-step fixes, or [contact support](/support/contact) directly.
@@ -15,19 +15,37 @@ If you have a question about Somos InControl, you're in the right place. These a
   <Accordion title="Which Sonos® speakers does it work with?">
     Somos InControl works with Sonos® speakers that support local control on the network — S2 systems and S1 systems alike. Every room appears in the app — home theater (soundbar) rooms, stereo pairs, single speakers, and portables such as Move and Roam. As a general rule: if your speaker shows up in the official Sonos® app on the same Wi-Fi, it should show up here too.
 
-    All rooms get volume, bass, treble, loudness, presets, Trueplay, Status Light, Touch Controls and the Music sheet. Home-theater-only controls — TV / Music source, the audio-format badge, Night Sound, Speech Boost, height and surround levels — appear only in rooms with a soundbar. Subwoofer controls appear in any room that has a Sub bonded; from build 35.7.4 the crossover slider appears wherever the room's speaker reports a crossover, not only on a Sonos Amp.
+    All rooms get volume, bass, treble, loudness, presets, Trueplay, Status Light, Touch Controls and the music page. Home-theater-only controls — TV / Music source, the audio-format badge, Night Sound, Speech Boost, height and surround levels — appear only in rooms with a soundbar. Subwoofer controls appear in any room that has a Sub bonded; from build 35.7.4 the crossover slider appears wherever the room's speaker reports a crossover, not only on a Sonos Amp.
 
     If a specific model isn't being discovered, contact support with the model name.
   </Accordion>
 
   <Accordion title="Do I need a Sonos® account?">
-    No. Somos InControl does not use your Sonos® account and will never ask you to log in. It talks to your speakers directly over Wi-Fi — no credentials, no cloud, no sign-in. Even music playback works without a login, because the speaker streams from the service itself and your phone only sends the command.
+    No. Somos InControl does not use your Sonos® account and has no account of its own. It talks to your speakers directly over Wi-Fi — no cloud, no sign-in. Playback works without a login, because the speaker streams from the service itself and your phone only sends the command.
+
+    Browsing a music service inside Somos is the one place you sign in — to that service, on its own page, so Somos can show you its catalogue and your library. Apple Music asks for an iPhone permission instead. See [Music Services](/features/music-services).
+  </Accordion>
+
+  <Accordion title="Which music services can I play?">
+    Apple Music, Amazon Music, Pandora, Spotify, iHeartRadio, TuneIn and Bandcamp. Each one you have set up is a button at the top of the music page: tap it, browse or search, and play straight to the room. The service also has to be on your Sonos® system — if it isn't, the app tells you to add it in the Sonos® app first. Want another service? Take the poll at the top of the menu. See [Music Services](/features/music-services).
+  </Accordion>
+
+  <Accordion title="Why does the app ask for Apple Music access?">
+    Apple lets only the Sonos® app sign in to Apple Music, so Somos browses it from your iPhone instead — the catalogue, your library and the quality badges (Lossless, Hi-Res Lossless, Dolby Atmos) all come through Apple's own framework, which needs that permission. Tap **Allow** when asked, or turn it on later under **Settings → Somos InControl**. The speaker plays on the Apple Music account your Sonos® system already has.
+  </Accordion>
+
+  <Accordion title="Where did my Sonos® favorites go?">
+    The Sonos® Favorites and Playlists tiles are no longer on the music page. Favorites in Somos are now your own: tap the heart on any song, album, playlist or station from a music service and it is kept on the Favorites page — the button pinned at the left of the music services. The Apple Watch app still plays your Sonos® favorites. See [Favorites & Queue](/features/favorites-and-queue).
+  </Accordion>
+
+  <Accordion title="How do I add a song to the queue without stopping what's playing?">
+    Tap the **plus** on the song — on any song row or tile while browsing, on a song on the Favorites page, or next to the heart on the player to queue what is playing now. A short toast says **Added to the queue** and nothing else changes.
   </Accordion>
 
   <Accordion title="Why does the app ask for Local Network permission?">
     iOS requires any app that discovers and communicates with devices on your local Wi-Fi to request Local Network permission. Somos InControl needs it to find your Sonos® speakers. Without it, the app has nothing to control. The permission only lets the app see devices on the Wi-Fi network you're currently connected to — nothing else.
 
-    If you declined the prompt initially, re-enable it in **Settings → Somos InControl → Local Network** (the menu's **App Permissions in iPhone Settings** takes you straight there).
+    If you declined the prompt initially, re-enable it in **Settings → Somos InControl → Local Network** (the menu's **Open iOS Settings for Somos**, under **Rooms → System settings**, takes you straight there).
   </Accordion>
 
   <Accordion title="Does it work over cellular or when I'm away from home?">
@@ -37,7 +55,7 @@ If you have a question about Somos InControl, you're in the right place. These a
   <Accordion title="How do I save a preset, and what does it store?">
     Dial in the sound you want, then **hold** a preset card. On the Save Preset sheet, name it and tick anything extra you want it to carry — **Volume**, **Night Sound**, **Speech Boost**, **Loudness** — then tap **Save**. Bass, treble and the surround, height, subwoofer and crossover levels are always saved. **Tap** a preset to load it. Hold it again and change only the name to **Rename** it without touching its values.
 
-    Each room has three TV presets on its page and three music presets on the Music sheet. While a preset is active, changing any control it captured clears its highlight and a toast says the preset was disabled. See [Sound Presets](/features/sound-presets).
+    Each room has three TV presets on its page and three music presets on the music page. The preset you loaded stays highlighted when you leave the room, switch rooms or reopen the app; changing any control it captured clears the highlight and a toast says the preset was disabled. A TV room's three presets are also on the Lock Screen card. See [Sound Presets](/features/sound-presets).
   </Accordion>
 
   <Accordion title="Can I control more than one room?">
@@ -45,7 +63,7 @@ If you have a question about Somos InControl, you're in the right place. These a
   </Accordion>
 
   <Accordion title="Why isn't the Dynamic Island or Lock Screen control showing?">
-    The Live Activity is **off by default**. Open the menu and switch **Live Activity** on under Settings. If it still doesn't appear, iOS may have Live Activities disabled for the app — the menu shows an orange link that opens **Settings → Apps → Somos InControl → Live Activities**. Live Activities need iOS 16.2 or later, and the card ends about 30 minutes after you background the app; reopening the app brings it back.
+    The Live Activity is **off by default**. Open the menu and switch **Live Activity** on under **Rooms → System settings**. If it still doesn't appear, iOS may have Live Activities disabled for the app — the menu shows an orange link that opens **Settings → Apps → Somos InControl → Live Activities**. Live Activities need iOS 16.2 or later, and the card ends about 30 minutes after you background the app; reopening the app brings it back.
   </Accordion>
 
   <Accordion title="What is Trueplay and should I enable it?">
@@ -76,12 +94,12 @@ If you have a question about Somos InControl, you're in the right place. These a
     Not from inside the app — Apple doesn't allow third-party apps to initiate AirPlay to external speakers. However, AirPlay-capable Sonos® speakers accept AirPlay directly from the iOS AirPlay picker, where they appear alongside any other AirPlay speakers in your home.
   </Accordion>
 
-  <Accordion title="Is there a widget or Siri support?">
-    Both. The Home Screen widget (small, medium, large) offers preset buttons and volume/mute rows for up to two rooms. Siri applies presets by name — "Apply Movies in Somos InControl" — and can turn the volume up or down or switch room. See [Widget & Siri](/features/widget-and-siri).
+  <Accordion title="Is there a widget, Siri support or an Apple Watch app?">
+    All three. The Home Screen widget (small, medium, large) offers preset buttons and volume/mute rows for up to two rooms. Siri applies presets by name — "Apply Movies in Somos InControl" — and can turn the volume up or down or switch room. The Watch app lists your rooms, plays and pauses, skips, turns the volume with the Crown and plays a Sonos® favorite. See [Widget & Siri](/features/widget-and-siri) and [Apple Watch](/features/apple-watch).
   </Accordion>
 
   <Accordion title="Does Somos InControl collect any data about me or my speakers?">
-    No. Nothing leaves your device except the local control messages your speakers need and one image request to Sonos®'s public photo library for speaker pictures. There is no analytics, no telemetry, no iCloud sync and no account to send data to. The questionnaires under Speaker Checks open a web page in your browser; the app itself sends nothing to it. See the [Privacy Policy](/legal/privacy-policy).
+    No. Nothing goes to us — there are no servers, no analytics, no telemetry, no iCloud sync and no account. What leaves your device is the local control messages your speakers need, one image request to Sonos®'s public photo library for speaker pictures, and — when you browse a music service — your requests to that service's own servers. Links in the menu open a web page in your browser; the app itself sends nothing to it, and **Submit diagnostics** only opens the share sheet for you to decide. See [Data & Network](/legal/data-and-network) and the [Privacy Policy](/legal/privacy-policy).
   </Accordion>
 
 </AccordionGroup>

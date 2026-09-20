@@ -1,33 +1,67 @@
 ---
-title: "Music: Play Sonos® Favorites, Playlists and the Queue"
+title: "Music: Services, the Player, Presets and the Queue"
 sidebarTitle: "Music"
-description: "The Music sheet plays your Sonos® favorites and playlists, shows the queue and now-playing controls, and holds the music-only Music Level and Ambient / Full settings."
+description: "The music page plays Apple Music, Amazon Music, Pandora, Spotify, iHeartRadio, TuneIn and Bandcamp straight to a room — browse, search, keep favorites, add to the queue — with the player, the music presets and the music EQ underneath."
 ---
 
-Every room has a **Music** sheet. Tap **Music** in the source row at the top of the room page to open it. From here you can start your Sonos® favorites and playlists on the speaker — no Sonos® login required, because the speaker streams straight from the service and your phone is only the remote.
+Every room has a **music page**. Tap **Music** in the source row at the top of the room page to open it. From here you browse your music services and play straight to the room — the speaker streams from the service itself, and your phone is only the remote. The page is titled **Music** with the room's name under it, so you always know which room you are playing to.
 
-## What's on the Music sheet
+## What's on the music page
+
+From top to bottom:
 
 <CardGroup cols={2}>
   <Card title="Pinned volume" icon="volume-high">
     The room's volume slider stays pinned at the top and collapses to a slim bar as you scroll, just like the room page.
   </Card>
-  <Card title="Now Playing" icon="play">
-    Album art, track and artist, with **Previous**, **Play/Pause**, **Next**, **Shuffle** and **Repeat**. Play resumes the queue rather than just un-pausing, and Shuffle no longer knocks Repeat off.
+  <Card title="Favorites and your music services" icon="music">
+    A row of buttons. **Favorites** is pinned at the left and stays put; after it, one button per music service you have set up, then **Add**. The lit button is the service that is playing, and it stays lit wherever you go. See [Music Services](/features/music-services) and [Favorites & Queue](/features/favorites-and-queue).
   </Card>
-  <Card title="TV / Music switch" icon="tv">
-    On soundbars, a TV / Music switch sits below the playback controls. Tap **TV** to send the bar straight back to the TV input when music took over while the TV was still on.
+  <Card title="The player" icon="play">
+    Album art, title, artist, a progress bar you can drag, and **Shuffle**, **Previous**, **Play/Pause**, **Next** and **Repeat**. Play resumes the queue rather than just un-pausing. When what is playing came from one of your services, a **heart** and a **plus** sit beside the title — keep it, or add it to the queue.
+  </Card>
+  <Card title="TV / Music" icon="tv">
+    On a soundbar, **TV** and **Music** pills sit below the player. Tap **TV** to send the bar straight back to the TV input and return to the room page. In a room without a soundbar the **Music** pill is the way back.
   </Card>
   <Card title="Sound presets" icon="star">
-    Three **music** presets, separate from the room page's TV presets. These can also capture Music Level and Ambient / Full. See [Sound Presets](/features/sound-presets).
+    The room's three **music** presets, separate from the TV presets on the room page. On a soundbar these are the only presets you see while music is playing. See [Sound Presets](/features/sound-presets).
   </Card>
   <Card title="EQ & Sound" icon="sliders">
-    A collapsible section with the room's bass, treble, height, subwoofer and loudness for music, plus the two music-only controls below.
+    A fold-out section with bass, treble, height, subwoofer and loudness for music, plus the two music-only surround controls below.
   </Card>
-  <Card title="Favorites, Playlists and the Queue" icon="list">
-    Your Sonos® Favorites and Sonos® Playlists appear as tiles — tap one to load it into the queue and start playing. The **QUEUE** list highlights the current track; tap a track to jump to it, swipe left to remove it, and tap the header to fold the list away.
+  <Card title="Queue" icon="list">
+    What is coming up next. The current track is highlighted; tap a track to jump to it, swipe left to remove it, tap **Queue** to fold the list away, and **Clear** to empty it (the app asks first).
   </Card>
 </CardGroup>
+
+## Browsing and playing
+
+<Steps>
+  <Step title="Tap a music service">
+    The music page slides down out of the way, leaving a handle at the bottom that shows what is playing, and the service's own page opens above it — its shelves, rows and stations, laid out the way the service asks.
+  </Step>
+  <Step title="Find something">
+    Scroll the service's page, open an album or a playlist in place, or use the **Search** field at the top — it searches with the service's own categories (songs, albums, artists, playlists, stations, whatever that service offers) and the results replace the page until you clear the field.
+  </Step>
+  <Step title="Play it">
+    Tap a song, album, playlist or station. It plays on the room, and the music page comes back up with the player and the queue. Tap the **plus** on a song instead to add it to the end of the queue without interrupting what is playing; tap the **heart** to keep it in your Favorites.
+  </Step>
+  <Step title="Go back and forth">
+    The handle at the top of the raised page reads **Back to browse** (or **Back to favorites**) — tap it or pull it down to return to the service's page. Pull the handle up to bring the player back. The back arrow in the top-left corner returns to the room page.
+  </Step>
+</Steps>
+
+<Note>
+  Music playing, and you come back into the app or switch to that room? You land on the music page, not the home theater page. It only opens by itself while music is actually playing — never for TV, never when paused.
+</Note>
+
+## Apple Music quality badges
+
+For a song that came from Apple Music, small badges under the artist line say what Apple's catalogue offers for that track — **Lossless**, **Hi-Res Lossless**, **Dolby Atmos**. This is what the track offers, not what the speaker is decoding at that moment. The same format scrolls in the room page header while the music plays, and shows on the [Live Activity](/features/live-activity) music card. Somos asks for Apple Music permission the first time it needs this.
+
+## Swipe the art to change songs
+
+Off by default. Turn it on in the menu under **Rooms → System settings → Swipe art to change songs**, then swipe the album art on the player **right for the next song, left for the previous**. See [Gestures](/features/gestures).
 
 ## Music-only surround controls
 
@@ -36,10 +70,10 @@ Rooms with surrounds get two extra controls that only apply to music, matching t
 - **Music Level** — how loud the surround speakers play during music. Separate from the **Surround** level on the room page, which is for TV.
 - **Ambient / Full** — a two-position switch. **Full** plays the surrounds at full level for music; **Ambient** keeps them subtle.
 
-## Managing favorites
-
-Somos InControl reads your favorites from the Sonos® system — add new ones in the official Sonos® app and they appear here automatically. To remove one, long-press its tile and choose **Remove Favorite**. This deletes it from your Sonos® system, so it disappears from the official app too.
-
 <Note>
-  Music playback controls also live on the [Live Activity](/features/live-activity): play/pause, previous and next appear on the Lock Screen and in the Dynamic Island whenever the room is playing music.
+  The Sonos® Favorites and Sonos® Playlists tiles from earlier builds are gone from the music page. Favorites in Somos are now your own — anything you heart from a music service — and live on the [Favorites page](/features/favorites-and-queue). The [Apple Watch app](/features/apple-watch) still plays your Sonos® favorites.
 </Note>
+
+<Tip>
+  Playback controls also live on the [Live Activity](/features/live-activity): play/pause, previous and next appear on the Lock Screen and in the Dynamic Island whenever the room is playing music.
+</Tip>

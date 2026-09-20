@@ -4,7 +4,7 @@ sidebarTitle: "Data & Network"
 description: "A plain-English breakdown of every network request Somos InControl makes, what Bluetooth is used for, and exactly where your settings are stored."
 ---
 
-This page is a plain-English summary of how Somos InControl interacts with your device's network and stores your data. Nothing here requires a legal background to understand — if you want the full formal version, see the [Privacy Policy](/legal/privacy-policy). The short answer: almost everything the app does happens locally on your Wi-Fi network, one narrow internet request exists (speaker photos), and no personal data ever leaves your device.
+This page is a plain-English summary of how Somos InControl interacts with your device's network and stores your data. Nothing here requires a legal background to understand — if you want the full formal version, see the [Privacy Policy](/legal/privacy-policy). The short answer: control happens locally on your Wi-Fi network; the app goes to the internet only for speaker photos and, when you use them, for your music services; and nothing goes to us — we run no servers.
 
 ## Local network discovery
 
@@ -27,35 +27,47 @@ The app reads only the advertising name broadcast by nearby Bluetooth devices an
 
 If you decline Bluetooth permission when iOS asks, the app continues to work normally for any speaker already on your Wi-Fi network.
 
-## The only internet request
+## Internet requests the app makes
 
-There is exactly one type of request Somos InControl sends to the internet: fetching your speakers' product photos from Sonos®'s public image library at `media.sonos.com`.
+Somos InControl talks to the internet for two things, and neither one involves a server of ours.
 
-This is a plain HTTPS request for a static image file — equivalent to your browser loading a logo from a website. The request contains:
+### Speaker photos
 
-- The model identifier of the speaker (e.g., "Era 100") — nothing personal
-- No speaker names, no network details, no location, no account information
+The app fetches your speakers' product photos from Sonos®'s public image library at `media.sonos.com`. This is a plain HTTPS request for a static image file — equivalent to your browser loading a logo from a website. The request contains the model identifier of the speaker (e.g., "Era 100") and nothing personal — no speaker names, no network details, no location, no account information. If `media.sonos.com` is unreachable, the app falls back to the low-resolution icon served by your speaker directly over the local network.
 
-If `media.sonos.com` is unreachable, the app automatically falls back to the low-resolution icon served by your speaker directly over the local network. **The app works fully offline** — speaker images are the only thing that require an internet connection.
+### Music services
+
+When you browse, search or sign in to a music service on the music page, the app talks to **that service's own servers** — Spotify's, Amazon's, Pandora's and so on — over HTTPS, using the same music-service interface the speakers themselves use. What travels is what you would expect: the search term you typed, the folder you opened, the song you picked, and the sign-in the service issued to Somos so it can browse your account. Album art and station logos are loaded from wherever the service keeps them.
+
+- **Signing in** happens on the service's own sign-in page, opened inside the app. Somos never sees your password; what it keeps is the token the service hands back, stored in the device's Keychain — the secure storage iOS uses for credentials — keyed to your Sonos® system. **Disconnect** removes it.
+- **Apple Music** is different: Somos browses it through Apple's own music framework on your iPhone, under the Apple Music permission you grant, and Apple handles that traffic. The speaker plays on the Apple Music account your Sonos® system already holds.
+- **Playing** is still local — Somos hands the speaker what to play over your Wi-Fi, and the speaker streams from the service.
+
+Control works fully offline: volume, EQ, presets, home theater controls and the queue all work with no internet at all. Browsing a music service does not — it needs the service.
 
 <Tip>
-  Want to verify this yourself? Put your iPhone into Airplane Mode, then turn Wi-Fi back on without turning Airplane Mode off. Everything in Somos InControl — volume, EQ, presets, home theater controls, music — will continue to work normally. Only the speaker product photos will be missing (replaced by local icons).
+  Want to verify this yourself? Put your iPhone into Airplane Mode, then turn Wi-Fi back on without turning Airplane Mode off. Volume, EQ, presets and home theater controls keep working; the speaker photos and the music services' pages are what stop.
 </Tip>
 
 ## Links the app opens
 
-A few menu items — **Support & Feedback**, **Suggest a Feature**, and the four **Speaker Checks** questionnaires — open a page on the Somos website in your browser. The app itself sends nothing to that site: it hands the URL to iOS and what you type into the web form afterwards is entirely up to you. The app also opens the official Sonos® app when you tap **Tune in Sonos app** on the Trueplay tile.
+A few menu items — **Poll: your favorite music services**, **Coming Soon**, **Support & Feedback** and **Suggest a Feature** — open a page on the Somos website in your browser, and **Getting Started** and **Feature Reference** open this manual. The app itself sends nothing to those sites: it hands the URL to iOS and what you type into a web form afterwards is entirely up to you. The app also opens the official Sonos® app when you tap **Tune in Sonos app** on the Trueplay tile.
+
+**Submit diagnostics** (under **Help us track bugs**) opens the iOS share sheet with the app's log as a text file — the last few hundred lines of what the app did and what the speakers answered, with no passwords, sign-in tokens or music in it. Nothing is sent until you choose where to send it.
 
 ## Your settings
 
 All of your preferences are stored locally on your device using iOS `UserDefaults` — the standard on-device storage mechanism Apple provides to every app. This includes:
 
 - Your room order, saved favourite groups and system names
-- Sound presets and crossover values
-- Live Activity, Haptics and Appearance settings, and the identify-tone switch
-- Tutorial state and which Speaker Checks you've been shown
+- Sound presets, which preset each room is on, and crossover values
+- The favorites you heart from music services
+- Live Activity, Haptics, Appearance, Pinch for volume and Swipe art settings, and the identify-tone switch
+- Tutorial state
 
-A small slice of this storage is shared with the Somos InControl widget and Live Activity extension so they display the same rooms and presets you are controlling.
+Music-service sign-ins are the one exception: they are credentials, so they live in the device's Keychain, not in `UserDefaults`.
+
+A small slice of this storage is shared with the Somos InControl widget and Live Activity extension so they display the same rooms and presets you are controlling, and the room list and your Sonos® favorites are sent to the [Apple Watch app](/features/apple-watch) when one is paired.
 
 **No iCloud sync.** The app does not use iCloud, iCloud Drive, or CloudKit. Your settings never leave your device and are never synced to any cloud service — presets don't follow you to a new phone. Uninstalling the app removes all of its stored data automatically.
 
@@ -74,7 +86,7 @@ Somos InControl has none of the data-collection infrastructure common in modern 
     The app contains no ad networks and no advertising identifiers are read or transmitted.
   </Accordion>
   <Accordion title="No Third-Party SDKs" icon="code">
-    The app is built entirely on Apple's own frameworks. There is no third-party code that could phone home.
+    The app is built entirely on Apple's own frameworks — including the one it uses for Apple Music. There is no third-party code that could phone home.
   </Accordion>
   <Accordion title="No Cloud Account" icon="cloud">
     No sign-in, no registration, and no server-side profile. The app works without any account.

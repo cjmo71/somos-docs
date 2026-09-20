@@ -12,18 +12,19 @@ This page covers the issues users run into most often and walks you through how 
     The most common cause is a network mismatch or a missing permission. Work through these steps in order:
 
     1. **Check you're on the same Wi-Fi network.** Your iPhone or iPad and your Sonos® speakers must be on the same network — not a guest network or a separate IoT VLAN. Many routers broadcast separate SSIDs for 2.4 GHz and 5 GHz bands; connect both to the same one.
-    2. **Verify Local Network permission.** If you declined the prompt when the app first launched, go to **Settings → Somos InControl → Local Network** and turn it on (the menu's **App Permissions in iPhone Settings** takes you there). Then tap **Try Again**.
-    3. **Rescan.** Open the menu and choose **Advanced → Rescan My Network**. Discovery also runs fresh on every launch, so force-quitting and reopening works too.
+    2. **Verify Local Network permission.** If you declined the prompt when the app first launched, go to **Settings → Somos InControl → Local Network** and turn it on (the menu's **Open iOS Settings for Somos**, under **Rooms → System settings**, takes you there). Then tap **Try Again**.
+    3. **Check the rest of the list.** Menu → **Help & Support → Settings Somos needs**: UPnP on in the Sonos® app, VPN off, not a guest or IoT network.
+    4. **Rescan.** Open the menu and tap **Rescan My Network** under **System**. Discovery also runs fresh on every launch, so force-quitting and reopening works too.
     4. **Test with the official Sonos® app.** If it can't find your speakers either, the problem is the network itself — restart your router and speakers, then test again.
 
-    If your speakers appear in the official app but not in Somos InControl, use the [Speakers Not Found questionnaire](https://somosincontrol.com/somos-incontrol/speakers-not-found.html) — also under **Speaker Checks** in the menu.
+    If your speakers appear in the official app but not in Somos InControl, send **Submit diagnostics** (menu → **Help us track bugs**) to the developer and fill in the [Speakers Not Found questionnaire](https://somosincontrol.com/somos-incontrol/speakers-not-found.html) on the website.
   </Accordion>
 
   <Accordion title="A speaker or an entire system didn't show up">
     If some rooms are missing — especially with an S1 and an S2 system, or two homes — these are the usual causes:
 
     - **Same Wi-Fi requirement.** See the section above.
-    - **A second system.** Somos InControl keeps each Sonos® system separate. Open the menu: if more than one system is listed under **System**, tap the other one. If it isn't listed, use **Add a Home / New S1 or S2 System** or **Advanced → Rescan My Network**. See [Multiple Systems](/rooms/multiple-systems).
+    - **A second system.** Somos InControl keeps each Sonos® system separate. Open the menu: if more than one system is listed under **System**, tap the other one. If it isn't listed, use **Add a Home / New S1 or S2 System** or **Rescan My Network**. See [Multiple Systems](/rooms/multiple-systems).
     - **A quarantined speaker.** A speaker on older firmware than the rest of the household shows **Needs a firmware update** and can't be controlled until the Sonos® app has updated it.
 
     If speakers are still missing, the [Speakers Not Found questionnaire](https://somosincontrol.com/somos-incontrol/speakers-not-found.html) is the best next step.
@@ -34,7 +35,17 @@ This page covers the issues users run into most often and walks you through how 
   </Accordion>
 
   <Accordion title="My preset stopped being highlighted">
-    That's by design: the highlight means the room currently matches the preset. Move any slider the preset captured — in Somos InControl or the official Sonos® app — and it clears, with a toast saying the preset was disabled. Tap the preset to reapply it. If a preset seems to load nothing, check what it captured: hold it and look at the ticks — Volume, Night Sound, Speech Boost and Loudness are only restored if they were ticked when it was saved.
+    The highlight means the room is still on the preset you loaded. It survives leaving the room, switching rooms and reopening the app; it clears when you move a slider the preset captured — in Somos InControl or the official Sonos® app — with a toast saying the preset was disabled, or when another preset loads. Tap the preset to reapply it. If a preset seems to load nothing, check what it captured: hold it and look at the ticks — Volume, Night Sound, Speech Boost and Loudness are only restored if they were ticked when it was saved.
+
+    Can't see the TV presets at all? On a soundbar with **Music** lit, the room page shows only the header and volume — the music presets are on the music page. Tap **TV** to get the TV presets back.
+  </Accordion>
+
+  <Accordion title="A music service won't play, or the wrong room plays">
+    - **"… isn't set up on your Sonos system yet"** — the Sonos® system has no account for that service. Add it in the Sonos® app once, then try again in Somos.
+    - **Apple Music shows nothing to browse** — Somos needs Apple Music access on this iPhone. Tap **Allow** when asked, or turn it on under **Settings → Somos InControl**. A song that is only in your library and not in Apple's catalogue can't be sent to the speaker, and the page says so.
+    - **The wrong room plays** — Somos plays to the room whose music page is open. The room name is under **Music** at the top of the page; swipe to another room or use the menu, then open Music there.
+    - **The services list won't load** — Somos asks the room that leads the group; try again from a room that isn't part of a home theater, or tap **Add** again to re-read.
+    - **Music started elsewhere but the app shows Standby** — the room page follows the speaker's real source on every change; pull down to refresh if it lags. See [Music Services](/features/music-services).
   </Accordion>
 
   <Accordion title="Speech Boost won't change">
@@ -66,11 +77,11 @@ This page covers the issues users run into most often and walks you through how 
   </Accordion>
 
   <Accordion title="I started music and lost my TV sound">
-    Playing music points the soundbar away from its TV input. Tap **TV** in the source row at the top of the room page — or the TV / Music switch below the playback controls on the Music sheet — to send it straight back. No need to touch the TV remote.
+    Playing music points the soundbar away from its TV input. Tap **TV** in the source row at the top of the room page — or the **TV** pill below the playback controls on the music page — to send it straight back. No need to touch the TV remote.
   </Accordion>
 
   <Accordion title="The Live Activity isn't appearing">
-    Check three things: the **Live Activity** toggle in the app's menu is on; **Settings → Apps → Somos InControl → Live Activities** is enabled in iOS (the menu shows an orange link if it isn't); and your iPhone runs iOS 16.2 or later. The card also ends about 30 minutes after the app goes to the background — reopen the app to bring it back.
+    Check three things: the **Live Activity** switch under **Rooms → System settings** in the app's menu is on; **Settings → Apps → Somos InControl → Live Activities** is enabled in iOS (the menu shows an orange link if it isn't); and your iPhone runs iOS 16.2 or later. The card also ends about 30 minutes after the app goes to the background — reopen the app to bring it back.
   </Accordion>
 
   <Accordion title="The widget shows nothing or old presets">
@@ -78,13 +89,21 @@ This page covers the issues users run into most often and walks you through how 
   </Accordion>
 
   <Accordion title="The tutorial keeps popping up">
-    The tour is designed to run once, then only when you choose **Take the Tour** from the menu. If it keeps reappearing, there is likely an issue with local storage on your device. Uninstall Somos InControl and reinstall it from TestFlight.
+    The tour is designed to run once, on first launch. If it keeps reappearing, there is likely an issue with local storage on your device. Uninstall Somos InControl and reinstall it from TestFlight.
+  </Accordion>
+
+  <Accordion title="Pinch or the art swipe does nothing">
+    Both gestures are off by default. Menu → **Rooms → System settings** → switch on **Pinch for volume** and **Swipe art to change songs**. The art swipe has to be a clear sideways swipe on the album art on the player: right for the next song, left for the previous. See [Gestures](/features/gestures).
+  </Accordion>
+
+  <Accordion title="The Apple Watch app has no rooms, or can't reach them">
+    Open Somos on your iPhone once — it sends your rooms to the Watch. If the Watch says it can't reach your Sonos, join your home Wi-Fi on the Watch or keep your iPhone nearby. Favourites arrive once the iPhone's music page has loaded them. See [Apple Watch](/features/apple-watch).
   </Accordion>
 
   <Accordion title="The app crashes on launch">
     1. **Force-quit the app.** Swipe it away in the App Switcher, then tap the icon to reopen.
     2. **Restart your device.** If force-quitting doesn't help, a full device restart often will.
-    3. **Contact support.** If the app still crashes after a restart, [send a message](/support/contact) with your device model and iOS version.
+    3. **Contact support.** If the app still crashes after a restart, [send a message](/support/contact) with your device model and iOS version, and attach the log from **Submit diagnostics** in the menu if you can get that far.
   </Accordion>
 
 </AccordionGroup>

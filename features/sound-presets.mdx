@@ -4,12 +4,13 @@ sidebarTitle: "Sound Presets"
 description: "Save a room's EQ levels — plus, if you tick them, volume, Night Sound, Speech Boost and Loudness — into a preset, then bring it all back with a single tap."
 ---
 
-Sound presets let you lock in exactly how a room should sound for a given situation — movie night, background music, late-night listening — and bring it all back instantly with a single tap. Every room has its own presets: three on the room page (TV presets) and three more on the Music sheet (music presets).
+Sound presets let you lock in exactly how a room should sound for a given situation — movie night, background music, late-night listening — and bring it all back instantly with a single tap. Every room has its own presets: three on the room page (TV presets) and three more on the music page (music presets).
 
 ## Where the presets live
 
-- **Room page** — the **Sound Presets** row sits between the volume card and the EQ card. These three slots are the room's *TV* presets and carry a small TV badge once saved.
-- **Music sheet** — tap **Music** in the source row at the top of a room to open it. It has its own **Sound Presets** row with three *music* slots (music-note badge), which can also capture the Music Level and Ambient/Full setting that only exist on that sheet.
+- **Room page** — the **Sound Presets** row sits between the volume card and the EQ card. These three slots are the room's _TV_ presets and carry a small TV badge once saved. On a soundbar, while **Music** is lit, the room page keeps only its header and volume — the presets you see then are the music ones, on the music page. Tap **TV** and the TV presets are back.
+- **Music page** — tap **Music** in the source row at the top of a room to open it. It has its own **Sound Presets** row with three _music_ slots (music-note badge), which can also capture the Music Level and Ambient/Full setting that only exist on that page.
+- **Lock Screen** — a TV room's three presets are also chips on the [Live Activity](/features/live-activity) card, by name, with the loaded one lit. Tap one there and the room page follows.
 
 All six start out named **Preset 1**, **Preset 2** and **Preset 3**. A preset is stored per room — saving "Movies" in the Living Room does not change the Bedroom's presets.
 
@@ -59,9 +60,15 @@ All six start out named **Preset 1**, **Preset 2** and **Preset 3**. A preset is
   The tick list opens pre-filled with what the preset already holds, so a rename never silently drops Volume, Night Sound, Speech Boost or Loudness. Unticking something is a deliberate choice and clears it on Save.
 </Note>
 
-## When a preset deactivates
+## The highlight stays until you change the sound
 
-The active highlight is worked out from what the speaker reports, not remembered: a preset stays highlighted only while every level it captured still matches the room. The moment you move a slider it captured — or flip Night Sound, Speech Boost, or Loudness on a preset that captured them — the highlight clears, and a toast tells you "*name* preset was disabled". Your manual change stays in effect. Changes made from the official Sonos® app clear the highlight the same way at the next background sync. To bring the preset back, tap it again.
+The preset you loaded stays highlighted when you leave the room and come back, switch rooms, or close and reopen the app — the room remembers which one it is on, whether you loaded it on the page, from the widget or from the Lock Screen. It clears in three cases:
+
+- you move a slider the preset captured, or flip Night Sound, Speech Boost or Loudness on a preset that captured them — a toast says "_name_ preset was disabled", and your change stays in effect;
+- a fresh read from the speaker no longer matches the preset's sound values — for example after a change in the official Sonos® app;
+- you load another preset, which takes the highlight with it.
+
+To bring a preset back, tap it again.
 
 ## Presets in music-only rooms
 
@@ -72,5 +79,5 @@ Presets work in every room, not just soundbar rooms. In a room without a soundba
 Once you name a preset, Siri knows it by that name — say "**Apply Movies in Somos InControl**" and it loads without any Shortcut setup. The Home Screen widget can also apply presets with one tap. See [Widget & Siri](/features/widget-and-siri).
 
 <Tip>
-  A good starting set for a soundbar room: **Movies** (Speech Boost on, a little extra bass), **Late Night** (Night Sound on, Volume ticked at a low level), and **Music** saved from the Music sheet with Loudness on.
+  A good starting set for a soundbar room: **Movies** (Speech Boost on, a little extra bass), **Late Night** (Night Sound on, Volume ticked at a low level), and **Music** saved from the music page with Loudness on. Name them — the names are what you see on the Lock Screen card.
 </Tip>
