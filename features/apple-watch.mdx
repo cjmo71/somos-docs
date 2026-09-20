@@ -6,33 +6,59 @@ description: "The Somos InControl Apple Watch app lists your rooms, plays and pa
 
 Somos InControl comes with a small Apple Watch app for the moments you do not want to reach for your phone: pick a room, play or pause, skip, turn the Crown for volume, or start a favorite. The Watch talks to your speakers directly over Wi-Fi, using the rooms your iPhone sent it.
 
-## Installing it
+<Frame caption="The Watch app on an Apple Watch Ultra: the rooms list, and a room with what is playing.">
+  <img
+    src="https://somosincontrol.com/somos-incontrol/assets/shots/5-watch-rooms.png"
+    alt="The Somos Apple Watch app's first screen: a list titled Somos with the rooms Era Right S, Era Right S 2 and Living Room."
+    width="211"
+  />
 
-Install Somos InControl from TestFlight on your iPhone and the Watch app comes along with it. If it does not appear on the Watch, open the **Watch** app on your iPhone and look under **Available Apps**. Then open Somos on the iPhone once: your rooms are sent to the Watch, in the same order as your bottom bar.
+  <img
+    src="https://somosincontrol.com/somos-incontrol/assets/shots/6-watch-room.png"
+    alt="A room on the Apple Watch: Era Right S, now playing Rhymin' and Stealin' by Beastie Boys, volume 10, a play button, a next button and a Favourites button."
+    width="211"
+  />
+</Frame>
 
-## What it does
+## How it works, step by step
 
-<CardGroup cols={2}>
-  <Card title="Rooms" icon="house">
-    The first screen lists your rooms. Tap one to open it. Until the iPhone has sent them, the screen says so: **Open Somos on your iPhone to send your rooms here.**
-  </Card>
-
-  <Card title="Play, pause, next" icon="play">
-    A room shows what is playing — title and artist — with **Play/Pause** and **Next** buttons.
-  </Card>
-
-  <Card title="Crown = volume" icon="circle-dot">
+<Steps>
+  <Step title="Install from TestFlight">
+    Install Somos InControl from TestFlight on your iPhone. The Watch app comes along with it.
+  </Step>
+  <Step title="Check the Watch app on your iPhone">
+    If Somos does not appear on the Watch, open the **Watch** app on your iPhone and look under **Available Apps** — turn Somos on there.
+  </Step>
+  <Step title="Open Somos on the iPhone once">
+    Your rooms are sent to the Watch the moment the iPhone app starts, in the same order as your bottom bar. Until then the Watch says **Open Somos on your iPhone to send your rooms here.**
+  </Step>
+  <Step title="Rooms appear">
+    The first screen lists your rooms. The Watch keeps the list, so it is there the next time even if the iPhone is out of reach. Tap a room to open it.
+  </Step>
+  <Step title="The room screen">
+    A room shows what is playing — title and artist — and its volume. The Watch reads both straight from the speaker over your home Wi-Fi.
+  </Step>
+  <Step title="Turn the Crown for volume">
     Turn the Digital Crown to change the room's volume; the number on screen follows. The Crown does nothing until the room's own level has been read — it shows a dash until then — so a turn can never send another room's level to this one.
-  </Card>
-
-  <Card title="Favourites" icon="heart">
+  </Step>
+  <Step title="Play, pause, next">
+    The **Play/Pause** button toggles playback and **Next** skips the track. What you do here shows up in the iPhone app's room and music pages, and the other way round.
+  </Step>
+  <Step title="Favourites">
     Tap **Favourites** for your Sonos® favorites — the list the Sonos® app keeps. Tap one to play it on the room. The list arrives once the iPhone's music page has loaded it; until then it reads **No favourites yet. Open Music in Somos on your iPhone.**
-  </Card>
-</CardGroup>
+  </Step>
+</Steps>
 
 <Note>
-  The Watch needs to reach your speakers. If it cannot, the room screen says **Can't reach your Sonos. Join your home Wi-Fi or bring your iPhone.** A room that has dropped off the system says so too — check it has power.
+  Only favorites that can be played directly are listed. Sonos® Radio shortcuts such as **Discover Sonos Radio**, **Playlists**, **Sonos Presents** and **Trending Now** are browse folders rather than something to play, so they are left out — if those are the only favorites you have, the Watch list stays empty.
 </Note>
+
+## What it cannot do
+
+- **Presets, EQ and sound settings** — these stay on the iPhone. The Watch has no presets, Bass, Treble, Night Sound or Speech Boost.
+- **Browsing music** — there is no browse or search. It plays what you already saved as a Sonos® favorite.
+- **Grouping** — rooms cannot be grouped or ungrouped from the Watch. Volume applies to the room you opened.
+- **Away from home Wi-Fi** — the Watch needs to reach your speakers. If it cannot, the room screen says **Can't reach your Sonos. Join your home Wi-Fi or bring your iPhone.** A room that has dropped off the system says so too — check it has power.
 
 <Tip>
   The Lock Screen [Live Activity](/features/live-activity) also mirrors to a paired Watch on iOS 18 and later as a read-only glance card in the Smart Stack.
