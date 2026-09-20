@@ -4,21 +4,23 @@ sidebarTitle: "Privacy Policy"
 description: "Somos InControl's full privacy policy: what data the app collects, how your network is used, where settings are stored, and how to contact us."
 ---
 
-Somos InControl is built to stay on your local network and mind its own business. The app collects no personal data, operates no servers, and contains zero third-party tracking code. The only outside contact the app ever makes is fetching a static product photo from Sonos®'s own public image library — nothing more.
+Somos InControl is built to stay on your local network and mind its own business. The app collects no personal data, operates no servers, and contains zero third-party tracking code. The only outside contact the app makes is fetching a static product photo from Sonos®'s own public image library and — when you use them — talking to your own music services, directly, with nothing passing through us.
 
 <Note>
-  **Last updated: April 2026**
+  **Last updated: September 2026** — added the music services section.
 </Note>
 
 ## The Short Version
 
-Somos InControl does not collect any data. We have no servers that see your activity. No account is required to use the app. There are no analytics, no ads, and no third-party SDKs. The one and only internet request the app makes is fetching product photos of your speakers from Sonos®'s public image library. Everything else — discovery, control, and settings — stays entirely on your device and your local Wi-Fi network.
+Somos InControl does not collect any data. We have no servers that see your activity. No Somos account is required to use the app. There are no analytics, no ads, and no third-party SDKs. The app's internet requests are fetching product photos of your speakers from Sonos®'s public image library and, when you browse or sign in to a music service, talking to that service's own servers. Everything else — discovery, control, and settings — stays entirely on your device and your local Wi-Fi network.
 
 ## What We Collect
 
 **Nothing.** Somos InControl does not collect, transmit, or store any personal information on our servers — in fact, we don't operate any servers. We do not use analytics, tracking pixels, advertising identifiers, crash-reporting SDKs, or any third-party code that phones home. The app contains zero third-party libraries; it is built entirely on Apple's own frameworks.
 
-**The website is a separate thing, and it is entirely opt-in.** The forms on this site — support, suggestions, and the Speaker Check questionnaires — send us whatever you choose to type into them, and nothing else. Every field is optional, including your email address: leave it blank and we simply have no way to write back. The app never fills any of this in for you. When a speaker refuses a setting, Somos InControl only opens a link to this site; whether you answer anything after that is entirely your choice.
+**The website is a separate thing, and it is entirely opt-in.** The forms on this site — support, suggestions, the poll and the questionnaires — send us whatever you choose to type into them, and nothing else. Every field is optional, including your email address: leave it blank and we simply have no way to write back. The app never fills any of this in for you; it only opens a link to this site, and whether you answer anything after that is entirely your choice.
+
+**Diagnostics are sent only by you.** **Submit diagnostics** in the app's menu opens the iOS share sheet with the app's log — action names, error codes and what the speakers answered, never passwords, sign-in tokens or what you played. It goes nowhere until you pick a recipient.
 
 ## Local Network Access
 
@@ -37,17 +39,17 @@ The app uses Bluetooth for one purpose only: detecting Sonos® speakers that are
 
 The app only looks at the advertising name of nearby devices and filters for Sonos® speakers. It does not pair with anything, does not send any data over Bluetooth, and does not identify you or your device in any way. If you decline Bluetooth permission, the app still works fully for speakers already on your Wi-Fi network.
 
-## The One Internet Request We Make
+## The Internet Requests We Make
 
-We want to be upfront about this: when the app displays your speakers, it fetches each speaker's product photo from Sonos®'s public image library at `media.sonos.com`. This is a plain HTTPS request for a static image — the same kind of request your browser makes when loading any website's logo. **No personal information is sent** — not your speaker names, not your network details, nothing beyond the IP address that any standard HTTPS request reveals. The request amounts to: "please send me the picture of this speaker model."
+**Speaker photos.** When the app displays your speakers, it fetches each speaker's product photo from Sonos®'s public image library at `media.sonos.com`. This is a plain HTTPS request for a static image — the same kind of request your browser makes when loading any website's logo. **No personal information is sent** — not your speaker names, not your network details, nothing beyond the IP address that any standard HTTPS request reveals. The request amounts to: "please send me the picture of this speaker model." If Sonos®'s image library is unreachable, the app falls back to the low-resolution icon served by your speaker itself on the local network.
 
-If Sonos®'s image library is unreachable, the app falls back to the low-resolution icon served by your speaker itself on the local network, so the app continues to work fully offline.
+**Music services.** When you browse, search, or sign in to a music service in the app — Amazon Music, Pandora, Spotify, iHeartRadio, TuneIn, Bandcamp — the app talks directly to that service's servers over HTTPS, using the same music-service interface your Sonos® speakers use. It sends what the action needs: the search term, the folder you opened, the item you picked, and the sign-in token the service issued to the app. Artwork is loaded from the service. Signing in happens on the service's own page, opened inside the app; the app never sees your password and stores only the token the service hands back, in the device's Keychain, until you tap **Disconnect**. Each service's own privacy policy governs what it does with your account. Apple Music is browsed through Apple's own framework on your device, under the Apple Music permission you grant, and Apple handles that traffic.
 
-Beyond this one image fetch, the app makes no other internet requests. No telemetry, no "analytics," no "product-improvement" pings.
+Beyond these, the app makes no other internet requests. No telemetry, no "analytics," no "product-improvement" pings, and nothing to us — we have no servers.
 
 ## Where Your Settings Live
 
-Your preferences — selected speakers, presets, EQ settings, and tutorial state — are stored in the app's local storage on your device (iOS `UserDefaults`), the same way any iOS app stores its settings. A small portion of this storage is shared with the Somos InControl widget and Live Activity so they can show the same speaker you are controlling. Everything stays on your device.
+Your preferences — selected speakers, presets, EQ settings, the favorites you heart from music services, and tutorial state — are stored in the app's local storage on your device (iOS `UserDefaults`), the same way any iOS app stores its settings. Music-service sign-in tokens are stored in the device's Keychain. A small portion of this storage is shared with the Somos InControl widget and Live Activity so they can show the same speaker you are controlling, and the room list and your Sonos® favorites are sent to the Apple Watch app when one is paired. Everything stays on your devices.
 
 The app does not use iCloud, iCloud Drive, or CloudKit. Nothing syncs to any cloud service.
 
@@ -65,7 +67,7 @@ Somos InControl does not knowingly collect data from anyone, including children.
 
 ## Third Parties
 
-We do not share, sell, or disclose any data to third parties, because we don't collect any data to begin with. The app does not include any third-party advertising networks, analytics services, or tracking SDKs.
+We do not share, sell, or disclose any data to third parties, because we don't collect any data to begin with. The app does not include any third-party advertising networks, analytics services, or tracking SDKs. The music services you choose to connect receive your requests directly from the app, as described above, and handle them under their own privacy policies.
 
 ## Changes to This Policy
 

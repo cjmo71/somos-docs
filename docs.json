@@ -29,8 +29,12 @@
               "features/eq-and-trueplay",
               "features/home-theater",
               "features/music",
+              "features/music-services",
+              "features/favorites-and-queue",
+              "features/gestures",
               "features/live-activity",
-              "features/widget-and-siri"
+              "features/widget-and-siri",
+              "features/apple-watch"
             ]
           },
           {
