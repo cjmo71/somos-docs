@@ -4,16 +4,24 @@ sidebarTitle: "Sound Presets"
 description: "Save a room's EQ levels — plus, if you tick them, volume, Night Sound, Speech Boost and Loudness — into a preset, then bring it all back with a single tap."
 ---
 
-Sound presets let you lock in exactly how a room should sound for a given situation — movie night, background music, late-night listening — and bring it all back instantly with a single tap. Every room has its own presets: three on the room page (TV presets) and three more on the music page (music presets).
+Sound presets let you lock in exactly how a room should sound for a given situation — movie night, background music, late-night listening — and bring it all back instantly with a single tap. Every room has three music presets on its music page; a soundbar room has three TV presets on its room page as well.
 
 ## Where the presets live
 
-- **Room page** — the **Sound Presets** row sits between the volume card and the EQ card. These three slots are the room's _TV_ presets and carry a small TV badge once saved. On a soundbar, while **Music** is lit, the room page keeps only its header and volume — the presets you see then are the music ones, on the music page. Tap **TV** and the TV presets are back.
-- **Music page** — tap **Music** in the source row at the top of a room to open it. It has its own **Sound Presets** row with three _music_ slots (music-note badge), which can also capture the Music Level and Ambient/Full setting that only exist on that page.
+- **Room page (soundbar rooms)** — the **Sound Presets** row sits between the volume card and the EQ card. These three slots are the room's _TV_ presets and carry a small TV icon once saved. On a soundbar, while **Music** is lit, the room page keeps only its header and volume — the presets you see then are the music ones, on the music page. Tap **TV** and the TV presets are back. A room without a soundbar — a single speaker, a stereo pair, an Amp — has no TV presets; its presets are on the music page.
+- **Music page** — tap **Music** in the source row at the top of a room to open it. It has its own **Sound Presets** row with three _music_ slots (music-note icon), which can also capture the Music Level and Ambient/Full setting that only exist on that page.
 - **Lock Screen** — a TV room's three presets are also chips on the [Live Activity](/features/live-activity) card, by name, with the loaded one lit. Tap one there and the room page follows.
 - **Apple Watch** — the [Watch app](/features/apple-watch) shows the room's three presets under its volume: the TV presets while the room is on its TV input, the music presets otherwise. Tap one on the wrist and it lights on the phone and the Lock Screen too.
 
-All six start out named **Preset 1**, **Preset 2** and **Preset 3**. A preset is stored per room — saving "Movies" in the Living Room does not change the Bedroom's presets.
+All six start out named **Preset 1**, **Preset 2** and **Preset 3**. A preset is stored per room — saving "Movies" in the Living Room does not change the Bedroom's presets. On each preset button the TV or music icon sits in the top corner and the name sits below it, so a long name that wraps onto two lines never runs over the icon.
+
+<Frame caption="Preset buttons with two-line names on the room page (TV presets, left) and the music page (music presets, right): the name always starts below the icon.">
+  <img
+    src="https://somosincontrol.com/somos-incontrol/assets/shots/13-preset-name-below-icon.png"
+    alt="Left: the Living Room page with three TV presets named Low bass, Mid range test and Bass, each name under a small TV icon, above Bass, Treble and Subwoofer sliders. Right: the Living Room music page with the player and three music presets named Mid range test, Low bass and Party mix under music-note icons."
+    width="520"
+  />
+</Frame>
 
 ## What a preset captures
 
@@ -47,18 +55,22 @@ All six start out named **Preset 1**, **Preset 2** and **Preset 3**. A preset is
     Adjust the EQ sliders and toggles until the room sounds exactly the way you want. If you want the preset to set the volume too, set that as well.
   </Step>
   <Step title="Hold a preset to save">
-    Press and hold any preset card for about half a second. The **Save Preset** sheet opens with the name field (up to 14 characters) and the **Also save** tick list. Tick what you want the preset to carry, then tap **Save**. The card highlights as the active preset and a toast confirms "*name* saved".
+    Press and hold any preset button for about half a second. The **Save Preset** page opens with the name field (up to 14 characters) and the **Also save** tick list. Tick what you want the preset to carry, then tap **Save**. The button highlights as the active preset and a message confirms "_name_ saved". On a slot that has never been saved, typing a name and tapping the button is always a full save — the sound you dialled in is captured along with the name, first time.
   </Step>
   <Step title="Tap a preset to load it">
     Tap any card to apply everything it captured at once. The sliders move to the saved values and the speaker updates immediately. If the preset captured a volume, the room's volume changes too — so keep that in mind before ticking Volume on a preset you use late at night.
   </Step>
   <Step title="Rename without re-saving">
-    Hold the card again, change only the name and leave the ticks alone — the button reads **Rename** instead of **Save**, and every stored value is kept exactly as it was. Change any tick and it becomes a full **Save** again, re-capturing the room's current settings.
+    Hold the button again on a preset you have already saved, change only the name and leave the ticks alone — the button reads **Rename** instead of **Save**, and every stored value is kept exactly as it was. Change any tick and it becomes a full **Save** again, re-capturing the room's current settings.
   </Step>
 </Steps>
 
 <Note>
   The tick list opens pre-filled with what the preset already holds, so a rename never silently drops Volume, Night Sound, Speech Boost or Loudness. Unticking something is a deliberate choice and clears it on Save.
+</Note>
+
+<Note>
+  **If a preset says "loaded, but crossover didn't take".** Some speakers report a crossover but refuse to change it — an Arc with a Sub is the usual case. The first time a preset's crossover is refused, you see that message once; after that, presets in that room stop sending the crossover and load quietly. The crossover slider on the room page is not affected: move it yourself and, if the speaker accepts it, presets send the crossover again.
 </Note>
 
 ## The highlight stays until you change the sound
@@ -73,7 +85,7 @@ To bring a preset back, tap it again.
 
 ## Presets in music-only rooms
 
-Presets work in every room, not just soundbar rooms. In a room without a soundbar, Night Sound and Speech Boost are never offered, so the presets there capture the EQ levels plus, optionally, Volume and Loudness.
+Presets work in every room, not just soundbar rooms. A room without a soundbar — a single speaker, a stereo pair, an Amp, with or without a Sub — has its three presets on the music page, next to the EQ they capture; there are no TV presets on its room page. Night Sound and Speech Boost are never offered there, so the presets capture the EQ levels plus, optionally, Volume and Loudness.
 
 ## Presets from Siri and the widget
 

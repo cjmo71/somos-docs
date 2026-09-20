@@ -37,7 +37,13 @@ This page covers the issues users run into most often and walks you through how 
   <Accordion title="My preset stopped being highlighted">
     The highlight means the room is still on the preset you loaded. It survives leaving the room, switching rooms and reopening the app; it clears when you move a slider the preset captured — in Somos InControl or the official Sonos® app — with a toast saying the preset was disabled, or when another preset loads. Tap the preset to reapply it. If a preset seems to load nothing, check what it captured: hold it and look at the ticks — Volume, Night Sound, Speech Boost and Loudness are only restored if they were ticked when it was saved.
 
-    Can't see the TV presets at all? On a soundbar with **Music** lit, the room page shows only the header and volume — the music presets are on the music page. Tap **TV** to get the TV presets back.
+    Can't see the TV presets at all? On a soundbar with **Music** lit, the room page shows only the header and volume — the music presets are on the music page. Tap **TV** to get the TV presets back. A room without a soundbar — a single speaker, a stereo pair, an Amp, even with a Sub — has no TV presets at all: its three presets are on the music page. See [TV rooms and music rooms](/rooms/overview#tv-rooms-and-music-rooms).
+
+    A preset you saved for the first time loaded back as flat zeros? That was a bug in builds before 36.0.7 — the first save of a fresh slot kept the name but not the sound. It is fixed: hold the slot, name it, tap the button, and the sound you set is saved with it. Presets saved on an earlier build can be re-saved once to pick up the sound.
+  </Accordion>
+
+  <Accordion title="Sub phase is greyed out">
+    The **Sub phase** switch (Normal / Reversed, under the Subwoofer switch on any room with a Sub) is set by Trueplay while Trueplay is on for that room — the note under it says so. Turn Trueplay off and the switch comes back. If it is greyed out with a spinner instead, the app is still waiting for the speaker to report its phase; pull down to refresh. See [Sub phase](/features/eq-and-trueplay#sub-phase).
   </Accordion>
 
   <Accordion title="A music service won't play, or the wrong room plays">
@@ -64,6 +70,8 @@ This page covers the issues users run into most often and walks you through how 
     If the slider is there but a change doesn't stick, your speaker is refusing the value. Sonos only documents an adjustable crossover on the Amp, so on other hardware the control is offered where the speaker reports one, and some models accept the reading but not the change. The app re-reads the value and shows what the speaker actually has rather than what you set.
 
     If the slider isn't there at all, the room's speaker didn't report a crossover when the app asked. Fill in the questionnaire either way — it's the only way this gets tracked down across hardware the developer doesn't own.
+
+    Loading a preset said **"loaded, but crossover didn't take"**? Same cause — the speaker refused the crossover the preset carries. From 36.0.7 you see that message once; after that, presets in the room stop sending the crossover and load quietly. Moving the slider yourself, if the speaker accepts it, lets presets send it again. The slider itself is unchanged.
 
     <Card title="Crossover questionnaire" icon="message-question" href="https://somosincontrol.com/somos-incontrol/crossover.html">
       Answer a few quick questions about your Sub and the room it's bonded to so the developer can track down why the crossover isn't changing or isn't there.
