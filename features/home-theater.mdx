@@ -4,7 +4,7 @@ sidebarTitle: "Home Theater"
 description: "TV / Music source switch, audio-format badge, Night Sound, Speech Boost, surround, height, subwoofer and group delay — all the soundbar controls, gathered in one place."
 ---
 
-When Somos InControl detects a room built around a soundbar (Arc, Arc Ultra, Beam, Ray, Playbar, Playbase), it unlocks a set of home theater controls that only make sense in that context. They appear automatically in soundbar rooms and are hidden everywhere else, so your music-only rooms stay uncluttered.
+When Somos InControl detects a room built around a soundbar (Arc, Arc Ultra, Beam, Ray, Playbar, Playbase), it unlocks a set of home theater controls that only make sense in that context. They appear automatically in soundbar rooms and are hidden everywhere else, so your music-only rooms stay uncluttered. Only the soundbar decides this: a stereo pair, a single speaker or an Amp with a Sub bonded to it is still a music room, and never gets the TV controls or the TV presets.
 
 ## What every room gets
 
@@ -12,11 +12,13 @@ All rooms — single speakers, stereo pairs, portables and soundbar setups — s
 
 - Volume slider with − / + and mute
 - Bass and treble EQ, Loudness
-- Subwoofer level, on/off, and crossover (when a Sub is bonded and the speaker reports one)
-- Sound presets (three TV, three music)
+- Subwoofer level, on/off, phase, and crossover (when a Sub is bonded and the speaker reports one)
+- Three music presets on the music page
 - Trueplay, Status Light and Touch Controls tiles
 - The music page with your music services, favorites and the queue
 - A room diagram, room grouping, and room rename
+
+In a room without a soundbar, the bass, treble, Sub level and Loudness are on the [music page](/features/music) rather than the room page — see [TV rooms and music rooms](/rooms/overview#tv-rooms-and-music-rooms).
 
 ## Home-theater-only controls
 
@@ -40,7 +42,7 @@ All rooms — single speakers, stereo pairs, portables and soundbar setups — s
     Sets the level of the overhead (Atmos) channels (−10 to +10). Shown only where there is real height hardware — the Arc family's up-firing drivers, the Beam (Gen 2), or Era 300 satellites — never on a Ray or Playbar.
   </Card>
   <Card title="Subwoofer" icon="volume-high">
-    Level (−15 to +15), an on/off switch, and — where the speaker reports one — the crossover frequency (50–110 Hz). A second Sub, including two older-generation Subs, is supported.
+    Level (−15 to +15), an on/off switch, **Sub phase** (Normal / Reversed — greyed out while Trueplay is on) and — where the speaker reports one — the crossover frequency (50–110 Hz). A second Sub, including two older-generation Subs, is supported. See [Sub phase](/features/eq-and-trueplay#sub-phase).
   </Card>
   <Card title="Group Audio Delay" icon="clock">
     Appears only while the soundbar is grouped with other rooms. Steps the delay applied to the other rooms so they don't echo against the bar — the same setting as the Sonos® app's Group Audio Delay.
@@ -49,7 +51,7 @@ All rooms — single speakers, stereo pairs, portables and soundbar setups — s
 
 ## The room page while music plays
 
-With **Music** lit, a soundbar's room page keeps only its header and the volume card — the TV presets, the EQ card, the toggles and the room diagram step aside, because the sound you are hearing is music, and music's presets and EQ live on the [music page](/features/music). Tap **TV**, or wait for the music to stop, and the page is exactly as it was. Rooms without a soundbar are unchanged.
+With **Music** lit, a soundbar's room page keeps only its header and the volume card — the TV presets, the EQ card, the toggles and the room diagram step aside, because the sound you are hearing is music, and music's presets and EQ live on the [music page](/features/music). Tap **TV**, or wait for the music to stop, and the page is exactly as it was. A room without a soundbar works this way all the time: its presets and EQ are always on the music page, and its room page keeps volume, Balance, the Sub's switch, crossover and phase, and the three switches.
 
 ## Building the home theater
 
@@ -58,5 +60,5 @@ Press and hold the room diagram on a soundbar's page to open **Home Theater Setu
 ## Subwoofer in non-soundbar rooms
 
 <Note>
-  The subwoofer controls are not exclusive to home theater rooms. They appear in **any** room that has a Sub bonded — including stereo pairs and single-speaker rooms. A Sub that isn't bonded to anything gets its own page explaining that there's nothing to control until you bond it to a soundbar or stereo pair.
+  The subwoofer controls are not exclusive to home theater rooms. They appear in **any** room that has a Sub bonded — including stereo pairs and single-speaker rooms: the Sub level on the music page, and the on/off switch, crossover and Sub phase on the room page. Bonding a Sub does not turn the room into a TV room. A Sub that isn't bonded to anything gets its own page explaining that there's nothing to control until you bond it to a soundbar or stereo pair.
 </Note>

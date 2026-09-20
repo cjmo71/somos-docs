@@ -1,7 +1,7 @@
 ---
 title: "EQ, Loudness, and Trueplay: Fine-Tune Your Room Sound"
 sidebarTitle: "EQ & Trueplay"
-description: "Bass, treble, balance, surround, height, subwoofer, crossover, loudness, Trueplay, status light and touch controls — every room's sound controls in one card."
+description: "Bass, treble, balance, surround, height, subwoofer, Sub phase, crossover, loudness, Trueplay, status light and touch controls — every room's sound controls, and where each one lives."
 ---
 
 The EQ card in Somos InControl gives you direct control over how every room sounds — not just soundbar rooms, but every Sonos® room in your home. All tone controls and toggles live in a single card below the presets, so there's nothing to hunt for. Controls that the room's hardware doesn't have simply don't appear.
@@ -10,8 +10,8 @@ The EQ card in Somos InControl gives you direct control over how every room soun
 
 | Slider | Range | Appears when |
 |---|---|---|
-| **Bass** | −10 to +10 | Every room |
-| **Treble** | −10 to +10 | Every room |
+| **Bass** | −10 to +10 | Every room (on the music page in a room without a soundbar) |
+| **Treble** | −10 to +10 | Every room (on the music page in a room without a soundbar) |
 | **Balance** | left ↔ right | Stereo pairs |
 | **Surround** | −15 to +15 | Surround speakers are bonded |
 | **Speech Boost** (level) | Off / Low / Medium / High / Max | Soundbars that support dialogue levels (Arc Ultra); other soundbars get the on/off tile below |
@@ -22,6 +22,25 @@ The EQ card in Somos InControl gives you direct control over how every room soun
 Sliders update the speaker live as you drag. If a slider snaps back, the speaker rejected the value — usually because Trueplay is active for that control, the room is in a group, or the connection dropped for a moment.
 
 Rooms with surrounds also get a **Surrounds** on/off switch under the Surround slider, and rooms with a Sub get a **Subwoofer** on/off switch that silences the Sub without unbonding it.
+
+## Sub phase
+
+Every room with a Sub — a Sub, a Sub Mini, any generation — has a **Sub phase** switch under the Subwoofer on/off switch, with two positions: **Normal** and **Reversed**. It is the same setting the Sonos® app calls Sub Phase. Flip it and the bass changes at once; if the Sub sounds thin or hollow from where you sit, try the other position and keep the one that sounds fuller.
+
+Two things to know:
+
+- While **Trueplay** is on for the room, the switch is greyed out with the note **Set by Trueplay while Trueplay is on** — Trueplay chooses the phase for you. Turn Trueplay off and the switch comes back.
+- The switch waits for the speaker to report its phase before it can be used, so it may spin for a moment when the page opens. If the speaker refuses a change, the switch goes back and a message says which phase the speaker kept.
+
+Sub phase is not part of a preset.
+
+<Frame caption="Sub phase under the Subwoofer switch. Left: greyed out while Trueplay is on. Right: Trueplay off, set to Normal.">
+  <img
+    src="https://somosincontrol.com/somos-incontrol/assets/shots/12-sub-phase.png"
+    alt="Two Living Room pages side by side. Both show Volume, Bass, Treble and Subwoofer sliders, a Subwoofer switch and a Sub phase row with Normal and Reversed. On the left the row is greyed out with the note Set by Trueplay while Trueplay is on; on the right it is active with Normal selected."
+    width="520"
+  />
+</Frame>
 
 ## Toggles
 
@@ -65,6 +84,8 @@ Trueplay is Sonos®'s room-calibration feature. When it's active, the speaker's 
 On a soundbar, Somos InControl keeps a separate set of EQ values for **TV** and for **Music**. Switch the source with the pills at the top of the room page and the sliders move to the values you last used for that source; the TV presets on the room page and the music presets on the music page are separate for the same reason.
 
 While **Music** is lit on a soundbar, the EQ card leaves the room page altogether — the room page keeps its header and volume, and the music EQ is in the **EQ & Sound** section of the [music page](/features/music). Tap **TV** and the card is back.
+
+A room with no soundbar — a single speaker, a stereo pair, an Amp, with or without a Sub — only ever plays music, so its bass, treble, Sub level and Loudness live on the music page all the time. Its room page keeps the controls the music page has no place for: **Balance** on a pair, the Sub's on/off switch, **Crossover** and **Sub phase**, and the Trueplay, Status Light and Touch Controls switches. See [TV rooms and music rooms](/rooms/overview#tv-rooms-and-music-rooms).
 
 ## Staying in sync
 
