@@ -18,6 +18,7 @@
               "getting-started/first-launch",
               "getting-started/permissions",
               "getting-started/menu",
+              "getting-started/whole-home",
               "getting-started/supported-speakers"
             ]
           },
@@ -34,7 +35,9 @@
               "features/gestures",
               "features/live-activity",
               "features/widget-and-siri",
-              "features/apple-watch"
+              "features/apple-watch",
+              "features/watch-face",
+              "features/icloud-sync"
             ]
           },
           {

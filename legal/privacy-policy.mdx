@@ -4,15 +4,15 @@ sidebarTitle: "Privacy Policy"
 description: "Somos InControl's full privacy policy: what data the app collects, how your network is used, where settings are stored, and how to contact us."
 ---
 
-Somos InControl is built to stay on your local network and mind its own business. The app collects no personal data, operates no servers, and contains zero third-party tracking code. The only outside contact the app makes is fetching a static product photo from Sonos®'s own public image library and — when you use them — talking to your own music services, directly, with nothing passing through us.
+Somos InControl is built to stay on your local network and mind its own business. The app collects no personal data, operates no servers, and contains zero third-party tracking code. The only outside contact the app makes is fetching a static product photo from Sonos®'s own public image library, talking to your own music services when you use them, and Apple's own iCloud and App Store — with nothing passing through us.
 
 <Note>
-  **Last updated: September 2026** — added the music services section.
+  **Last updated: September 2026** — added iCloud sync and the Whole Home in-app purchase.
 </Note>
 
 ## The Short Version
 
-Somos InControl does not collect any data. We have no servers that see your activity. No Somos account is required to use the app. There are no analytics, no ads, and no third-party SDKs. The app's internet requests are fetching product photos of your speakers from Sonos®'s public image library and, when you browse or sign in to a music service, talking to that service's own servers. Everything else — discovery, control, and settings — stays entirely on your device and your local Wi-Fi network.
+Somos InControl does not collect any data. We have no servers that see your activity. No Somos account is required to use the app. There are no analytics, no ads, and no third-party SDKs. The app's internet requests are fetching product photos of your speakers from Sonos®'s public image library and, when you browse or sign in to a music service, talking to that service's own servers. Everything else — discovery and control — stays on your local Wi-Fi network. Your settings stay on your device and, if you're signed in to iCloud, in your own iCloud storage. The optional Whole Home purchase goes through Apple's App Store.
 
 ## What We Collect
 
@@ -45,15 +45,21 @@ The app only looks at the advertising name of nearby devices and filters for Son
 
 **Music services.** When you browse, search, or sign in to a music service in the app — Amazon Music, Pandora, Spotify, iHeartRadio, TuneIn, Bandcamp — the app talks directly to that service's servers over HTTPS, using the same music-service interface your Sonos® speakers use. It sends what the action needs: the search term, the folder you opened, the item you picked, and the sign-in token the service issued to the app. Artwork is loaded from the service. Signing in happens on the service's own page, opened inside the app; the app never sees your password and stores only the token the service hands back, in the device's Keychain, until you tap **Disconnect**. Each service's own privacy policy governs what it does with your account. Apple Music is browsed through Apple's own framework on your device, under the Apple Music permission you grant, and Apple handles that traffic.
 
+**Apple's iCloud and App Store.** When you're signed in to iCloud, your settings sync through Apple's iCloud (see [Where Your Settings Live](#where-your-settings-live)). The Whole Home purchase and Restore Purchases go through Apple's App Store (see [In-App Purchase](#in-app-purchase)).
+
 Beyond these, the app makes no other internet requests. No telemetry, no "analytics," no "product-improvement" pings, and nothing to us — we have no servers.
 
 ## Where Your Settings Live
 
-Your preferences — selected speakers, presets, EQ settings, the favorites you heart from music services, and whether the intro video has played — are stored in the app's local storage on your device (iOS `UserDefaults`), the same way any iOS app stores its settings. Music-service sign-in tokens are stored in the device's Keychain. A small portion of this storage is shared with the Somos InControl widget and Live Activity so they can show the same speaker you are controlling, and the room list, each room's presets and your Sonos® favorites are sent to the Apple Watch app when one is paired. Everything stays on your devices.
+Your preferences — selected speakers, presets, EQ settings, the favorites you heart from music services, and whether the intro video has played — are stored in the app's local storage on your device (iOS `UserDefaults`), the same way any iOS app stores its settings. Music-service sign-in tokens are stored in the device's Keychain. A small portion of this storage is shared with the Somos InControl widget and Live Activity so they can show the same speaker you are controlling, and the room list, each room's presets and your Sonos® favorites are sent to the Apple Watch app when one is paired. Apart from the iCloud copy described below, everything stays on your devices.
 
-The app does not use iCloud, iCloud Drive, or CloudKit. Nothing syncs to any cloud service.
+**iCloud sync.** When your device is signed in to iCloud, the app keeps a copy of your presets, home names, room order, saved groups, hearted favorites, playlists and app switches in your own iCloud storage (Apple's iCloud key-value store), so they reach your other devices and come back after a reinstall. That copy is held by Apple under your Apple ID and governed by Apple's privacy policy; we cannot see it. Music-service sign-in tokens, room names and widget settings are never synced. Signed out of iCloud, nothing is synced.
 
-Uninstalling the app removes all of its local data.
+Uninstalling the app removes all of its local data. The iCloud copy stays with your Apple ID, where iCloud settings can remove it.
+
+## In-App Purchase
+
+The app offers one optional, one-time purchase, **Whole Home**. Buying it, redeeming an offer code and restoring it are handled entirely by Apple through the App Store. We receive no payment details, name or email from the app; the app only asks the App Store whether Whole Home is owned on your Apple Account.
 
 ## Relationship with Sonos®
 

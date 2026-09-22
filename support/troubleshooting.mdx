@@ -97,7 +97,7 @@ This page covers the issues users run into most often and walks you through how 
   </Accordion>
 
   <Accordion title="The intro video keeps playing, or I want to see it again">
-    The short intro video plays once, the first time the app opens after a fresh install, and never again on that install. If it keeps reappearing, there is likely an issue with local storage on your device — uninstall Somos InControl and reinstall it. To watch it again, the same thing: delete the app and reinstall. From 36.1.1 the video fits every iPhone screen (thin black bars instead of a crop), and the old nine-step text tour that followed it is gone.
+    The short intro video plays once, the first time the app opens after a fresh install, and never again on that install. If it keeps reappearing, there is likely an issue with local storage on your device — uninstall Somos InControl and reinstall it. To watch it again, the same thing: delete the app and reinstall. If you're signed in to iCloud your settings come back, but the video plays once more. From build 37 the video fills every iPhone and iPad screen, upright or sideways, with nothing cut off. On a Mac it is skipped, and the app opens straight on the setup pages. The old nine-step text tour that followed it is gone.
   </Accordion>
 
   <Accordion title="Pinch or the art swipe does nothing">
@@ -108,10 +108,26 @@ This page covers the issues users run into most often and walks you through how 
     Open Somos on your iPhone once — it sends your rooms to the Watch. If the Watch says it can't reach your Sonos, join your home Wi-Fi on the Watch or keep your iPhone nearby. Favourites arrive once the iPhone's music page has loaded them. See [Apple Watch](/features/apple-watch).
   </Accordion>
 
+  <Accordion title="Somos isn't listed for my watch face, or the complication shows Open Somos">
+    Open Somos on your iPhone, then open Somos on the Watch once — that gives the face a room to show. Then edit the face again: every slot lists all five Somos complications, under **Somos**. Tapping **Play / Pause** or **Next Room** opens the Watch app first; that is how Apple lets complications work. See [Watch Face](/features/watch-face).
+  </Accordion>
+
+  <Accordion title="My settings didn't come back, or don't match on my other device">
+    - **Check iCloud.** Both devices must be signed in to iCloud with the same Apple ID. Signed out, Somos keeps settings on the device only.
+    - **Give it a minute.** After a reinstall, open Somos and wait. iCloud sends settings down in the background, and open screens update as they arrive.
+    - **The first sync picks one device.** When two devices meet for the first time, one device's settings win for each item. After that, the newest edit wins.
+    - **Some things never sync.** Room names live on the speakers. Music-service sign-ins, the Live Activity switch and the widget are set up on each device. See [iCloud Sync](/features/icloud-sync).
+  </Accordion>
+
+  <Accordion title="Whole Home didn't turn on after I bought it">
+    Open the menu, tap **Whole Home**, then **Restore Purchases**. Make sure the device is signed in to the same Apple Account you bought with. If a family organiser has to approve the purchase, the page says it's waiting for approval, and Whole Home turns on by itself once it goes through. See [Whole Home](/getting-started/whole-home).
+  </Accordion>
+
   <Accordion title="The app crashes on launch">
     1. **Force-quit the app.** Swipe it away in the App Switcher, then tap the icon to reopen.
     2. **Restart your device.** If force-quitting doesn't help, a full device restart often will.
-    3. **Contact support.** If the app still crashes after a restart, [send a message](/support/contact) with your device model and iOS version, and attach the log from **Submit diagnostics** in the menu if you can get that far.
+    3. **On a Mac, update.** Build 36.1.1 would not open on some Macs. From build 37 the Mac skips the intro video and opens straight on the setup pages, so install the latest build from TestFlight.
+    4. **Contact support.** If the app still crashes after a restart, [send a message](/support/contact) with your device model and iOS version, and attach the log from **Submit diagnostics** in the menu if you can get that far.
   </Accordion>
 
 </AccordionGroup>
