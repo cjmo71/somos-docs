@@ -4,7 +4,7 @@ sidebarTitle: "Data & Network"
 description: "A plain-English breakdown of every network request Somos InControl makes, what Bluetooth is used for, and exactly where your settings are stored."
 ---
 
-This page is a plain-English summary of how Somos InControl interacts with your device's network and stores your data. Nothing here requires a legal background to understand — if you want the full formal version, see the [Privacy Policy](/legal/privacy-policy). The short answer: control happens locally on your Wi-Fi network; the app goes to the internet only for speaker photos and, when you use them, for your music services; and nothing goes to us — we run no servers.
+This page is a plain-English summary of how Somos InControl interacts with your device's network and stores your data. Nothing here requires a legal background to understand — if you want the full formal version, see the [Privacy Policy](/legal/privacy-policy). The short answer: control happens locally on your Wi-Fi network; the app goes to the internet only for speaker photos, your music services when you use them, and Apple's iCloud and App Store; and nothing goes to us — we run no servers.
 
 ## Local network discovery
 
@@ -29,7 +29,7 @@ If you decline Bluetooth permission when iOS asks, the app continues to work nor
 
 ## Internet requests the app makes
 
-Somos InControl talks to the internet for two things, and neither one involves a server of ours.
+Somos InControl talks to the internet for the few things below, and none of them involves a server of ours. Two are Apple's own services: **iCloud**, which syncs your settings when you're signed in (see [Your settings](#your-settings)), and the **App Store**, which handles the [Whole Home](/getting-started/whole-home) purchase, an offer code and **Restore Purchases**. Apple processes the purchase; Somos only learns whether Whole Home is owned. The other two are below.
 
 ### Speaker photos
 
@@ -62,14 +62,15 @@ All of your preferences are stored locally on your device using iOS `UserDefault
 - Your room order, saved favourite groups and system names
 - Sound presets, which preset each room is on, and crossover values
 - The favorites you heart from music services
-- Live Activity, Haptics, Appearance, Pinch for volume and Swipe art settings, and the identify-tone switch
+- Live Activity, Haptics, Appearance, Pinch for volume, Swipe art and Room wheel settings, and the identify-tone switch
+- Whether you own Whole Home (a copy of what the App Store says, so the widget can read it) and which room is your free room
 - Whether the intro video has played
 
-Music-service sign-ins are the one exception: they are credentials, so they live in the device's Keychain, not in `UserDefaults`.
+Music-service sign-ins are the one exception: they are credentials, so they live in the device's Keychain, not in `UserDefaults`, and they never leave that device.
 
 A small slice of this storage is shared with the Somos InControl widget and Live Activity extension so they display the same rooms and presets you are controlling, and the room list, each room's presets and your Sonos® favorites are sent to the [Apple Watch app](/features/apple-watch) when one is paired.
 
-**No iCloud sync.** The app does not use iCloud, iCloud Drive, or CloudKit. Your settings never leave your device and are never synced to any cloud service — presets don't follow you to a new phone. Uninstalling the app removes all of its stored data automatically.
+**iCloud sync.** When your device is signed in to iCloud, Somos keeps a copy of your presets, home names, room order, saved groups, hearted favorites, playlists and app switches in your own iCloud storage, so they follow your Apple ID to your other devices and come back after a reinstall. This uses Apple's iCloud key-value storage, tied to your Apple ID. Nothing goes to us, and no one else can read it. Room names, music-service sign-ins, the Live Activity switch, your Whole Home status, widget settings and the intro video's flag are never synced. Signed out of iCloud, settings stay on the device only, and uninstalling the app removes them. See [iCloud Sync](/features/icloud-sync).
 
 ## What we don't do
 
