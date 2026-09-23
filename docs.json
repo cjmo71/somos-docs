@@ -86,5 +86,9 @@
       "label": "Download Beta",
       "href": "https://testflight.apple.com/join/2D778AXH"
     }
+  },
+  "banner": {
+    "content": "**On the App Store September 29.** Launch sale: Whole Home $5.99 (regular $8.99) through October 12. Dates may change.",
+    "dismissible": true
   }
 }
