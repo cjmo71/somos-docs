@@ -40,7 +40,7 @@ The app fetches your speakers' product photos from Sonos®'s public image librar
 When you browse, search or sign in to a music service on the music page, the app talks to **that service's own servers** — Spotify's, Amazon's, Pandora's and so on — over HTTPS, using the same music-service interface the speakers themselves use. What travels is what you would expect: the search term you typed, the folder you opened, the song you picked, and the sign-in the service issued to Somos so it can browse your account. Album art and station logos are loaded from wherever the service keeps them.
 
 - **Signing in** happens on the service's own sign-in page, opened inside the app. Somos never sees your password; what it keeps is the token the service hands back, stored in the device's Keychain — the secure storage iOS uses for credentials — keyed to your Sonos® system. **Disconnect** removes it.
-- **Apple Music** is different: Apple allows only its own Sonos® app to sign in to or browse it, so Somos does neither — it plays from what's already linked to your Sonos® system in the Sonos® app. The only Apple Music traffic Somos makes is a catalogue lookup, through Apple's own music framework under the Apple Music permission, for the quality badge on a playing track.
+- **Apple Music** is different: Somos browses it through Apple's own music framework on your iPhone, under the Apple Music permission you grant, and Apple handles that traffic. The speaker plays on the Apple Music account your Sonos® system already holds.
 - **Playing** is still local — Somos hands the speaker what to play over your Wi-Fi, and the speaker streams from the service.
 
 Control works fully offline: volume, EQ, presets, home theater controls and the queue all work with no internet at all. Browsing a music service does not — it needs the service.
@@ -53,7 +53,7 @@ Control works fully offline: volume, EQ, presets, home theater controls and the 
 
 A few menu items — **Poll: your favorite music services**, **Coming Soon**, **Support & Feedback** and **Suggest a Feature** — open a page on the Somos website in your browser, and **Getting Started**, **Feature Reference** and **Apple Watch** open this manual. The app itself sends nothing to those sites: it hands the URL to iOS and what you type into a web form afterwards is entirely up to you. The app also opens the official Sonos® app when you tap **Tune in Sonos app** on the Trueplay tile.
 
-**Diagnostics** (in the menu) opens a page with the app's log; its share icon opens the iOS share sheet with the log as a text file — the last few hundred lines of what the app did and what the speakers answered, with no passwords, sign-in tokens or music in it. Nothing is sent until you choose where to send it.
+**Submit diagnostics** (under **Help us track bugs**) opens the iOS share sheet with the app's log as a text file — the last few hundred lines of what the app did and what the speakers answered, with no passwords, sign-in tokens or music in it. Nothing is sent until you choose where to send it.
 
 ## Your settings
 
@@ -62,7 +62,7 @@ All of your preferences are stored locally on your device using iOS `UserDefault
 - Your room order, saved favourite groups and system names
 - Sound presets, which preset each room is on, and crossover values
 - The favorites you heart from music services
-- Live Activity, Haptics, Appearance and Room wheel settings, and the identify-tone switch
+- Live Activity, Haptics, Appearance, Pinch for volume, Swipe art and Room wheel settings, and the identify-tone switch
 - Whether you own Whole Home (a copy of what the App Store says, so the widget can read it) and which room is your free room
 - Whether the intro video has played
 
