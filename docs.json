@@ -33,6 +33,7 @@
               "features/music-services",
               "features/favorites-and-queue",
               "features/gestures",
+              "features/sleep-timer",
               "features/live-activity",
               "features/widget-and-siri",
               "features/apple-watch",
