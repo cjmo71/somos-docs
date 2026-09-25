@@ -33,6 +33,7 @@
               "features/music-services",
               "features/favorites-and-queue",
               "features/gestures",
+              "features/sleep-timer",
               "features/live-activity",
               "features/widget-and-siri",
               "features/apple-watch",
@@ -88,7 +89,7 @@
     }
   },
   "banner": {
-    "content": "**On the App Store September 29.** Whole Home: $5.99 — Launch price, limited time. Dates may change.",
+    "content": "**On the App Store September 29.** Whole Home: $5.99 launch special. Subject to change.",
     "dismissible": true
   }
 }

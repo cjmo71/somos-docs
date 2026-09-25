@@ -1,10 +1,10 @@
 ---
 title: "Grouping Rooms: Play the Same Audio Everywhere"
 sidebarTitle: "Grouping Rooms"
-description: "Group Sonos® rooms so they play together, control each room's volume from one page, tune the soundbar's group delay, and save a group as a favourite."
+description: "Group Sonos® rooms so they play together, turn the whole group with one Group slider from any of its rooms, use the leader's presets, tune the soundbar's group delay, and save a group for one-tap recall."
 ---
 
-Grouped rooms play the same audio in sync. Somos InControl lets you build and break groups from any room page, keeps every room's volume within reach while grouped, and lets you save a group you use often so a single tap rebuilds it.
+Grouped rooms play the same audio in sync. Somos InControl lets you build and break groups from any room page, keeps the group's volume and every room's own volume within reach, and lets you save a group you use often so a single tap rebuilds it.
 
 <Note>
   Grouping and saved groups are part of [Whole Home](/getting-started/whole-home), the one-time purchase that covers every room beyond your free one.
@@ -13,29 +13,43 @@ Grouped rooms play the same audio in sync. Somos InControl lets you build and br
 ## Grouping and ungrouping
 
 <Steps>
-  <Step title="Open the room you want as the anchor">
-    Whatever this room is playing is what the group will play.
+  <Step title="Open the room you want as the leader">
+    Whatever this room is playing is what the group will play, and its presets become the group's.
   </Step>
   <Step title="Tap the group button">
-    It's in the top-right of the room page. The **Group Rooms** sheet lists every other room on the system with a switch. On a system with only one room there is nothing to group with, so the button isn't shown.
+    It's in the top-right of the room page. The **Group Rooms** sheet opens with **Play in sync with** the room's name at the top, and every other room on the system below it with a switch. On a system with only one room there is nothing to group with, so the button isn't shown.
   </Step>
   <Step title="Turn rooms on or off">
     Switch a room **on** to add it to this room's group; switch it **off** to make it standalone again. Changes apply immediately. Tap **Done** when you're finished.
   </Step>
 </Steps>
 
+Under the leader's name, the sheet says whose presets the group uses, for example **Presets come from Office**. When the group has a soundbar in it, it adds: **Your TV remote won't change the volume of the other rooms in this group.** The remote only turns the soundbar.
+
 <Note>
   Two rooms that share the same name can't be told apart by Sonos® when grouping. If the sheet points this out, rename one of them first — press and hold the room name at the top of its page.
 </Note>
 
-## Volume in a group
+## What a grouped room's page shows
 
-While a room is grouped, its status line reads **Grouped with …**. The room that started the group shows a single **Group** slider that moves every speaker in the group together, and each room keeps its own slider on its own page, so you can still balance them to taste. Presets, EQ and the other controls on the page still apply to that room only.
+- **Who it's grouped with.** A line names the room and the rest of the group, for example **Office grouped with Era Right S**. The group can be changed from any of its rooms.
+- **The Group slider.** Every room in the group has one, under that line. It is the group's own volume, the same one the Sonos® app shows: drag it and every room moves together, each keeping its place in the mix. The room's own slider stays above it, so you can still balance one room against the others.
+- **The leader's presets.** Every room in the group shows the leader's presets, under a heading with its name, such as **Office presets**. Loading or saving one acts on the leader. See [Sound Presets](/features/sound-presets#presets-in-a-group).
+- **On the music page too.** The music page of a grouped room shows the same line and Group slider.
+
+A room joining a group never comes in louder than the group. It joins at its own volume or the leader's, whichever is lower.
+
+## A music speaker grouped with a soundbar
+
+When a speaker that can't play TV on its own, such as an Era or a One, is in a group a soundbar leads, its page shows the soundbar's TV input: the **TV** source row with the connection and audio format, and the **TV** and **Music** buttons. Those buttons act on the soundbar. A group of music speakers only still shows **Music**, as before.
 
 ## Group Audio Delay
 
 When a soundbar is grouped with other rooms, a **Group Audio Delay** stepper appears in its EQ card. It steps the delay applied to the *other* rooms so their audio lines up with the bar instead of echoing — the same setting the Sonos® app keeps under System settings. It's hidden on an ungrouped room because it has no effect there.
 
-## Saving a group as a favourite
+## Saving a group
 
-At the bottom of the Group Rooms sheet, tap **Save as favourite** to keep this combination. Saved groups live on the second page of the bottom bar (up to 4 slots) and are rebuilt with one tap. See [Favorites](/rooms/favorites#saved-groups-second-page-of-the-bar).
+- **From the Group Rooms sheet** — tap **Save as favourite** at the bottom. The saved group is named after the leader and how many rooms join it, for example **Office +2**.
+- **From the bottom bar** — with the **Room wheel** on, hold the **Saved Groups** wheel while it shows its title and tap **Save current group**. With the tabs and no saved groups yet, hold the empty Saved Groups page instead. Name it (up to 12 characters) and it's on the wheel. This is offered only when the room you're on is grouped and that exact group isn't saved yet.
+
+Saved groups live on the second page of the bottom bar (up to 4) and are rebuilt with one tap. Hold one to **Rename**, **Ungroup** or **Remove** it. See [Favorites](/rooms/favorites#saved-groups-second-page-of-the-bar).
