@@ -8,8 +8,8 @@ Sound presets let you lock in exactly how a room should sound for a given situat
 
 ## Where the presets live
 
-- **Room page (soundbar rooms)** — the **Sound Presets** row sits between the volume card and the EQ card. These three slots are the room's _TV_ presets and carry a small TV icon once saved. On a soundbar, while **Music** is lit, the room page keeps only its header and volume — the presets you see then are the music ones, on the music page. Tap **TV** and the TV presets are back. A room without a soundbar — a single speaker, a stereo pair, an Amp — has no TV presets; its presets are on the music page.
-- **Music page** — tap **Music** in the source row at the top of a room to open it. It has its own **Sound Presets** row with three _music_ slots (music-note icon), which can also capture the Music Level and Ambient/Full setting that only exist on that page.
+- **Room page (soundbar rooms)** — the **Sound Presets** row sits between the volume card and the EQ card. These three slots are the room's _TV_ presets and carry a small TV icon once saved. On a soundbar, while **Music** is lit, the TV presets step aside — the presets for that room now are the music ones, on the music page. Tap **TV** and the TV presets are back. A room without a soundbar — a single speaker, a stereo pair, an Amp — has no TV presets; its presets are on the music page.
+- **Music page** — tap **Music** in the source row at the top of a room to open it. It has its own **Sound Presets** row with three _music_ slots (music-note icon), which also capture the **Surround level (music)** and Ambient / Full setting that only exist on that page.
 - **Lock Screen** — a TV room's three presets are also chips on the [Live Activity](/features/live-activity) card, by name, with the loaded one lit. Tap one there and the room page follows.
 - **Apple Watch** — the [Watch app](/features/apple-watch) shows the room's three presets under its volume: the TV presets while the room is on its TV input, the music presets otherwise. Tap one on the wrist and it lights on the phone and the Lock Screen too.
 
@@ -34,7 +34,8 @@ All six start out named **Preset 1**, **Preset 2** and **Preset 3**. A preset is
     - **Height** level (height-capable soundbars and Era 300 satellites)
     - **Subwoofer** level (rooms with a Sub)
     - **Crossover** (rooms with a Sub whose speaker reports one)
-    - On the Music sheet only: **Music Level** and **Ambient / Full** playback mode
+    - **Trueplay** on or off, in a room that has been tuned
+    - On the Music sheet only, in a room with surrounds bonded: **Surround level (music)** and **Ambient / Full** playback mode
   </Tab>
   <Tab title="Only if you tick them">
     The save sheet has an **Also save** list. Anything left unticked is simply not part of the preset, and loading it leaves that setting exactly as the room has it now:
@@ -65,11 +66,16 @@ All six start out named **Preset 1**, **Preset 2** and **Preset 3**. A preset is
   </Step>
 </Steps>
 
-The note under the tick list says what is always saved: **Bass, treble and the levels are always saved**, or **Bass, treble, height and the levels** on a room with height.
+The note under the tick list says what is always saved: **Bass, treble, levels and Trueplay (when tuned) are always saved**, or **Bass, treble, height, levels and Trueplay (when tuned)** on a room with height. On the music page of a room with surrounds bonded it adds that **Surround level (music) and Full/Ambient are always saved**. It also counts the rows in the **Also save** list, including **All**.
 
 ## Deleting a preset
 
-Hold a saved preset to open **Save Preset**, then tap **Delete preset** at the bottom. The slot is cleared and gets its first name back (**Preset 1**, **Preset 2** or **Preset 3**). Your speaker's sound doesn't change. **Delete preset** only shows on a preset that has been saved or named.
+Hold a saved preset to open **Save Preset**, then tap **Delete preset** at the bottom. The slot is cleared and gets its first name back (**Preset 1**, **Preset 2** or **Preset 3**). **Delete preset** only shows on a preset that has been saved or named.
+
+What happens to the room's sound depends on whether that preset is the lit one:
+
+- **The lit preset.** The note under **Delete preset** says **Clears this preset and resets this room's EQ to flat.** Somos sets the room's bass, treble and height (where it has them) to 0, sets the surround level to 0 — the **Surround** level for a TV preset, **Surround level (music)** for a music preset, where surrounds are bonded — and turns **Loudness** on. A message says **Preset deleted — EQ reset**.
+- **Any other preset.** The note says **Clears this preset and gives it back its first name. Your speaker's sound doesn't change.**
 
 <Note>
   The tick list opens pre-filled with what the preset already holds, so a rename never silently drops Volume, Night Sound, Speech Boost or Loudness. Unticking something is a deliberate choice and clears it on Save.
@@ -91,7 +97,7 @@ To bring a preset back, tap it again.
 
 ## Presets in a group
 
-While rooms are grouped, they all use the presets of the room that leads the group. Every grouped room's page, room page and music page alike, shows the leader's presets under a heading with its name, for example **Office presets**. Loading or saving one acts on the leader. The **Group Rooms** sheet says so under the leader's name: **Presets come from Office**. When the rooms ungroup, each one has its own presets again, exactly as they were. See [Grouping Rooms](/rooms/groups).
+Grouping doesn't change presets. Each room uses its own, on its room page and its music page alike, and loading or saving a preset acts on the room whose page you are on. The **Group Rooms** sheet says so under the leader's name: **Each room uses its own presets**. See [Grouping Rooms](/rooms/groups).
 
 ## Presets in music-only rooms
 

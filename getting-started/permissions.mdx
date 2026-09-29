@@ -8,7 +8,7 @@ Somos InControl asks for two iOS permissions during first-launch setup, one per 
 
 ## Before the permissions — what the Sonos® side needs
 
-The two iOS permissions below are only half of it. Somos also needs, in the Sonos® app and on your network: **UPnP on** (Sonos app › Account › Privacy & Security › UPnP), **no VPN** on the phone, the phone on the **same Wi-Fi** as the speakers, and **not a guest or IoT network**. The full list with paths is at the top of [First Launch](/getting-started/first-launch).
+The two iOS permissions below are only half of it. Somos also needs, in the Sonos® app and on your network: **UPnP on** (Sonos app › Account › Privacy & Security › UPnP), a **VPN that allows your home network** (if the Sonos® app works with your VPN on, Somos will too), the phone on the **same Wi-Fi** as the speakers, and **not a guest or IoT network**. The full list with paths is at the top of [First Launch](/getting-started/first-launch).
 
 ## Local Network permission
 
@@ -37,7 +37,7 @@ The app shows a screen explaining that Local Network is off, with the path to fi
 
 <Steps>
   <Step title="Open iOS Settings">
-    Open the **Settings** app on your iPhone or iPad. From inside the app, the menu's **Open iOS Settings for Somos** row (under **System settings**, the box just under System) takes you straight there.
+    Open the **Settings** app on your iPhone or iPad. From inside the app, **Open iOS Settings for Somos** in the menu's **Somos settings** (under **App**) takes you straight there.
   </Step>
   <Step title="Find Somos InControl">
     Scroll down the Settings list until you see **Somos InControl** and tap it. (On some iOS versions the switch lives under **Settings → Privacy & Security → Local Network** instead.)
@@ -46,7 +46,7 @@ The app shows a screen explaining that Local Network is off, with the path to fi
     Tap the toggle next to **Local Network** to turn it on.
   </Step>
   <Step title="Return to the app">
-    Switch back to Somos InControl and tap **Try Again**, or open the menu and choose **Rescan My Network** under **System**.
+    Switch back to Somos InControl and tap **Try Again**, or open the menu and choose **Rescan My Network** under **Your Sonos**.
   </Step>
 </Steps>
 
@@ -56,7 +56,7 @@ The app shows a screen explaining that Local Network is off, with the path to fi
 
 ### What it does
 
-The app uses Bluetooth for one specific purpose: detecting Sonos® speakers that are **nearby but not yet connected to your Wi-Fi network** — a brand-new speaker you're setting up, or one that has dropped off the network. They appear in a **Nearby via Bluetooth** list so you know the speaker exists even though it can't be controlled yet.
+The app uses Bluetooth for one specific purpose: detecting Sonos® speakers that are **nearby but not yet connected to your Wi-Fi network** — a brand-new speaker you're setting up, or one that has dropped off the network. They appear in a **Nearby — not on network** list so you know the speaker exists even though it can't be controlled yet. Sonos Ace headphones are left out of that list, because they never join Wi-Fi.
 
 When the permission is granted, the app only reads the advertising name broadcast by nearby Bluetooth devices and filters for names that match Sonos® hardware. It does not:
 
@@ -77,7 +77,7 @@ The app continues to work normally for every speaker that is already on your Wi-
 
 <Steps>
   <Step title="Open iOS Settings">
-    Open the **Settings** app, or use **Open iOS Settings for Somos** under **System settings** in the app's menu.
+    Open the **Settings** app, or use **Open iOS Settings for Somos** under **Somos settings** in the app's menu.
   </Step>
   <Step title="Find Somos InControl">
     Scroll down to **Somos InControl** and tap it.
@@ -101,13 +101,13 @@ Every other music service still works, and Apple Music still plays from anything
 
 ### How to re-enable Apple Music access
 
-Open **Settings → Somos InControl** (or **Open iOS Settings for Somos** in the app's menu) and turn on **Media & Apple Music**.
+Open **Settings → Somos InControl** (or **Open iOS Settings for Somos** under **Somos settings** in the app's menu) and turn on **Media & Apple Music**.
 
 ---
 
 ## Live Activities
 
-[Live Activity](/features/live-activity) is off by default and is switched on under **System settings** in the app's menu. iOS separately controls whether an app may show Live Activities at all; if that's off, the menu shows an orange **Live Activities are turned off in iOS Settings** link that opens **Settings → Apps → Somos InControl → Live Activities**.
+[Live Activity](/features/live-activity) is off by default and is switched on under **Somos settings** in the app's menu. iOS separately controls whether an app may show Live Activities at all; if that's off, **Somos settings** shows **Off in iOS Settings** in place of the switch, with an **Open iOS Settings** button that takes you to **Settings → Apps → Somos InControl → Live Activities**.
 
 ---
 

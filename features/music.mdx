@@ -12,10 +12,10 @@ From top to bottom:
 
 <CardGroup cols={2}>
   <Card title="Pinned volume" icon="volume-high">
-    The room's volume slider stays pinned at the top and collapses to a slim bar as you scroll, just like the room page.
+    The room's volume slider stays pinned at the top and collapses to a slim bar as you scroll, just like the room page. Its number is always shown at the right end of the slider line.
   </Card>
-  <Card title="Favorites and your music services" icon="music">
-    A row of buttons. **Favorites** is pinned at the left and stays put; after it, one button per music service you have set up, then **Add**. The lit button is the service that is playing, and it stays lit wherever you go. See [Music Services](/features/music-services) and [Favorites & Queue](/features/favorites-and-queue).
+  <Card title="The chips" icon="music">
+    Two rows of chips, pinned under the volume. The first row is fixed: **Favorites**, **Playlists** and **Queue**. Under it, one scrolling row has a chip for each music service you have set up, then **Add**. **One chip is lit at a time** — the page you are on. Tap a chip to open its page; tap the lit chip again to go back to the top of that page. See [Music Services](/features/music-services) and [Favorites & Queue](/features/favorites-and-queue).
   </Card>
   <Card title="The player" icon="play">
     Album art, title, artist, a progress bar you can drag, and **Shuffle**, **Previous**, **Play/Pause**, **Next** and **Repeat**. Play resumes the queue rather than just un-pausing. When what is playing came from one of your services, a **heart** and a **plus** sit beside the title — keep it, or add it to the queue or one of your playlists. See [Add the playing song to a playlist](/features/favorites-and-queue#add-the-playing-song-to-a-playlist). A radio station shows the station's name as the title and, underneath, what the station says is on right now.
@@ -30,7 +30,7 @@ From top to bottom:
     A fold-out section with bass, treble, height, subwoofer and loudness for music, plus the two music-only surround controls below. In a room without a soundbar — a single speaker, a stereo pair, an Amp — this is where the room's bass, treble, Sub level and Loudness live; the room page keeps only Balance, the Sub's switch, crossover and phase, and the three switches.
   </Card>
   <Card title="Queue" icon="list">
-    What is coming up next. The current track is highlighted; tap a track to jump to it, swipe left to remove it, tap **Queue** to fold the list away, and **Clear** to empty it (the app asks first). A song from one of your services has a **heart** at the end of its row; hold the row to add it to a playlist.
+    What is coming up next, on the **Queue** chip's page. The current track is highlighted; tap a track to jump to it, swipe left to remove it, tap **Queue** in the list's heading to fold the list away, tap **Save** to save the queue as a playlist (the app asks for a name), and **Clear** to empty it (the app asks first). With nothing queued, the page says **The queue is empty. Play music or add a song to put it here.** A song from one of your services has a **heart** at the end of its row; hold the row to add it to a playlist.
   </Card>
 </CardGroup>
 
@@ -42,16 +42,16 @@ The music page of a grouped room shows who it is grouped with (for example **Off
 
 <Steps>
   <Step title="Tap a music service">
-    The music page slides down out of the way, leaving a handle at the bottom that shows what is playing, and the service's own page opens above it — its shelves, rows and stations, laid out the way the service asks.
+    The player slides down out of the way, leaving a handle at the bottom that shows what is playing, and the service's own page opens above it — its shelves, rows and stations, laid out the way the service asks. Only that service's chip is lit.
   </Step>
   <Step title="Find something">
     Scroll the service's page, open an album or a playlist in place, or use the **Search** field at the top — it searches with the service's own categories (songs, albums, artists, playlists, stations, whatever that service offers) and the results replace the page until you clear the field.
   </Step>
   <Step title="Play it">
-    Tap a song, album, playlist or station. It plays on the room, and the music page comes back up with the player and the queue. Tap the **plus** on a song instead to add it to the end of the queue without interrupting what is playing; tap the **heart** to keep it in your Favorites.
+    Tap a song, album, playlist or station. It plays on the room, and the player comes back up. Tap the **plus** on a song instead to add it to the end of the queue without interrupting what is playing; tap the **heart** to keep it in your Favorites.
   </Step>
   <Step title="Go back and forth">
-    The handle at the top of the raised page reads **Back to browse** (or **Back to favorites**) — tap it or pull it down to return to the service's page. Pull the handle up to bring the player back. The handle is only there after you opened a service's page yourself; when music was started elsewhere and the service simply lit up, the player has no handle to go back to. The back arrow in the top-left corner returns to the room page.
+    With the player up, the handle at its top reads **Hide player** — tap it or pull it down to lower the player onto the page you were on (a service, **Favorites**, **Playlists** or **Queue**). With the player lowered, tap the mini player at the bottom, or pull it up, to bring the player back; the **Show player** row at the top of the Favorites page does the same. The back arrow in the top-left corner returns to the room page.
   </Step>
 </Steps>
 
@@ -65,17 +65,19 @@ For a song that came from Apple Music, small badges under the artist line say wh
 
 ## Swipe the art to change songs
 
-Off by default. Turn it on in the menu under **System settings → Swipe art to change songs**, then swipe the album art on the player **right for the next song, left for the previous**. See [Gestures](/features/gestures).
+Off by default. Turn it on in the menu under **Somos settings → Swipe art to change songs**, then swipe the album art on the player **right for the next song, left for the previous**. See [Gestures](/features/gestures).
 
 ## Music-only surround controls
 
-Rooms with surrounds get two extra controls that only apply to music, matching the Sonos® app's music-surround settings:
+Rooms with surrounds bonded get two extra controls that only apply to music, matching the Sonos® app's music-surround settings. They sit in **EQ & Sound** under the heading **Surrounds for music: Ambient / Full**, and rooms without surrounds don't show them:
 
-- **Music Level** — how loud the surround speakers play during music. Separate from the **Surround** level on the room page, which is for TV.
+- **Surround level (music)** — how loud the surround speakers play during music. Separate from the **Surround** level on the room page, which is for TV.
 - **Ambient / Full** — a two-position switch. **Full** plays the surrounds at full level for music; **Ambient** keeps them subtle.
 
+**Reset EQ** on the music page also puts **Surround level (music)** back at 0 and the switch back on **Ambient**, along with bass, treble, height and the Sub. See [Sound Presets](/features/sound-presets) for how a preset saves these two.
+
 <Note>
-  The Sonos® Favorites and Sonos® Playlists tiles from earlier builds are gone from the music page. Favorites in Somos are now your own — anything you heart from a music service — and live on the [Favorites page](/features/favorites-and-queue). The [Apple Watch app](/features/apple-watch) still plays your Sonos® favorites.
+  The Sonos® Favorites and Sonos® Playlists tiles from earlier builds are gone from the music page. Favorites in Somos are now your own — anything you heart from a music service — and live on the [Favorites page](/features/favorites-and-queue). To bring over what you already saved in the Sonos® app, tap **Import from Sonos Favorites** on the Favorites page or **Import from Sonos Playlists** on the Playlists page. The [Apple Watch app](/features/apple-watch) still plays your Sonos® favorites.
 </Note>
 
 <Tip>

@@ -82,6 +82,12 @@
     ]
   },
   "navbar": {
+    "links": [
+      {
+        "label": "Reddit",
+        "href": "https://www.reddit.com/r/SomosInControl/"
+      }
+    ],
     "primary": {
       "type": "button",
       "label": "Download Beta",

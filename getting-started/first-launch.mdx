@@ -10,15 +10,16 @@ The first time you open Somos InControl you get a short set of full-screen pages
   Somos InControl requires **Local Network** permission to find your Sonos® speakers. Without it, the app has nothing to control. See [App Permissions](/getting-started/permissions) for what each permission does and how to re-enable it if you declined.
 </Note>
 
-## Before you start — five things Somos needs
+## Before you start — four things Somos needs
 
-Somos talks to your speakers over your home Wi-Fi and nothing else, so five things have to be true before it can find them. The app shows you four of them on its second setup page and asks for the fifth on the page after; the same list is in the menu under **Help & Support → Settings Somos needs**.
+Somos talks to your speakers over your home Wi-Fi and nothing else, so a few things have to be true before it can find them. The app shows you four of them on its second setup page, **Four things Somos needs**, and asks for the fifth, Local Network permission, on the page after. The same four are in the menu under **Help & Support → Settings Somos needs**.
 
 1. **UPnP on in the Sonos® app.** Sonos app › Account › Privacy & Security › UPnP › on.
-2. **VPN off on your phone.** A VPN hides your home network from Somos.
+2. **VPN allows your home network.** If the Sonos® app works with your VPN on, Somos will too.
 3. **Phone on the same Wi-Fi as the speakers.** Not cellular.
-5. **Not a guest or IoT network.** Those keep devices from seeing each other.
-5. **Local Network permission on for Somos.** iOS Settings › Somos InControl › Local Network.
+4. **Not a guest or IoT network.** Those isolate devices from each other.
+
+The fifth is **Local Network permission on for Somos**: iOS Settings › Somos InControl › Local Network. The app asks for it on the next page.
 
 <Note>
   Bluetooth is **optional** — Somos works over Wi-Fi alone. It only helps spot a speaker that is on but not on your Wi-Fi yet.
@@ -38,8 +39,8 @@ Somos talks to your speakers over your home Wi-Fi and nothing else, so five thin
   <Step title="Get started">
     Open the app. The first page is the name and a line about what it does. Tap **Get started**. If you just want to look around without any Sonos® hardware, tap **Explore Demo Mode** instead — three demo rooms appear, and an **Exit Demo** button at the top of each page takes you back.
   </Step>
-  <Step title="Four things Sonos needs">
-    The second page is the checklist above (without Local Network, which is the next page). Nothing to grant here — check it and tap **Continue**.
+  <Step title="Four things Somos needs">
+    The second page is the checklist above (without Local Network, which is the next page). Nothing to grant here — check it and tap **Continue**. Changed your mind? Tap **Back** under **Continue** to return to the first page, for example to pick **Explore Demo Mode** instead.
   </Step>
   <Step title="Allow Somos to find your speakers">
     Tap **Continue** and iOS asks whether to allow the app to find and connect to devices on your local network. Tap **Allow**.
@@ -50,7 +51,7 @@ Somos talks to your speakers over your home Wi-Fi and nothing else, so five thin
     Tap **Continue** and iOS asks for Bluetooth. This is used only to spot Sonos® speakers that are nearby but not yet on your Wi-Fi — a new speaker you're about to set up. Tap **Allow** for that, or **Don't Allow** to skip it. The app works fully without it for any speaker already on your network.
   </Step>
   <Step title="Find My Speakers">
-    The last page says everything is set. Tap **Find My Speakers**. The app searches your subnet and listens for Bonjour at the same time; on most home networks this takes a few seconds. Every Sonos® room appears — soundbar rooms, stereo pairs, single and portable speakers — and the first one opens.
+    The last page says everything is set. Tap **Find My Speakers**. The app searches your subnet and listens for Bonjour at the same time; on most home networks this takes a few seconds. If the first look comes up empty because iOS was still asking about Local Network, Somos looks again on its own for a short while. Every Sonos® room appears — soundbar rooms, stereo pairs, single and portable speakers — and the first one opens.
   </Step>
   <Step title="That's it">
     Your first room is open. There is no tour to click through — the short intro video you saw on first open (on iPhone and iPad) is the only walkthrough, and this manual is the reference from then on.
@@ -67,7 +68,7 @@ Somos is free for one room. Every other room, grouping, saved groups and front s
 
 ## Help after setup
 
-Open the menu (top-left) and look under **Help & Support**: **Settings Somos needs** shows the checklist again, **Getting Started** and **Feature Reference** open this manual, **Apple Watch** adds a ready-made Somos watch face and explains the Watch app, and **Support & Feedback** reaches the developer. See [The Menu](/getting-started/menu).
+Open the menu (top-left) and look under **Help & Support**: **Settings Somos needs** shows the checklist again, **Getting Started** and **Feature Reference** open this manual in a pop-up inside the app, and **Support & Feedback** reaches the developer. **Apple Watch**, which adds a ready-made Somos watch face and explains the Watch app, is under **App**. See [The Menu](/getting-started/menu).
 
 ## What gets discovered
 
@@ -83,11 +84,11 @@ Every Sonos® room on your Wi-Fi appears automatically — you don't choose room
   <Card title="Rooms with a subwoofer" icon="volume-high" href="/features/eq-and-trueplay">
     Any room with a bonded Sub — soundbar or not — adds the subwoofer level, on/off, and the crossover wherever the speaker reports one.
   </Card>
-  <Card title="Your 4 favourite rooms" icon="star" href="/rooms/favorites">
-    The bottom bar holds the top 4 rooms of your menu order as tabs, plus a second page of saved groups. Hold and drag in the menu to choose which 4 appear.
+  <Card title="Room tabs" icon="star" href="/rooms/favorites">
+    The bottom bar has a tab for every room — swipe it sideways to reach them all — plus a second page of saved groups. Hold a tab to reorder or rename it.
   </Card>
 </CardGroup>
 
 <Tip>
-  If a room isn't appearing, make sure your iPhone or iPad is on the **same Wi-Fi network** as your Sonos® speakers — not a guest network or an IoT VLAN. Then open the menu and tap **Rescan My Network** under **System**.
+  If a room isn't appearing, make sure your iPhone or iPad is on the **same Wi-Fi network** as your Sonos® speakers — not a guest network or an IoT VLAN. Then open the menu and tap **Rescan My Network** under **Your Sonos**.
 </Tip>
