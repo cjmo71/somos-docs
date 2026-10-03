@@ -12,19 +12,19 @@ This page covers the issues users run into most often and walks you through how 
     The most common cause is a network mismatch or a missing permission. Work through these steps in order:
 
     1. **Check you're on the same Wi-Fi network.** Your iPhone or iPad and your Sonos® speakers must be on the same network — not a guest network or a separate IoT VLAN. Many routers broadcast separate SSIDs for 2.4 GHz and 5 GHz bands; connect both to the same one.
-    2. **Verify Local Network permission.** If you declined the prompt when the app first launched, go to **Settings → Somos InControl → Local Network** and turn it on (the menu's **Open iOS Settings for Somos**, under **System settings**, the box just under System, takes you there). Then tap **Try Again**.
-    3. **Check the rest of the list.** Menu → **Help & Support → Settings Somos needs**: UPnP on in the Sonos® app, VPN off, not a guest or IoT network.
-    4. **Rescan.** Open the menu and tap **Rescan My Network** under **System**. Discovery also runs fresh on every launch, so force-quitting and reopening works too.
+    2. **Verify Local Network permission.** If you declined the prompt when the app first launched, go to **Settings → Somos InControl → Local Network** and turn it on (**Open Settings** on the **No speakers found** screen, or the menu's **App → Somos settings → Open iOS Settings for Somos**, takes you there). Then tap **Try Again**.
+    3. **Check the rest of the list.** The **No speakers found** screen shows it under **If Somos can't find your speakers, check:** — and it is always in the menu under **Help & Support → Settings Somos needs**. UPnP on in the Sonos® app, a VPN that allows your home network, phone on the same Wi-Fi (not cellular), not a guest or IoT network.
+    4. **Rescan.** Open the menu and tap **Your Sonos → Rescan My Network**. Discovery also runs fresh on every launch, so force-quitting and reopening works too.
     4. **Test with the official Sonos® app.** If it can't find your speakers either, the problem is the network itself — restart your router and speakers, then test again.
 
-    If your speakers appear in the official app but not in Somos InControl, send **Submit diagnostics** (menu → **Help us track bugs**) to the developer and fill in the [Speakers Not Found questionnaire](https://somosincontrol.com/somos-incontrol/speakers-not-found.html) on the website.
+    If your speakers appear in the official app but not in Somos InControl, send **Submit diagnostics** (in the menu) to the developer and fill in the [Speakers Not Found questionnaire](https://somosincontrol.com/somos-incontrol/speakers-not-found.html) on the website.
   </Accordion>
 
   <Accordion title="A speaker or an entire system didn't show up">
     If some rooms are missing — especially with an S1 and an S2 system, or two homes — these are the usual causes:
 
     - **Same Wi-Fi requirement.** See the section above.
-    - **A second system.** Somos InControl keeps each Sonos® system separate. Open the menu: if more than one system is listed under **System**, tap the other one. If it isn't listed, use **Add a Home / New S1 or S2 System** or **Rescan My Network**. See [Multiple Systems](/rooms/multiple-systems).
+    - **A second system.** Somos InControl keeps each Sonos® system separate. Open the menu: if more than one system is listed on the **Your Sonos** page, tap the other one. If it isn't listed, use **Add a Home / New S1 or S2 System** or **Rescan My Network**. See [Multiple Systems](/rooms/multiple-systems).
     - **A quarantined speaker.** A speaker on older firmware than the rest of the household shows **Needs a firmware update** and can't be controlled until the Sonos® app has updated it.
 
     If speakers are still missing, the [Speakers Not Found questionnaire](https://somosincontrol.com/somos-incontrol/speakers-not-found.html) is the best next step.
@@ -89,7 +89,7 @@ This page covers the issues users run into most often and walks you through how 
   </Accordion>
 
   <Accordion title="The Live Activity isn't appearing">
-    Check two things: the **Live Activity** switch under **System settings** in the app's menu is on; and **Settings → Apps → Somos InControl → Live Activities** is enabled in iOS (the menu shows an orange link if it isn't). The card also ends about 30 minutes after the app goes to the background — reopen the app to bring it back.
+    Check two things: the **Live Activity** switch under **App → Somos settings** in the app's menu is on; and **Settings → Apps → Somos InControl → Live Activities** is enabled in iOS (the menu shows an orange link if it isn't). The card also ends about 30 minutes after the app goes to the background — reopen the app to bring it back.
   </Accordion>
 
   <Accordion title="The widget shows nothing or old presets">
@@ -101,7 +101,7 @@ This page covers the issues users run into most often and walks you through how 
   </Accordion>
 
   <Accordion title="Pinch or the art swipe does nothing">
-    Both gestures are off by default. Menu → **System settings** → switch on **Pinch for volume** and **Swipe art to change songs**. The art swipe has to be a clear sideways swipe on the album art on the player: right for the next song, left for the previous. See [Gestures](/features/gestures).
+    Both gestures are off by default. Menu → **App → Somos settings** → switch on **Pinch for volume** and **Swipe art to change songs**. The art swipe has to be a clear sideways swipe on the album art on the player: right for the next song, left for the previous. See [Gestures](/features/gestures).
   </Accordion>
 
   <Accordion title="The Apple Watch app has no rooms, or can't reach them">
@@ -109,7 +109,7 @@ This page covers the issues users run into most often and walks you through how 
   </Accordion>
 
   <Accordion title="Somos isn't listed for my watch face, or the complication shows Open Somos">
-    Open Somos on your iPhone, then open Somos on the Watch once — that gives the face a room to show. Then edit the face again: each slot lists the Somos complications made for its shape (round, corner or wide), under **Somos**. Every tap opens the Watch app first; that is how Apple lets complications work. A slot that went blank after updating held one of the older white complications from build 37, which are gone: pick a Somos complication for it again. Or add the ready-made face from the iPhone: menu → **Apple Watch** → **Add Infograph face**. See [Watch Face](/features/watch-face).
+    Open Somos on your iPhone, then open Somos on the Watch once — that gives the face a room to show. Then edit the face again: each slot lists the Somos complications made for its shape (round, corner or wide), under **Somos**. Every tap opens the Watch app first; that is how Apple lets complications work. A slot that went blank after updating held one of the older white complications from build 37, which are gone: pick a Somos complication for it again. Or add the ready-made face from the iPhone: menu → **App → Apple Watch** → **Add Infograph face**. See [Watch Face](/features/watch-face).
   </Accordion>
 
   <Accordion title="My settings didn't come back, or don't match on my other device">
@@ -117,11 +117,10 @@ This page covers the issues users run into most often and walks you through how 
     - **Give it a minute.** After a reinstall, open Somos and wait. iCloud sends settings down in the background, and open screens update as they arrive.
     - **The first sync picks one device.** When two devices meet for the first time, one device's settings win for each item. After that, the newest edit wins.
     - **Some things never sync.** Room names live on the speakers. Music-service sign-ins, the Live Activity switch and the widget are set up on each device. See [iCloud Sync](/features/icloud-sync).
-    - **Look at the iCloud line.** At the bottom of the menu, under **About**, it says when settings last synced, **iCloud: on**, or **iCloud: off** when the device isn't signed in.
   </Accordion>
 
   <Accordion title="Whole Home didn't turn on after I bought it">
-    Open the menu, tap **Whole Home**, then **Restore Purchases**. Make sure the device is signed in to the same Apple Account you bought with. If a family organiser has to approve the purchase, the page says it's waiting for approval, and Whole Home turns on by itself once it goes through. See [Whole Home](/getting-started/whole-home).
+    Open the menu, tap **Unlock Whole Home** (or **Manage Whole Home**), then **Restore Purchases**. Make sure the device is signed in to the same Apple Account you bought with. If a family organiser has to approve the purchase, the page says it's waiting for approval, and Whole Home turns on by itself once it goes through. See [Whole Home](/getting-started/whole-home).
   </Accordion>
 
   <Accordion title="The app crashes on launch">
