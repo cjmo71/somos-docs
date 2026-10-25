@@ -1,0 +1,35 @@
+---
+title: "Network Health: Is Each Speaker Well Connected?"
+sidebarTitle: "Network Health"
+description: "One row per speaker with its room, model, wired or Wi-Fi band, how fast it answers and a verdict, plus a plain-words summary you can refresh and share."
+---
+
+When a room is slow to respond or drops out, **Network health** shows which speaker is the weak link. It sits in the menu, under **Submit diagnostics**, in its own box.
+
+{/* screenshot: IP-10 (iPad: PD-15) */}
+
+## What the page shows
+
+The check runs when the page opens. You get one row per speaker:
+
+- **The room and the model.**
+- **How it is connected.** **Wired**, or **Wi-Fi** with the band when the speaker reports it: **2.4 GHz**, **5 GHz** or **6 GHz**.
+- **How fast it answers**, in milliseconds.
+- **A verdict.** **Good**, **Check** or **Problem**.
+
+A speaker that answers in under 100 ms is fast. From 100 ms up to 400 ms it is slow and reads **Check**. A speaker that does not answer, answers slower than 400 ms, or was missed by the latest scan reads **Problem**.
+
+Under a row that needs attention, a short line says what to try, such as moving the speaker closer to the router or to 5 GHz, or checking the router or mesh point nearest it. A speaker on 2.4 GHz that is still answering fast keeps its green verdict, with a note.
+
+Under the rows, a **summary** in plain words says how many speakers answer fast and what to look at for the rest.
+
+## Refresh and Share
+
+- **Refresh** checks again.
+- **Share** sends the result as text or as a PDF, through the iOS share sheet.
+
+<Note>
+  The check talks only to your speakers on your own Wi-Fi. Nothing is sent to Somos unless you share it yourself.
+</Note>
+
+Still stuck? See [Troubleshooting](/support/troubleshooting), or send the app's log from **Submit diagnostics** (see [Contact](/support/contact)).

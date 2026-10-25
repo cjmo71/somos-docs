@@ -37,7 +37,7 @@ This page covers the issues users run into most often and walks you through how 
   <Accordion title="My preset stopped being highlighted">
     The highlight means the room is still on the preset you loaded. It survives leaving the room, switching rooms and reopening the app; it clears when you move a slider the preset captured — in Somos InControl or the official Sonos® app — with a toast saying the preset was disabled, or when another preset loads. Tap the preset to reapply it. If a preset seems to load nothing, check what it captured: hold it and look at the ticks — Volume, Night Sound, Speech Boost and Loudness are only restored if they were ticked when it was saved.
 
-    Can't see the TV presets at all? On a soundbar with **Music** lit, the room page shows only the header and volume — the music presets are on the music page. Tap **TV** to get the TV presets back. A room without a soundbar — a single speaker, a stereo pair, an Amp, even with a Sub — has no TV presets at all: its three presets are on the music page. See [TV rooms and music rooms](/rooms/overview#tv-rooms-and-music-rooms).
+    Can't see the TV presets at all? A soundbar room has two pages: while you are on the **Music** page, the music presets are the ones you see. Tap **Go to TV** in the title bar to get the TV presets back. A room without a soundbar — a single speaker, a stereo pair, an Amp, even with a Sub — has no TV presets at all: its three presets are on the music page. See [TV rooms and music rooms](/rooms/overview#tv-rooms-and-music-rooms).
 
     A preset you saved for the first time loaded back as flat zeros? That was a bug in builds before 36.0.7 — the first save of a fresh slot kept the name but not the sound. It is fixed: hold the slot, name it, tap the button, and the sound you set is saved with it. Presets saved on an earlier build can be re-saved once to pick up the sound.
   </Accordion>
@@ -85,11 +85,15 @@ This page covers the issues users run into most often and walks you through how 
   </Accordion>
 
   <Accordion title="I started music and lost my TV sound">
-    Playing music points the soundbar away from its TV input. Tap **TV** in the source row at the top of the room page — or the **TV** pill below the playback controls on the music page — to send it straight back. No need to touch the TV remote.
+    Playing music points the soundbar away from its TV input. Tap **Back to TV** when the app offers it, or **Switch to TV** on the room page's now-playing line, to send it straight back. No need to touch the TV remote. The **Go to TV** button in the title bar only changes the page you are looking at, not the sound.
   </Accordion>
 
   <Accordion title="The Live Activity isn't appearing">
     Check two things: the **Live Activity** switch under **App → Somos settings** in the app's menu is on; and **Settings → Apps → Somos InControl → Live Activities** is enabled in iOS (the menu shows an orange link if it isn't). The card also ends about 30 minutes after the app goes to the background — reopen the app to bring it back.
+  </Accordion>
+
+  <Accordion title="Network health shows Check or Problem for a speaker">
+    **Check** means the speaker answers slowly (100 to 400 ms) or doesn't report how it connects. **Problem** means it didn't answer, answered slower than 400 ms, or was missed by the latest scan. The line under the row says what to try: check the speaker has power and is on your Wi-Fi, move it closer to the router or to 5 GHz, or check the router or mesh point nearest it. Tap **Refresh** to check again. See [Network Health](/features/network-health).
   </Accordion>
 
   <Accordion title="The widget shows nothing or old presets">

@@ -32,13 +32,16 @@
               "features/music",
               "features/music-services",
               "features/favorites-and-queue",
+              "features/playlist-backup",
               "features/gestures",
               "features/sleep-timer",
+              "features/alarms",
               "features/live-activity",
               "features/widget-and-siri",
               "features/apple-watch",
               "features/watch-face",
-              "features/icloud-sync"
+              "features/icloud-sync",
+              "features/network-health"
             ]
           },
           {
@@ -95,7 +98,7 @@
     }
   },
   "banner": {
-    "content": "**Coming soon to the App Store.** Whole Home: $5.99 launch special.",
+    "content": "**Coming soon to the App Store.** Whole Home launch price, limited time.",
     "dismissible": true
   }
 }
