@@ -4,7 +4,7 @@ sidebarTitle: "Apple Watch"
 description: "The Somos InControl Apple Watch app lists your rooms, plays, pauses and skips, shows the queue with Shuffle and Repeat, groups rooms, turns the volume (or a group's volume) with the Digital Crown, loads and saves presets, sets Sub, Surrounds and more from the EQ page, switches alarms on and off and plays a Sonos® favorite — and its complications put your room, EQ, sleep timer, favourites and presets on your watch face."
 ---
 
-Somos InControl comes with a small Apple Watch app for the moments you do not want to reach for your phone. Pick a room and everything for it is on one screen: what is playing, the volume on the Crown with Mute beside it, the room's three presets, and — when the room is playing music — previous, play, pause, next and your favorites. Its complications add the room's EQ, the sleep timer, favourites and presets to your watch face. The Watch talks to your speakers directly over Wi-Fi, using the rooms your iPhone sent it.
+Somos InControl comes with a small Apple Watch app for the moments you do not want to reach for your phone. Pick a room and everything for it is on one screen: what is playing, the volume as a line the Crown follows with Mute beside it, the room's three presets, and — when the room is playing music — previous, play, pause, next and your favorites. Its complications add the room's EQ, the sleep timer, favourites and presets to your watch face. The Watch talks to your speakers directly over Wi-Fi, using the rooms your iPhone sent it.
 
 <Frame caption="The Watch app on an Apple Watch Ultra: the rooms list, a TV room, and a music room.">
   <div style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 200px), 1fr))", gap: "16px", justifyItems: "center", width: "100%"}}>
@@ -50,7 +50,7 @@ Somos InControl comes with a small Apple Watch app for the moments you do not wa
     A room is one screen, and what it shows depends on what the room is doing. A **TV room** — a soundbar on its TV input — shows **TV** and the audio format it is receiving (**TV · Dolby Atmos (MAT)**, for example; just **TV** while there is no signal). A **music room** shows the album art, the title and the artist. The Watch reads all of it straight from the speaker over your home Wi-Fi.
   </Step>
   <Step title="Turn the Crown for volume, tap Mute">
-    Turn the Digital Crown to change the room's volume; the number on screen follows. When the room is grouped, the number is the **group's** volume, and the Crown turns the whole group up or down together, each room keeping its place in the mix. The Crown does nothing until the room's own level has been read — the number shows a dash until then — so a turn can never send another room's level to this one. **Mute** sits beside the number: tap it to mute the room, and it reads **Unmute**, lit, while the room is muted.
+    The volume is a line: the number, then the level in blue on a grey track. A **green box** around it means the Crown is the volume, and the room screen opens that way. Turn the Digital Crown to change the room's volume; the number and the line follow. Scroll the screen with a finger, or tap anywhere else on it, and the box goes: now the Crown scrolls the screen. Tap the volume line, from anywhere down the screen, and the box comes back with the Crown on the volume again. When the room is grouped, the number is the **group's** volume, and the Crown turns the whole group up or down together, each room keeping its place in the mix. The Crown does nothing until the room's own level has been read — the number shows a dash until then — so a turn can never send another room's level to this one. The **speaker button** beside the volume mutes the room; it shows a slashed speaker, lit, while the room is muted. Tap it again to unmute.
   </Step>
   <Step title="Tap a preset">
     Under the volume are the room's three [sound presets](/features/sound-presets), by name: the three **TV presets** on a TV room, the three **music presets** on a music room. The loaded one is lit. Tap another and the room takes on everything that preset captured — the EQ, and volume, Loudness, Night Sound or Speech Boost when you ticked them — and the same preset lights up on the iPhone's room page and on the Lock Screen card. A room with no saved presets says **Save presets in Somos on your iPhone.**
@@ -89,7 +89,7 @@ At the bottom of a room's screen are **Group** and **EQ** buttons, and on a soun
 
 {/* screenshot: WA-08 (EQ page with Sub and Surrounds rows), WA-11 (Group with…), WA-04 and WA-05 (Save as preset) */}
 
-<Frame caption="On the watch, left to right: the Rooms list (the watch keeps its own room, so picking one here does not change the phone); a TV room with the volume (turn the Crown, tap the speaker to mute) and its presets; the EQ bars (tap a bar, then turn the Crown); and the TV room's Night Sound and Speech Boost level with Group, EQ and a music shortcut.">
+<Frame caption="On the watch, left to right: the Rooms list (the watch keeps its own room, so picking one here does not change the phone); a TV room with the volume line in its green box (turn the Crown, tap the speaker to mute) and its presets; the EQ bars (tap a bar, then turn the Crown); and the TV room's Night Sound and Speech Boost level with Group, EQ and a music shortcut.">
   <div style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 180px), 1fr))", gap: "16px", justifyItems: "center", width: "100%"}}>
   <img
     src="/images/v3/098-watch-rooms.webp"
@@ -99,8 +99,8 @@ At the bottom of a room's screen are **Group** and **EQ** buttons, and on a soun
   />
 
   <img
-    src="/images/v3/099-watch-tv-room.webp"
-    alt="A TV room on Apple Watch: Rooms button, Living Room, Dolby Atmos, TV, volume 28 with a speaker button, and Sound presets Movie Night, Late Night and Game Day."
+    src="/images/4002/watch-tv-room.webp"
+    alt="A TV room on Apple Watch: Rooms button, Living Room, Dolby Atmos, TV, a speaker button and the volume line at 28 inside a green box, Sound presets Movie Night, Late Night and Game Day, and Group, EQ and music buttons."
     width="180"
     style={{width: "180px", maxWidth: "100%", height: "auto"}}
   />
@@ -132,7 +132,7 @@ The Watch decides the same way the iPhone app does: by what the speaker is reall
 
 ## On your watch face
 
-Somos has complications for round, corner and wide slots: the Somos logo, **Room**, **Now Playing**, **Volume**, **EQ Bars**, **EQ LEDs**, **Sleep Timer**, **Favourites**, **Presets**, **Play/Pause** and **Next Room**. Each tap lands on its own screen: an EQ complication opens the room's **EQ** screen, Sleep Timer opens the timer choices, Favourites opens your favourites, and Presets loads the room's next preset. The quickest start is the ready-made face: on your iPhone, open the menu, tap **Apple Watch**, then **Add Infograph face**. See [Watch Face](/features/watch-face) for every complication and how to add it.
+Somos has complications for round, corner and wide slots: the Somos logo, the **Rooms** button (it reads **ROOM**), **Room**, **Now Playing**, **EQ Bars**, **EQ LEDs**, **Sleep Timer**, **Favorites**, **Presets**, and one-tap **Mute**, **Night Sound**, **Speech Boost** and **TV / Music**. Each tap lands on its own screen: the Rooms button opens your rooms, an EQ complication opens the room's **EQ** screen, Sleep Timer opens the timer choices, Favorites opens your favorites, and Presets opens the presets. The one-tap complications act right from the face on watchOS 11 and later. The quickest start is the ready-made face: on your iPhone, open the menu, tap **Apple Watch**, then **Add Infograph face**. See [Watch Face](/features/watch-face) for every complication and how to add it.
 
 ## The EQ and sleep timer screens
 
@@ -142,8 +142,8 @@ Somos has complications for round, corner and wide slots: the Somos logo, **Room
 <Frame caption="Left: a music room's Now Playing with the song, playback buttons and the volume. Middle: Presets, tap one to load it. Right: the watch sleep timer, which asks for the room first and then the length; Off clears it.">
   <div style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 180px), 1fr))", gap: "16px", justifyItems: "center", width: "100%"}}>
   <img
-    src="/images/v3/105-watch-now-playing.webp"
-    alt="Now Playing for Studio on Apple Watch: Golden Hour by North and West from Afterglow, a progress bar, shuffle, previous, pause, next and repeat, and volume 22."
+    src="/images/4002/watch-now-playing.webp"
+    alt="Now Playing for Studio on Apple Watch: Golden Hour by North and West from Afterglow, a progress bar, shuffle, previous, pause, next and repeat, a speaker button and the volume line at 22 with the Groups symbol inside a green box."
     width="180"
     style={{width: "180px", maxWidth: "100%", height: "auto"}}
   />
@@ -171,10 +171,10 @@ A room opened from a complication is the top screen, so it has no back arrow. Pr
 
 ## The card in the Smart Stack
 
-When [Live Activity](/features/live-activity) is on and the iPhone is running iOS 18 or later, the Lock Screen card also appears in the Watch's Smart Stack. It is a read-only glance, not a remote:
+When [Live Activity](/features/live-activity) is on and the iPhone is running iOS 18 or later, the Lock Screen card also appears in the Watch's Smart Stack, on the same navy as the phone's card. It is a read-only glance, not a remote: three lines and a volume ring.
 
-- **TV room** — the room name, the volume, and the audio format.
-- **Music room** — the room name, the volume, what is playing and, when the service reports one, the format.
+- **TV room** — the room name, **TV**, and the audio format, with the volume on the ring.
+- **Music room** — the room name, the song and artist, and, when the service reports one, the format, with the volume on the ring and the album art.
 
 Tap the card and the Watch app opens on that room, with the Crown, Mute, presets and playback ready. The card follows the room the iPhone app has open, like the Lock Screen card does.
 
@@ -182,7 +182,7 @@ Tap the card and the Watch app opens on that room, with the Crown, Mute, presets
 
 - **Name presets or move the EQ sliders** — presets are named on the iPhone. The Watch loads them, and can save the room's current sound into an empty slot.
 - **Browsing music** — there is no browse or search. It plays what you already saved as a Sonos® favorite.
-- **Press a button from the watch face** — a complication opens the Watch app first; Apple only lets widgets press buttons directly on iPhone and iPad.
+- **Press most buttons from the watch face** — only Mute, Night Sound, Speech Boost and TV / Music act right from the face (watchOS 11 and later); every other complication opens the Watch app first.
 - **Save a group** — saving a group stays a phone job. The Watch can group and ungroup rooms. On a grouped room, the Crown turns the group's volume.
 - **Play, pause or skip on a TV room** — the buttons are not shown there, because a TV input ignores them.
 - **Away from home Wi-Fi** — the Watch needs to reach your speakers. If it cannot, the room screen says **Can't reach your Sonos. Join your home Wi-Fi or bring your iPhone.** A room that has dropped off the system says so too — check it has power.

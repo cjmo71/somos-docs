@@ -8,20 +8,22 @@ Live Activity brings Somos InControl's most-used controls out of the app and ont
 
 ## What Live Activity shows
 
-The card follows what the speaker is really doing — TV on the wire means the TV card, even if the music page is open in the app:
+The card follows what the speaker is really doing — TV on the wire means the TV card, even if the music page is open in the app. Since build 40.0.2 it is drawn in the same navy as the Home Screen widget:
 
 <Tabs>
   <Tab title="TV (soundbar) mode">
-    - The room name, with the audio format it is receiving underneath (**Dolby Atmos · eARC** and so on — just **TV** until the format arrives)
-    - A **Mute** chip, then the room's **three sound presets by name** — the loaded one lit. Tap one to apply it; the room page follows at once if it is open. A room with no saved presets shows no preset chips.
-    - The **current volume percentage** with **−** and **\+** buttons
+    - The **current volume percentage**, large, beside the TV symbol and the room name with **· TV**
+    - The audio format as badges under the room name — **DOLBY ATMOS** and **EARC**, for example — when the soundbar reports them
+    - A volume slider with **−** and **\+** buttons
+    - The room's **three sound presets by name**, then **Mute**. The loaded preset is lit in the same glass as the app's picked buttons. Tap one to apply it; the room page follows at once if it is open. A room with no saved presets shows no preset chips.
+    - **Mute** is a grey button with a slashed speaker, reading **Muted**, while the room is muted
   </Tab>
   <Tab title="Music mode">
-    - The track title, then the **artist** and, when the service reports one, the format — **Artist · Lossless**, for example. The album is left off so the format always fits on the line.
+    - The room's **album art** beside the track title, then the **artist** and, when the service reports one, the format as a badge — **LOSSLESS**, for example. The album is left off so the format always fits on the line.
     - While the music is paused, the card's header reads **Standby**
     - Elapsed and remaining time
     - **Previous**, **Play/Pause** and **Next** buttons
-    - The **current volume percentage** with **−** and **+** buttons
+    - A volume slider with **−** and **+** buttons, and the room's music presets underneath
   </Tab>
 </Tabs>
 
@@ -29,14 +31,26 @@ The card follows what the speaker is really doing — TV on the wire means the T
   The Night Sound and Speech Boost chips from earlier builds are gone. Save them into a preset instead — a preset can carry Night Sound and Speech Boost — and switch between presets from the card. See [Sound Presets](/features/sound-presets).
 </Note>
 
-In the **Dynamic Island** (iPhone 14 Pro and later), the compact view shows the Somos mark on one side and the volume percentage on the other; press and hold it to expand to the full card with the same buttons. On iOS 18 and later, a paired Apple Watch's Smart Stack shows the same card as a read-only glance: the room and its volume, the audio format on a TV room, and what is playing on a music room. Tap it and the [Watch app](/features/apple-watch) opens on that room.
+In the **Dynamic Island** (iPhone 14 Pro and later), the compact view shows the TV symbol and the audio format for a TV room, or the room's album art for music, on one side, and **Vol** with the volume percentage on the other. Press and hold it to expand it: the room (with the album art first on music), what is playing, and the same buttons as the card. On iOS 18 and later, a paired Apple Watch's Smart Stack shows the card as a read-only glance on the same navy: three lines — the room, the song and artist (or **TV**), and the audio format — with a volume ring and, on music, the album art. Tap it and the [Watch app](/features/apple-watch) opens on that room.
 
-<Frame caption="The TV layout of the Lock Screen card: the volume, the room and the TV audio format, a volume slider, the room's saved presets (the active one highlighted) and Mute. This is a layout preview with example data.">
+<Frame caption="The Lock Screen card in build 40.0.2. Top: a TV room, with the volume, the room, the DOLBY ATMOS and EARC badges, the slider, the room's presets (Game Day picked) and Mute. Middle: a music room, with the album art, the song, the LOSSLESS badge, playback buttons and the slider. Bottom: the Dynamic Island's room line for TV and for music. Example data.">
+  <div style={{display: "grid", gridTemplateColumns: "1fr", gap: "12px", justifyItems: "center", width: "100%"}}>
   <img
-    src="/images/v3/114-live-activity-tv.webp"
-    alt="A Somos Live Activity card in TV layout: 30 percent, Living Room plus Bedroom, TV, eARC, Dolby Atmos, a volume slider with minus and plus, and Movie Night, Late Night, Game Day (highlighted) and Mute buttons."
+    src="/images/4002/live-activity-tv.webp"
+    alt="A navy Somos Live Activity card in TV layout: 30 percent, the TV symbol, Living Room plus Bedroom · TV, DOLBY ATMOS and EARC badges, a volume slider with minus and plus, and Movie Night, Late Night, Game Day (picked) and Mute buttons."
     width="420"
   />
+  <img
+    src="/images/4002/live-activity-music.webp"
+    alt="A navy Somos Live Activity card in music layout: album art, Living Room plus Bedroom, Golden Hour by North and West with a LOSSLESS badge, previous, pause and next buttons, a volume slider, and Movie Night, Late Night and Game Day."
+    width="420"
+  />
+  <img
+    src="/images/4002/island-leading.webp"
+    alt="The Dynamic Island's room line: the TV symbol, the Groups symbol and Living Room; then album art, the music note, the Groups symbol and Living Room."
+    width="420"
+  />
+  </div>
 </Frame>
 
 ## Enabling Live Activity

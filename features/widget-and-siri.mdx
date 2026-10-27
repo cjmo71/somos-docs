@@ -8,13 +8,16 @@ Somos InControl ships with a Home Screen widget and a set of Siri shortcuts, so 
 
 ## Home Screen widget
 
-The **Somos InControl** widget comes in **small**, **medium** and **large** sizes. It's built from rows, and each row is one of five types:
+The **Somos InControl** widget comes in **small**, **medium** and **large** sizes. It's built from rows, and each row is one of eight types:
 
 - **TV presets** — a room's three TV preset buttons, which apply the saved sound directly
 - **Music presets** — the same for the room's three music presets
 - **Volume + mute** — the room name with **−**, **Mute** and **+** buttons
 - **Set volume** — one button, **Set to** and a number, that sets the room to the volume you chose in the widget's editor
 - **Favourite groups** — your saved groups, one tap to rebuild each
+- **Rooms** — three room buttons. Tap one to make it the **widget's room**; it is lit in the picked glass, and each button says what its room is doing (**on TV**, **playing** or **idle**). The room you have picked is always one of the three.
+- **Now Playing** — one wide button for the row's room: the album art or the TV symbol, the song and artist (or TV), a volume ring and **Play/Pause**
+- **Sound** — **Night Sound**, **Speech Boost** and **Go to TV** / **Go to Music** for the row's room, the same one-tap switches as the watch face. A room without a TV shows one **TV room only** button that opens Somos.
 
 The Home Screen widgets, Siri and Shortcuts are free; they are not part of [Whole Home](/getting-started/whole-home).
 
@@ -25,29 +28,35 @@ The Home Screen widgets, Siri and Shortcuts are free; they are not part of [Whol
     Long-press the Home Screen, tap **+**, search for **Somos InControl**, choose a size and tap **Add Widget**.
   </Step>
   <Step title="Choose what each row shows">
-    Long-press the widget and tap **Edit Widget**. For each row pick a **Type** and, for anything but favourite groups, a **Room**. For a **Set volume** row, also choose the **Volume** number its button sets. The editor only asks about the rows the chosen size can hold.
+    Long-press the widget and tap **Edit Widget**. For each row pick a **Type** and, for anything but favourite groups and Rooms, a **Room**. For a **Set volume** row, also choose the **Volume** number its button sets. The editor only asks about the rows the chosen size can hold.
   </Step>
   <Step title="Open the app once">
     Open Somos InControl at least once after installing so the widget has your rooms and presets — it refreshes every time you open the app.
   </Step>
 </Steps>
 
+### The widget's room
+
+Each row's **Room** list also offers **Widget's room**. A row set to it follows the room you tap in the widget's **Rooms** row, so one widget can drive whichever room you pick: put a Rooms row on top and set the rows under it to Widget's room. Until you pick one, it uses the room you had open last in the app. Rows set to a room of their own, and widgets made before build 40.0.2, keep their room. Picking a room in the widget never changes the room the app has open.
+
+A **small** widget whose first row is Rooms, Now Playing or Sound shows one button: the widget's room, the room's now-playing button, or Night Sound.
+
 <Note>
-  Preset buttons apply exactly what the preset captured, including volume if you ticked it. The active preset lights up so you can see which one is loaded.
+  Preset buttons apply exactly what the preset captured, including volume if you ticked it. The active preset lights up in the same glass as the app's picked buttons, so you can see which one is loaded. **Mute** shows a speaker while the room is playing and a slashed speaker reading **Muted** while it is muted.
 </Note>
 
-<Frame caption="Widget sizes, from the widget previews: a large widget with TV and music preset rows and a Volume and mute row; a small widget with one preset (the active one shows green); a Set volume button that sets a room to one exact level; and a Favorite groups row that opens a saved group. Touch and hold a widget and choose Edit Widget to pick what each row does.">
+<Frame caption="The widgets in build 40.0.2: a large widget with TV preset rows (the loaded one in the picked glass) and a Volume and mute row; a small widget with one preset; a Set volume button that sets a room to one exact level; a large widget with the new Rooms, Now Playing and Sound rows; and a Favorite groups row with Mute on. Touch and hold a widget and choose Edit Widget to pick what each row does.">
   <div style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 150px), 1fr))", gap: "16px", justifyItems: "center", width: "100%"}}>
   <img
-    src="/images/v3/107-widget-large.webp"
-    alt="A large Somos widget: Movie Night (green), Late Night and Game Day for LR, Focus, Relax and Party for Studio, and Vol minus, Mute and Vol plus."
+    src="/images/4002/widget-large.webp"
+    alt="A large Somos widget: Movie Night (picked, in a lighter glass), Late Night and Game Day for LR, Focus, Relax and Party for Studio, and Vol minus, Mute with a speaker, and Vol plus."
     width="150"
     style={{width: "150px", maxWidth: "100%", height: "auto"}}
   />
 
   <img
-    src="/images/v3/108-widget-small.webp"
-    alt="A small Somos widget with one button, Movie Night for LR, shown in green."
+    src="/images/4002/widget-small.webp"
+    alt="A small Somos widget with one button, Movie Night for LR, picked, in the lighter glass."
     width="150"
     style={{width: "150px", maxWidth: "100%", height: "auto"}}
   />
@@ -60,8 +69,15 @@ The Home Screen widgets, Siri and Shortcuts are free; they are not part of [Whol
   />
 
   <img
-    src="/images/v3/112-widget-groups.webp"
-    alt="A widget preview titled Favorite groups and quick controls: Movie Night (2 rooms) and Everywhere (3 rooms), Vol minus, Mute and Vol plus, and a wide Set to 18 button."
+    src="/images/4002/widget-new-rows.webp"
+    alt="A large Somos widget with the new rows: Rooms with Living Room (picked, on TV), Studio (playing) and Office (idle); Now Playing for Studio with album art, Golden Hour by North and West, a volume ring at 22 and Pause; and Sound with Night Sound, Speech Boost and Go to Music."
+    width="150"
+    style={{width: "150px", maxWidth: "100%", height: "auto"}}
+  />
+
+  <img
+    src="/images/4002/widget-groups.webp"
+    alt="A large Somos widget: Favorite groups Movie Night (2 rooms) and Everywhere (3 rooms), Vol minus, Mute with a speaker and Vol plus, and a wide Set to 18 button."
     width="150"
     style={{width: "150px", maxWidth: "100%", height: "auto"}}
   />

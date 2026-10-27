@@ -1,7 +1,7 @@
 ---
 title: "Watch Face: Somos Complications for Your Apple Watch"
 sidebarTitle: "Watch Face"
-description: "Add a ready-made Somos watch face from your iPhone, or put Somos complications on any face: your room, its volume, its EQ as bars or LEDs, the sleep timer, favourites, presets, Play/Pause and Next Room."
+description: "Add a ready-made Somos watch face from your iPhone, or put Somos complications on any face: the Room button, your room and what is playing, its volume, its EQ as bars or LEDs, the sleep timer, favorites, presets, and one-tap Mute, Night Sound, Speech Boost and TV / Music."
 ---
 
 Somos InControl puts your room one tap from the watch face. The quickest start is a ready-made face with the Somos complications already on it. You can also add any Somos complication to a face you already use.
@@ -40,17 +40,27 @@ Each complication is made for one shape of slot: round, corner or wide. The face
 
 | Complication | Slots | What it shows | Tap it and… |
 | --- | --- | --- | --- |
-| **Somos InControl** | Round, corner | The Somos logo. Round, it is in the app icon's colours. | Somos opens. |
-| **Room** | Wide | The room, its loaded preset and a volume bar. On TV it shows a TV symbol and **TV ·** the TV preset. | The room opens. |
-| **Now Playing** | Wide | The song, the source and the volume, as the Watch app last read them. | The room opens. |
-| **Volume** | Round, corner | The room's volume on a ring, blue to red. In a corner, the volume with a curved arc. | The room opens. Turn the Crown for volume. |
-| **EQ Bars** | Round, corner, wide | The loaded preset's EQ as bars. In a corner the bars follow the curve of the edge. The wide one shows bold bars for Sub, bass, treble and height, with the preset name. | The room's EQ screen opens. |
+| **Somos InControl** | Corner | The Somos logo. | Somos opens. |
+| **Rooms** (the Room button) | Round, corner | The word **ROOM**, as big as the slot allows. | Your rooms, groups and favorite groups open. Tap one to pick it. |
+| **Room** | Wide | The room's name, what is playing — the song and artist, or **TV** and its sound — and the volume. The room line is the name alone, with no symbol. | Now Playing opens for that room. |
+| **Now Playing** | Round, corner, inline | Round: the room's volume on a ring, blue to red. Corner: the volume with a curved arc. Inline: what the room is playing. | Now Playing opens. The Crown is the volume. |
+| **EQ Bars** | Round, corner, wide, inline | The loaded preset's EQ as bars. In a corner the bars follow the curve of the edge. The wide one shows bold bars for Sub, bass, treble and height, with the preset name. | The room's EQ screen opens. |
 | **EQ LEDs** | Round, corner, wide | The loaded preset's EQ as a small cluster of LEDs. The wide one is an LED spectrum; the corner one curves the settings beside it. | The room's EQ screen opens. |
-| **Sleep Timer** | Round, corner, wide | The time left on the room's sleep timer, or **Off**. | The sleep timer choices open. See [Sleep Timer](/features/sleep-timer). |
-| **Favourites** | Round, corner, wide | A red heart and your Sonos® favourites. | Your favourites list opens. Tap one to play it. |
-| **Presets** | Round, corner, wide | The room's presets for what it is doing: the TV presets on TV, the music presets on music, with the loaded one. | The room loads its next preset from that set, and opens. |
-| **Play/Pause** | Round, corner | The play/pause symbol and the room. | The room opens, then plays or pauses. |
-| **Next Room** | Round, corner | The next room in your list, for example **Next: Kitchen**. | That room opens. Every Somos complication moves to it, and Next Room moves on to the room after. |
+| **Sleep Timer** | Round, corner, wide, inline | The time left on the room's sleep timer, or **Off**. | The sleep timer choices open. See [Sleep Timer](/features/sleep-timer). |
+| **Favorites** | Round, corner, wide, inline | A red heart and your Sonos® favorites. | Your favorites list opens. Tap one to play it. |
+| **Presets** | Round, corner, wide, inline | The room's presets for what it is doing: the TV presets on TV, the music presets on music, with the loaded one. | The presets open. Tap one to load it. |
+| **Mute** | Round, corner | Mute for the room. It wears a filled disc only while the room is muted. | The room mutes or unmutes, right from the face. |
+| **Night Sound** | Round, corner | Night Sound for a home theater room, with a filled disc only while it is on. | Night Sound turns on or off. |
+| **Speech Boost** | Round, corner | Speech Boost for a home theater room, with a filled disc only while it is on. | Speech Boost turns on or off. On an Arc Ultra or Beam Ultra, which have Speech Boost levels, the tap opens the level row instead. |
+| **TV / Music** | Round, corner | Which source the home theater room is on. | The room switches between TV and music. |
+
+<Frame caption="The Room button in build 40.0.2: the word ROOM in a round slot and in a corner slot, beside an EQ preset button.">
+  <img
+    src="/images/4002/watch-face-room-button.webp"
+    alt="Somos complications on an Apple Watch face: two round buttons reading ROOM on either side of a Hard Bass preset button, and below them the corner version reading ROOM."
+    width="360"
+  />
+</Frame>
 
 <Note>
   The EQ complications draw the loaded preset, not the music. They are a picture of the settings, not live audio. Each bar has a small starting height, so the bars stand at different heights even on a flat EQ. Positive values raise them above that.
@@ -61,7 +71,7 @@ Each complication is made for one shape of slot: round, corner or wide. The face
 **No room yet.** Until your iPhone has sent your rooms, a complication shows the Somos icon and **Open Somos**. The volume shows a dash until the watch has read the room's level.
 
 <Note>
-  A watch face complication can't press a button by itself. Apple only allows that on iPhone and iPad. So every Somos complication opens the Watch app first. **Play/Pause** and **Presets** act a moment later, once the app has read the room. On a TV room Play/Pause just opens the room, because a TV input has nothing to play or pause.
+  **Mute**, **Night Sound**, **Speech Boost** and **TV / Music** act right from the face on watchOS 11 and later. On an older watch, on a room that is locked, or on a room the switch does not apply to (Night Sound on a music room, for example), the tap opens the Watch app where that control is. Every other Somos complication opens the Watch app on its screen.
 </Note>
 
 ## Getting back to your rooms

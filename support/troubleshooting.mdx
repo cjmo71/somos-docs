@@ -98,10 +98,12 @@ This page covers the issues users run into most often and walks you through how 
 
   <Accordion title="The widget shows nothing or old presets">
     Open Somos InControl at least once after installing the widget — the widget takes its rooms and presets from the app and refreshes each time you open it. To change which room or which row type it shows, long-press the widget and tap **Edit Widget**.
+
+    A row driving a room you didn't expect? Check its **Room** in **Edit Widget**: a row set to **Widget's room** follows the room you last tapped in the widget's **Rooms** row (or, before you tap one, the room you had open last in the app). Pick a room of its own for the row if you want it fixed. A small widget whose first row is **Rooms**, **Now Playing** or **Sound** drew an empty square in early 40.0.2 test builds; from build 40.0.2 it shows one button. See [the widget's room](/features/widget-and-siri#the-widgets-room).
   </Accordion>
 
   <Accordion title="The intro video keeps playing, or I want to see it again">
-    The short intro video plays once, the first time the app opens after a fresh install, and never again on that install. If it keeps reappearing, there is likely an issue with local storage on your device — uninstall Somos InControl and reinstall it. To watch it again, the same thing: delete the app and reinstall. If you're signed in to iCloud your settings come back, but the video plays once more. From build 37 the video fills every iPhone and iPad screen, upright or sideways, with nothing cut off. The old nine-step text tour that followed it is gone.
+    The short intro video plays once, the first time the app opens after a fresh install, and never again on that install. Build 40.0.1 brought a new intro film, so it also plays once, the first time you open the app after updating to 40.0.1 or later. If it keeps reappearing, there is likely an issue with local storage on your device — uninstall Somos InControl and reinstall it. To watch it again, the same thing: delete the app and reinstall. If you're signed in to iCloud your settings come back, but the video plays once more. From build 37 the video fills every iPhone and iPad screen, upright or sideways, with nothing cut off. The old nine-step text tour that followed it is gone.
   </Accordion>
 
   <Accordion title="Pinch or the art swipe does nothing">
@@ -112,8 +114,12 @@ This page covers the issues users run into most often and walks you through how 
     Open Somos on your iPhone once — it sends your rooms to the Watch. If the Watch says it can't reach your Sonos, join your home Wi-Fi on the Watch or keep your iPhone nearby. Favourites arrive once the iPhone's music page has loaded them. See [Apple Watch](/features/apple-watch).
   </Accordion>
 
+  <Accordion title="On the watch, the Crown scrolls the screen instead of changing the volume">
+    The Crown turns the volume while the volume line has its **green box** — that is how the room screen opens. Once you scroll the screen with a finger, or tap somewhere else on it, the box goes and the Crown scrolls the screen instead. Tap the volume line (from anywhere down the screen) to bring the box back, then turn the Crown. This is how the Watch app works from build 40.0.1; before that, the Crown only set the volume at the top of the screen. See [Apple Watch](/features/apple-watch).
+  </Accordion>
+
   <Accordion title="Somos isn't listed for my watch face, or the complication shows Open Somos">
-    Open Somos on your iPhone, then open Somos on the Watch once — that gives the face a room to show. Then edit the face again: each slot lists the Somos complications made for its shape (round, corner or wide), under **Somos**. Every tap opens the Watch app first; that is how Apple lets complications work. A slot that went blank after updating held one of the older white complications from build 37, which are gone: pick a Somos complication for it again. Or add the ready-made face from the iPhone: menu → **App → Apple Watch** → **Add Infograph face**. See [Watch Face](/features/watch-face).
+    Open Somos on your iPhone, then open Somos on the Watch once — that gives the face a room to show. Then edit the face again: each slot lists the Somos complications made for its shape (round, corner or wide), under **Somos**. **Mute**, **Night Sound**, **Speech Boost** and **TV / Music** act right from the face on watchOS 11 and later; every other complication opens the Watch app first. The Room button reads **ROOM** from build 40.0.2. A slot that went blank after updating held one of the older white complications from build 37, which are gone: pick a Somos complication for it again. Or add the ready-made face from the iPhone: menu → **App → Apple Watch** → **Add Infograph face**. See [Watch Face](/features/watch-face).
   </Accordion>
 
   <Accordion title="My settings didn't come back, or don't match on my other device">
