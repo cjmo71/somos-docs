@@ -8,6 +8,57 @@ If you have a question about Somos InControl, you're in the right place. These a
 
 <AccordionGroup>
 
+  <Accordion title="Adding front speakers fails, my old layout comes back, or the fronts stay silent">
+    This is the question people ask most. A few things to know:
+
+    - **Set every speaker up in the Sonos® app first.** A speaker still at factory settings, never added to your Sonos® system, can't be set up from Somos. Once Sonos® knows it, Somos can bond it.
+    - **Each front must be on its own.** Home Theater Setup only offers standalone speakers — not grouped, not in a stereo pair, not bonded to another soundbar. Fronts go on as a pair, both or neither. See [Speaker Setup](/rooms/speaker-setup).
+    - **Sonos® says "configuring" and then your old layout comes back (Arc Ultra).** Testers fixed this with a clean start: remove every speaker from the soundbar, add the soundbar fresh, add the two fronts in Somos **first**, and only then add the Sub and the surrounds in the Sonos® app.
+    - **The fronts bond on an Arc Ultra but play nothing.** That's a known problem the developer is still chasing, and you aren't doing anything wrong. It helps to try the layout the other way round (for example the Era 300s as fronts and the Fives as surrounds) and then send **Submit diagnostics** from the menu right after a try where the fronts stay silent.
+    - **Beam Ultra.** Fronts on a Beam Ultra aren't working yet; it's still being looked into.
+
+    Bonding fronts also has trade-offs, including Trueplay turning off while they're bonded — see [Separate front speakers](/rooms/speaker-setup#separate-front-speakers) and [Troubleshooting](/support/troubleshooting).
+  </Accordion>
+
+  <Accordion title="Somos can't find my speakers, shows the wrong system, or is stuck on another home">
+    Somos finds speakers on the Wi-Fi your iPhone is on, so start with the checklist under **Help & Support → Settings Somos needs**: UPnP on in the Sonos® app, a VPN that allows your home network, the phone on the same Wi-Fi as the speakers (not cellular), and not a guest or IoT network. Check that Local Network is allowed (**App → Somos settings → Open iOS Settings for Somos**).
+
+    Then open the menu's **Your Sonos** page:
+
+    - **Rescan My Network** looks again for the speakers on the network you're on now, for example after you arrive at another house.
+    - **Two systems (S1 and S2), or two homes.** Somos keeps each Sonos® system separate. If more than one is listed, tap the one you want. If one is missing, use **Add a Home**: name it, connect to that home's Wi-Fi, then tap **Scan for System**. The name tells your homes apart in the switcher.
+
+    If the official Sonos® app finds a speaker and Somos doesn't, send **Submit diagnostics** from the menu. See [Troubleshooting](/support/troubleshooting) and [Multiple Systems](/rooms/multiple-systems).
+  </Accordion>
+
+  <Accordion title="Where is the Crossover slider, and why doesn't my change stick?">
+    Crossover appears in any room with a bonded Sub whose speaker reports a crossover, not only on a Sonos® Amp. It's shown in hertz (50–110 Hz) with the other sound sliders. If it isn't there, the room's speaker didn't report one. If you move it and it goes back, the speaker refused the value, and Somos shows what the speaker really has. Presets carry the crossover too. See [EQ & Trueplay](/features/eq-and-trueplay) and the crossover entry in [Troubleshooting](/support/troubleshooting).
+  </Accordion>
+
+  <Accordion title="TestFlight asks me for a redeem code">
+    You don't need one. Install **TestFlight** from the App Store, then go back and open the beta link on the same iPhone or iPad: **[testflight.apple.com/join/2D778AXH](https://testflight.apple.com/join/2D778AXH)**. Tap **Accept**, then **Install**. **Redeem** in the TestFlight app only takes codes from email invitations, so nothing typed there will work. To let someone else try Somos, send them the same link. See [First Launch](/getting-started/first-launch).
+  </Accordion>
+
+  <Accordion title="Speech Boost won't turn off, or shows the wrong setting">
+    On the **Arc Ultra** and **Beam Ultra**, Speech Boost is a level (**Off**, **Low**, **Medium**, **High**, **Max**), not an on/off switch; other soundbars show a switch. Somos reads the value back after every change. If the speaker doesn't accept it, the control goes back and a message says the speaker refused it. A preset only changes Speech Boost if you ticked **Speech Boost** when you saved it. See [Troubleshooting](/support/troubleshooting).
+  </Accordion>
+
+  <Accordion title="When rooms are grouped, can I still change one room's volume?">
+    Yes. In a group, the teal **Group** slider moves every room together, and the blue slider above it is still that room's own volume. Expand **Room volumes** to set each room in the group on its own. See [Grouping Rooms](/rooms/groups).
+  </Accordion>
+
+  <Accordion title="Can a preset turn my Sub or surrounds off?">
+    Yes. A preset saves the **Sub** switch and the **Surrounds** switch along with bass, treble, height and the levels, so a "Neighbours" preset can turn the Sub off and another can turn it back on. Volume, Night Sound, Speech Boost and Loudness are only saved if you tick them on the Save Preset sheet. See [Sound Presets](/features/sound-presets).
+  </Accordion>
+
+  <Accordion title="Not all my rooms fit on the bottom bar, or I want them in a different order">
+    The bar shows every room. If they don't all fit, the row scrolls and keeps the room you're on in view, and you can swipe the tabs to go to the next room. To change the order, press and hold a tab, tap **Reorder**, drag the tabs, then tap **Done**. The menu's **Rooms** list also shows every room at once. You can also switch to the **Room wheel** in Somos settings. See [Favorites](/rooms/favorites).
+  </Accordion>
+
+  <Accordion title="I bought Whole Home, but my rooms are still locked">
+    Open the menu, tap **Unlock Whole Home** (or **Manage Whole Home**), then **Restore Purchases**, signed in to the same Apple Account you bought with. If a family organiser has to approve it, the page says the purchase is waiting for approval and Whole Home turns on once it goes through. If Apple keeps asking for your password, turn on **Settings › Face ID & Passcode › iTunes & App Store** to confirm with Face ID. See [Whole Home](/getting-started/whole-home).
+  </Accordion>
+
   <Accordion title="Is this made by Sonos®?">
     No. Somos InControl is an independent, unofficial third-party app. It is not affiliated with, endorsed by, or sponsored by Sonos, Inc. It uses the publicly documented local control protocol to communicate with Sonos® speakers on your Wi-Fi network.
   </Accordion>
@@ -61,8 +112,10 @@ If you have a question about Somos InControl, you're in the right place. These a
     To play every hearted song in one go, open the Favorites page and tap **Play all** beside the heading — it fills the room's queue with your songs in page order and starts the first one. Stations, albums and playlists are skipped, and the message says how many. See [Favorites & Queue](/features/favorites-and-queue).
   </Accordion>
 
-  <Accordion title="Is there a sleep timer?">
+  <Accordion title="Is there a sleep timer, or an alarm?">
     Yes. Open the menu, tap **Your Sonos**, then **Set a sleep timer**, and pick **15**, **30**, **45**, **60** or **90 min**, or **Off**. It is your Sonos® speaker's own timer, so it runs with Somos closed. The minutes left show on the room page, and the Sleep Timer complication puts them on your watch face. See [Sleep Timer](/features/sleep-timer).
+
+    Alarms too. Open **Alarms** from the menu to see each alarm with its room and days and turn it on or off, or add one: pick the room and time, the days it repeats, what it plays (the Sonos® chime or one of your favorites) and its own volume. Alarms are stored on your Sonos®, so they ring with Somos closed. See [Alarms](/features/alarms).
   </Accordion>
 
   <Accordion title="Why does the app ask for Local Network permission?">
