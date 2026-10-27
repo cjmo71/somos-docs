@@ -7,7 +7,7 @@ description: "The Somos InControl Apple Watch app lists your rooms, plays, pause
 Somos InControl comes with a small Apple Watch app for the moments you do not want to reach for your phone. Pick a room and everything for it is on one screen: what is playing, the volume on the Crown with Mute beside it, the room's three presets, and — when the room is playing music — previous, play, pause, next and your favorites. Its complications add the room's EQ, the sleep timer, favourites and presets to your watch face. The Watch talks to your speakers directly over Wi-Fi, using the rooms your iPhone sent it.
 
 <Frame caption="The Watch app on an Apple Watch Ultra: the rooms list, a TV room, and a music room.">
-  <div style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 200px), 1fr))", gap: "16px", justifyItems: "center"}}>
+  <div style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 200px), 1fr))", gap: "16px", justifyItems: "center", width: "100%"}}>
   <img
     src="https://somosincontrol.com/somos-incontrol/assets/shots/5-watch-rooms.png"
     alt="The Somos Apple Watch app's first screen: a list titled Somos with the rooms Era Right S, Era Right S 2 and Living Room."
@@ -70,6 +70,14 @@ Somos InControl comes with a small Apple Watch app for the moments you do not wa
   Only favorites that can be played directly are listed. Sonos® Radio shortcuts such as **Discover Sonos Radio**, **Playlists**, **Sonos Presents** and **Trending Now** are browse folders rather than something to play, so they are left out — if those are the only favorites you have, the Watch list stays empty.
 </Note>
 
+<Frame caption="On the iPhone, the menu's Apple Watch page lists the three setup steps: install Somos from Available Apps in the Watch app, open it on the watch once, and keep Somos open on the iPhone the first time so it can send your rooms.">
+  <img
+    src="/images/v3/095-watch-setup-steps.webp"
+    alt="The Set up your Apple Watch card on iPhone: 1. Install Somos on your watch in the Watch app, Available Apps. 2. Open Somos on your watch once. 3. Keep Somos open on your phone the first time so it can send the rooms."
+    width="360"
+  />
+</Frame>
+
 ## Group, EQ and the room's other page
 
 At the bottom of a room's screen are **Group** and **EQ** buttons, and on a soundbar a button that switches the bar between TV and music; the room's screen follows. Each room has a small **Music** page or **Home Theater** page, depending on what it is playing.
@@ -80,6 +88,39 @@ At the bottom of a room's screen are **Group** and **EQ** buttons, and on a soun
 - **Presets you can save from the wrist** — under the room's presets, **Save the sound now** puts the room's current sound into an empty preset slot. A slot that already holds a preset is never offered. The preset is on your iPhone too.
 
 {/* screenshot: WA-08 (EQ page with Sub and Surrounds rows), WA-11 (Group with…), WA-04 and WA-05 (Save as preset) */}
+
+<Frame caption="On the watch, left to right: the Rooms list (the watch keeps its own room, so picking one here does not change the phone); a TV room with the volume (turn the Crown, tap the speaker to mute) and its presets; the EQ bars (tap a bar, then turn the Crown); and the TV room's Night Sound and Speech Boost level with Group, EQ and a music shortcut.">
+  <div style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 180px), 1fr))", gap: "16px", justifyItems: "center", width: "100%"}}>
+  <img
+    src="/images/v3/098-watch-rooms.webp"
+    alt="The Somos Rooms list on Apple Watch: Living Room, Studio and Office."
+    width="180"
+    style={{width: "180px", maxWidth: "100%", height: "auto"}}
+  />
+
+  <img
+    src="/images/v3/099-watch-tv-room.webp"
+    alt="A TV room on Apple Watch: Rooms button, Living Room, Dolby Atmos, TV, volume 28 with a speaker button, and Sound presets Movie Night, Late Night and Game Day."
+    width="180"
+    style={{width: "180px", maxWidth: "100%", height: "auto"}}
+  />
+
+  <img
+    src="/images/v3/100-watch-eq.webp"
+    alt="The EQ screen on Apple Watch for Movie Night: bars for Bass +2, Treble 0, Sub +2, Height +1 and Surround +3, and the hint Tap a bar, then turn the Crown."
+    width="180"
+    style={{width: "180px", maxWidth: "100%", height: "auto"}}
+  />
+
+  <img
+    src="/images/v3/104-watch-tv-sound.webp"
+    alt="The Sound section of a TV room on Apple Watch: Night Sound Off, Speech Boost Medium with Off, Low, Med, High and Max buttons, and Group, EQ and music buttons."
+    width="180"
+    style={{width: "180px", maxWidth: "100%", height: "auto"}}
+  />
+
+  </div>
+</Frame>
 
 ## Alarms on the Watch
 
@@ -97,6 +138,32 @@ Somos has complications for round, corner and wide slots: the Somos logo, **Room
 
 - **EQ** — opened from an EQ complication. It shows the loaded preset's name, its EQ as bars and its values in words, with the room's preset buttons underneath to load another. With no preset loaded it says **No preset loaded. Pick one below.**
 - **Sleep timer** — opened from the Sleep Timer complication. Tap **Off**, **15 min**, **30 min**, **45 min**, **60 min** or **90 min**. While a timer runs, the time left sits at the top. See [Sleep Timer](/features/sleep-timer).
+
+<Frame caption="Left: a music room's Now Playing with the song, playback buttons and the volume. Middle: Presets, tap one to load it. Right: the watch sleep timer, which asks for the room first and then the length; Off clears it.">
+  <div style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 180px), 1fr))", gap: "16px", justifyItems: "center", width: "100%"}}>
+  <img
+    src="/images/v3/105-watch-now-playing.webp"
+    alt="Now Playing for Studio on Apple Watch: Golden Hour by North and West from Afterglow, a progress bar, shuffle, previous, pause, next and repeat, and volume 22."
+    width="180"
+    style={{width: "180px", maxWidth: "100%", height: "auto"}}
+  />
+
+  <img
+    src="/images/v3/101-watch-presets.webp"
+    alt="The Presets screen on Apple Watch: TV presets with Movie Night highlighted, Late Night and Game Day."
+    width="180"
+    style={{width: "180px", maxWidth: "100%", height: "auto"}}
+  />
+
+  <img
+    src="/images/v3/106-watch-timer.webp"
+    alt="The sleep timer on Apple Watch for the Living Room: Off, 15 min and 30 min."
+    width="180"
+    style={{width: "180px", maxWidth: "100%", height: "auto"}}
+  />
+
+  </div>
+</Frame>
 
 ## The Rooms button
 
