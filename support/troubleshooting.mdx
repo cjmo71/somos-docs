@@ -17,7 +17,7 @@ This page covers the issues users run into most often and walks you through how 
     4. **Rescan.** Open the menu and tap **Your Sonos → Rescan My Network**. Discovery also runs fresh on every launch, so force-quitting and reopening works too.
     4. **Test with the official Sonos® app.** If it can't find your speakers either, the problem is the network itself — restart your router and speakers, then test again.
 
-    If your speakers appear in the official app but not in Somos InControl, send **Submit diagnostics** (in the menu) to the developer and fill in the [Speakers Not Found questionnaire](https://somosincontrol.com/somos-incontrol/speakers-not-found) on the website.
+    If your speakers appear in the official app but not in Somos InControl, send **Submit diagnostics** (menu → **Advanced Settings**) to the developer and fill in the [Speakers Not Found questionnaire](https://somosincontrol.com/somos-incontrol/speakers-not-found) on the website.
   </Accordion>
 
   <Accordion title="A speaker or an entire system didn't show up">
@@ -103,7 +103,11 @@ This page covers the issues users run into most often and walks you through how 
   </Accordion>
 
   <Accordion title="The intro video keeps playing, or I want to see it again">
-    The short intro video plays once, the first time the app opens after a fresh install, and never again on that install. Build 40.0.1 brought a new intro film, so it also plays once, the first time you open the app after updating to 40.0.1 or later. If it keeps reappearing, there is likely an issue with local storage on your device — uninstall Somos InControl and reinstall it. To watch it again, the same thing: delete the app and reinstall. If you're signed in to iCloud your settings come back, but the video plays once more. From build 37 the video fills every iPhone and iPad screen, upright or sideways, with nothing cut off. The old nine-step text tour that followed it is gone.
+    The short intro video plays once, the first time the app opens after a fresh install, and never again on that install. Build 40.0.1 brought a new intro film, so it also plays once, the first time you open the app after updating to 40.0.1 or later. Build 40.0.5 has new first-launch films (iPhone, iPad upright and iPad sideways) and plays them once the same way. If it keeps reappearing, there is likely an issue with local storage on your device — uninstall Somos InControl and reinstall it. To watch it again, the same thing: delete the app and reinstall. If you're signed in to iCloud your settings come back, but the video plays once more. From build 37 the video fills every iPhone and iPad screen, upright or sideways, with nothing cut off. The old nine-step text tour that followed it is gone.
+  </Accordion>
+
+  <Accordion title="A spot on my watch face is blank after the update">
+    In build 40.0.5 the wide **Room** card is gone and the wide card is **Now Playing**. A spot that held the old Room card is blank. Press and hold the face, tap **Edit**, swipe to **Complications**, tap the blank spot and pick Somos **Now Playing**. See [Watch Face](/features/watch-face).
   </Accordion>
 
   <Accordion title="Pinch or the art swipe does nothing">
@@ -140,7 +144,9 @@ This page covers the issues users run into most often and walks you through how 
   <Accordion title="The app crashes on launch">
     1. **Force-quit the app.** Swipe it away in the App Switcher, then tap the icon to reopen.
     2. **Restart your device.** If force-quitting doesn't help, a full device restart often will.
-    3. **Contact support.** If the app still crashes after a restart, [send a message](/support/contact) with your device model and iOS version, and attach the log from **Submit diagnostics** in the menu if you can get that far.
+    3. **Contact support.** If the app still crashes after a restart, [send a message](/support/contact) with your device model and iOS version, and attach the log from **Submit diagnostics** (menu → **Advanced Settings**) if you can get that far.
+
+    **The crash report.** From build 40.0.5, after Somos closes unexpectedly, the next time you open it asks once: "Somos closed unexpectedly last time. Send the report?" Tap **Send the report** to open the Submit diagnostics screen, where you see what you would send and choose how to share it, or **Not now**. Nothing is sent unless you send it. Please send it: a crash is the worst problem you can hit, and the report is how the developer finds what caused it. Somos asks once for each new crash report.
   </Accordion>
 
 </AccordionGroup>

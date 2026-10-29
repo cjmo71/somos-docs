@@ -42,8 +42,7 @@ Each complication is made for one shape of slot: round, corner or wide. The face
 | --- | --- | --- | --- |
 | **Somos InControl** | Corner | The Somos logo. | Somos opens. |
 | **Rooms** (the Room button) | Round, corner | The word **ROOM**, as big as the slot allows. | Your rooms, groups and favorite groups open. Tap one to pick it. |
-| **Room** | Wide | The room's name, what is playing — the song and artist, or **TV** and its sound — and the volume. The room line is the name alone, with no symbol. | Now Playing opens for that room. |
-| **Now Playing** | Round, corner, inline | Round: the room's volume on a ring, blue to red. Corner: the volume with a curved arc. Inline: what the room is playing. | Now Playing opens. The Crown is the volume. |
+| **Now Playing** | Round, corner, wide, inline | Round: the room's volume on a ring, blue to red. Corner: the volume with a curved arc. Wide: the song, the source and the volume, as the Watch app last read them. Inline: what the room is playing. | Now Playing opens. The Crown is the volume. |
 | **EQ Bars** | Round, corner, wide, inline | The loaded preset's EQ as bars. In a corner the bars follow the curve of the edge. The wide one shows bold bars for Sub, bass, treble and height, with the preset name. | The room's EQ screen opens. |
 | **EQ LEDs** | Round, corner, wide | The loaded preset's EQ as a small cluster of LEDs. The wide one is an LED spectrum; the corner one curves the settings beside it. | The room's EQ screen opens. |
 | **Sleep Timer** | Round, corner, wide, inline | The time left on the room's sleep timer, or **Off**. | The sleep timer choices open. See [Sleep Timer](/features/sleep-timer). |
@@ -66,13 +65,17 @@ Each complication is made for one shape of slot: round, corner or wide. The face
   The EQ complications draw the loaded preset, not the music. They are a picture of the settings, not live audio. Each bar has a small starting height, so the bars stand at different heights even on a flat EQ. Positive values raise them above that.
 </Note>
 
-**Grouped rooms.** When the room is grouped, the volume on the Room, Volume and Now Playing complications is the group's volume.
+**Grouped rooms.** When the room is grouped, the volume on the Now Playing complications is the group's volume.
 
 **No room yet.** Until your iPhone has sent your rooms, a complication shows the Somos icon and **Open Somos**. The volume shows a dash until the watch has read the room's level.
 
 <Note>
   **Mute**, **Night Sound**, **Speech Boost** and **TV / Music** act right from the face on watchOS 11 and later. On an older watch, on a room that is locked, or on a room the switch does not apply to (Night Sound on a music room, for example), the tap opens the Watch app where that control is. Every other Somos complication opens the Watch app on its screen.
 </Note>
+
+## A blank spot after updating to build 40.0.5
+
+Build 40.0.5 has one wide card, **Now Playing**. The wide **Room** card from earlier test builds is gone. If a spot on your watch face is blank after the update, it held the old Room card. Press and hold the face, tap **Edit**, swipe to **Complications**, tap the blank spot and pick Somos **Now Playing**. The Modular Ultra face's middle slot is Now Playing too.
 
 ## Getting back to your rooms
 

@@ -15,7 +15,7 @@ From top to bottom:
     The room's volume slider stays pinned at the top and collapses to a slim bar as you scroll, just like the room page.
   </Card>
   <Card title="Favorites and your music services" icon="music">
-    Two rows of buttons. **Favorites**, **Playlists** and **Queue** sit in a fixed row at the top and stay put. Under them, one button per music service you have set up, then **Add**. When a cable is plugged into a speaker's Line In, a **Line In** tile comes first in that row (see [Line In](#line-in) below). The lit button is the service that is playing, and it stays lit wherever you go. See [Music Services](/features/music-services) and [Favorites & Queue](/features/favorites-and-queue).
+    Two rows of buttons, always shown — since build 40.0.5 there is no **Tap to browse** row to open first. **Favorites**, **Playlists** and **Queue** sit in a fixed row at the top and stay put. Under them, one button per music service you have set up, then **Add**. When a cable is plugged into a speaker's Line In, a **Line In** tile comes first in that row (see [Line In](#line-in) below). The lit button is the service that is playing, and it stays lit wherever you go. See [Music Services](/features/music-services) and [Favorites & Queue](/features/favorites-and-queue).
   </Card>
   <Card title="The player" icon="play">
     Album art, title, artist, a progress bar you can drag, and **Shuffle**, **Previous**, **Play/Pause**, **Next** and **Repeat**. Play resumes the queue rather than just un-pausing. When what is playing came from one of your services, a **heart** and a **plus** sit beside the title — keep it, or add it to the queue or one of your playlists. See [Add the playing song to a playlist](/features/favorites-and-queue#add-the-playing-song-to-a-playlist). A radio station shows the station's name as the title and, underneath, what the station says is on right now. A title too long for the line scrolls instead of being cut off.
@@ -34,11 +34,13 @@ From top to bottom:
   </Card>
 </CardGroup>
 
-<Frame caption="Left: a grouped music room. Volume and the Group slider are at the top, then Tap to browse services, favorites and playlists, and the player with play, pause, previous and next. Right: browsing open, with Favorites, Playlists and Queue above the player and Add a music service below them.">
+{/* screenshot needed: the Music page in build 40.0.5 with the services always showing and no "Tap to browse" row (the left picture is from before; it still shows that row) */}
+
+<Frame caption="Left: a grouped music room (this picture is from before build 40.0.5, when a Tap to browse row sat above the services; that row is gone and the services are always shown). Right: Favorites, Playlists and Queue above the player and Add a music service below them.">
   <div style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 220px), 1fr))", gap: "16px", justifyItems: "center", width: "100%"}}>
   <img
     src="/images/v3/046-music-page-group.webp"
-    alt="The Music page for Studio on iPhone: Era 300 streaming MP3, Volume at 22 percent, Main room Studio with Kitchen and a Group slider, Tap to browse services, favorites and playlists, and a player card showing Golden Hour by North and West with shuffle, previous, pause, next and repeat."
+    alt="The Music page for Studio on iPhone: Era 300 streaming MP3, Volume at 22 percent, Main room Studio with Kitchen and a Group slider, a row that read Tap to browse services, favorites and playlists (gone since build 40.0.5), and a player card showing Golden Hour by North and West with shuffle, previous, pause, next and repeat."
     width="220"
     style={{width: "220px", maxWidth: "100%", height: "auto"}}
   />

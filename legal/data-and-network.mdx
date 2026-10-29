@@ -80,8 +80,8 @@ Somos InControl has none of the data-collection infrastructure common in modern 
   <Accordion title="No Analytics" icon="chart-bar">
     The app sends no usage events, screen views, or behavioral data to any analytics platform — not even anonymised data.
   </Accordion>
-  <Accordion title="No Crash Reporting" icon="bug">
-    There is no crash-reporting SDK. No stack traces or device info are sent anywhere when something goes wrong.
+  <Accordion title="No Automatic Crash Reporting" icon="bug">
+    There is no crash-reporting SDK. From build 40.0.5, iOS hands Somos its own crash and hang reports for the app (through Apple's MetricKit) and Somos keeps the newest few on your device. After a crash Somos asks once whether to send the report. The newest reports travel with the log when you use **Submit diagnostics**. Nothing is sent unless you choose a recipient there; no stack traces or device info leave your device on their own.
   </Accordion>
   <Accordion title="No Advertising" icon="megaphone">
     The app contains no ad networks and no advertising identifiers are read or transmitted.
