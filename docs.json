@@ -58,6 +58,26 @@
         ]
       },
       {
+        "tab": "Android",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "android/introduction",
+              "android/first-launch",
+              "android/permissions"
+            ]
+          },
+          {
+            "group": "Android Specifics",
+            "pages": [
+              "android/lock-screen-and-widgets",
+              "android/differences"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "Privacy & Legal",
         "groups": [
           {
