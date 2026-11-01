@@ -42,10 +42,14 @@ Under the leader's name, the sheet says whose presets the group uses, for exampl
 
 - **Who it's grouped with.** A line names the room and the rest of the group, for example **Office grouped with Era Right S**. The group can be changed from any of its rooms.
 - **The Group slider.** Every room in the group has one, under that line. It is the group's own volume, the same one the Sonos® app shows: drag it and every room moves together, each keeping its place in the mix. The room's own slider stays above it, so you can still balance one room against the others. Expand **Room volumes** under the Group slider to set each room in the group on its own.
-- **The leader's presets.** Every room in the group shows the leader's presets, under a heading with its name, such as **Office presets**. Loading or saving one acts on the leader. See [Sound Presets](/features/sound-presets#presets-in-a-group).
+- **The leader's presets.** Every room in the group uses the leader's presets. The room page has a heading such as **Office presets**; Music has three pills below **EQ & Sound**, without a heading. Loading or saving one acts on the leader. See [Sound Presets](/features/sound-presets#presets-in-a-group).
 - **On the music page too.** The music page of a grouped room shows the same line and Group slider.
 
 A room joining a group never comes in louder than the group. It joins at its own volume or the leader's, whichever is lower.
+
+The Group knob follows your finger from the level it shows, including after you mute and unmute. If the first move after unmuting is refused with error **801**, Somos retries it once at your latest level. If that retry is refused, the knob shows the speaker's actual volume. A late reply does not replace a newer drag.
+
+If you change the group while dragging, Somos drops any waiting moves for the old group. Let the new group settle, then drag again. You may see **Checking who’s in the group — try again in a second** while Somos checks its rooms.
 
 <Frame caption="In a group, the blue slider is still this room's volume, the teal Group slider moves the rooms playing together, and the line above it names the main room and the others. Expand Room volumes to set each member on its own.">
   <img

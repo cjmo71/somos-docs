@@ -1,59 +1,57 @@
 ---
 title: "Music: Services, the Player, Presets and the Queue"
 sidebarTitle: "Music"
-description: "The music page plays Apple Music, Amazon Music, Pandora, Spotify, iHeartRadio, TuneIn and Bandcamp straight to a room — browse, search, keep favorites, add to the queue — with the player, the music presets and the music EQ underneath."
+description: "Browse music services and play to a room, keep the mini player beside volume, and open music EQ, presets and the speaker map on the same page."
 ---
 
 Every room has a **music page**. On a soundbar, tap **Go to Music** in the title bar of the room page; on any other room, tap **Music** at the top of its page. A room that is already playing music opens on this page. From here you browse your music services and play straight to the room — the speaker streams from the service itself, and your phone is only the remote. The page is titled **Music** with the room's name under it, so you always know which room you are playing to.
 
 ## What's on the music page
 
-From top to bottom:
+Volume stays at the top. Below it, the page scrolls from the services and full player to **EQ & Sound**, the preset pills and **Speakers in this room**.
 
 <CardGroup cols={2}>
   <Card title="Pinned volume" icon="volume-high">
     The room's volume slider stays pinned at the top and collapses to a slim bar as you scroll, just like the room page.
   </Card>
   <Card title="Favorites and your music services" icon="music">
-    Two rows of buttons, always shown — since build 40.0.5 there is no **Tap to browse** row to open first. **Favorites**, **Playlists** and **Queue** sit in a fixed row at the top and stay put. Under them, one button per music service you have set up, then **Add**. When a cable is plugged into a speaker's Line In, a **Line In** tile comes first in that row (see [Line In](#line-in) below). The lit button is the service that is playing, and it stays lit wherever you go. See [Music Services](/features/music-services) and [Favorites & Queue](/features/favorites-and-queue).
+    **Favorites**, **Playlists** and **Queue** sit above the music services. Swipe the service row sideways to see more services and **Manage services**. If none are set up, tap **Add a music service**. These rows scroll up with the page; you do not need to open a **Tap to browse** row first. When a cable is plugged into a speaker's Line In, a **Line In** tile comes first (see [Line In](#line-in)). The lit service is the one playing. See [Music Services](/features/music-services) and [Favorites & Queue](/features/favorites-and-queue).
   </Card>
   <Card title="The player" icon="play">
     Album art, title, artist, a progress bar you can drag, and **Shuffle**, **Previous**, **Play/Pause**, **Next** and **Repeat**. Play resumes the queue rather than just un-pausing. When what is playing came from one of your services, a **heart** and a **plus** sit beside the title — keep it, or add it to the queue or one of your playlists. See [Add the playing song to a playlist](/features/favorites-and-queue#add-the-playing-song-to-a-playlist). A radio station shows the station's name as the title and, underneath, what the station says is on right now. A title too long for the line scrolls instead of being cut off.
   </Card>
   <Card title="Go to TV" icon="tv">
-    On a soundbar, the **Go to TV** button in the title bar takes you back to the Home Theater page; it changes the page, not the sound. To send the bar back to its TV input, tap **Back to TV** when it is offered (a play that takes the room off its TV offers it), or go to the Home Theater page and tap **Switch to TV**. The EQ and presets page keeps a mini player. See [Home Theater](/features/home-theater#two-pages-for-a-soundbar-room).
-  </Card>
-  <Card title="Sound presets" icon="star">
-    The room's three **music** presets, separate from the TV presets on a soundbar's room page. On a soundbar these are the only presets you see while music is playing; in a room without a soundbar they are the room's only presets. See [Sound Presets](/features/sound-presets).
+    On a soundbar, **Go to TV** in the title bar takes you back to Home Theater. It changes the page you see. To send the bar back to its TV input, tap **Back to TV** when it is offered, or go to Home Theater and tap **Switch to TV**. See [Home Theater](/features/home-theater#two-pages-for-a-soundbar-room).
   </Card>
   <Card title="EQ & Sound" icon="sliders">
-    A fold-out section with bass, treble, height, subwoofer and loudness for music, plus the two music-only surround controls below. On a soundbar with a Sub, the music page has a **Sub** on/off switch, and the Sub row shows the first time you open the EQ. In a room without a soundbar — a single speaker, a stereo pair, an Amp — this is where the room's bass, treble, Sub level and Loudness live; the room page keeps only Balance, the Sub's switch, crossover and phase, and the three switches.
+    Tap **EQ & Sound**, or the EQ button on the full or mini player, to open the controls in place. Tap again to close them. The sliders come first, with the switches at the bottom of the EQ card. Controls follow the room's hardware: bass, treble, Sub level, Balance, Height and Music Level where available. Sub and surround controls are still here for rooms that have them. See [EQ & Trueplay](/features/eq-and-trueplay).
+  </Card>
+  <Card title="Music presets" icon="star">
+    Three compact preset pills sit below **EQ & Sound**, without a **Sound Presets** heading. These are separate from a soundbar's TV presets. Tap to load; hold to save or rename. Long names scroll, and an empty slot has a hold-to-save symbol. See [Sound Presets](/features/sound-presets).
+  </Card>
+  <Card title="Speakers in this room" icon="speaker">
+    Below the presets, tap **Speakers in this room** to open or close the speaker map. Press and hold the map to configure the room. See [Room Diagram](/rooms/room-diagram).
   </Card>
   <Card title="Queue" icon="list">
-    What is coming up next. The current track is highlighted; tap a track to jump to it, swipe left to remove it, tap **Queue** to fold the list away, and **Clear** to empty it (the app asks first). A song from one of your services has a **heart** at the end of its row; hold the row to add it to a playlist. A **Search** field at the top filters the queue as you type.
+    Tap **Queue** above the services to see what is coming up next. The current track is highlighted. Tap a track to jump to it, swipe left to remove it, or tap **Clear** to empty it (the app asks first). **Search Queue** filters the list. See [Favorites & Queue](/features/favorites-and-queue#the-queue).
   </Card>
 </CardGroup>
 
-{/* screenshot needed: the Music page in build 40.0.5 with the services always showing and no "Tap to browse" row (the left picture is from before; it still shows that row) */}
+{/* screenshot needed: 40.0.7 Music page with the services, full player, EQ & Sound, three preset pills and Speakers in this room; a second view with the mini player pinned below volume and EQ open */}
 
-<Frame caption="Left: a grouped music room (this picture is from before build 40.0.5, when a Tap to browse row sat above the services; that row is gone and the services are always shown). Right: Favorites, Playlists and Queue above the player and Add a music service below them.">
-  <div style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 220px), 1fr))", gap: "16px", justifyItems: "center", width: "100%"}}>
-  <img
-    src="/images/v3/046-music-page-group.webp"
-    alt="The Music page for Studio on iPhone: Era 300 streaming MP3, Volume at 22 percent, Main room Studio with Kitchen and a Group slider, a row that read Tap to browse services, favorites and playlists (gone since build 40.0.5), and a player card showing Golden Hour by North and West with shuffle, previous, pause, next and repeat."
-    width="220"
-    style={{width: "220px", maxWidth: "100%", height: "auto"}}
-  />
+## The mini player and seek bar
 
-  <img
-    src="/images/v3/049-music-browse.webp"
-    alt="The Music page for the Living Room with browsing open: Go to TV and EQ buttons, Volume at 28 percent, Favorites, Playlists and Queue buttons, Add a music service, and a player card saying Nothing playing."
-    width="220"
-    style={{width: "220px", maxWidth: "100%", height: "auto"}}
-  />
+Scroll down and the player shrinks to a mini player pinned just under volume. **Previous**, **Play/Pause**, **Next**, **Shuffle**, **Repeat** and **EQ** stay within reach. Tap its art or title to return to the full player. Shuffle shows whether it is on; Repeat cycles through **Off**, **All** and **This song**. Both players show the same state. A radio station greys out controls it cannot use.
 
-  </div>
-</Frame>
+For a seekable song, drag the full player's progress bar and hold it where you want. The thumb and elapsed and remaining times follow your finger. Let go to play from that point. While the song plays, the thumb and times advance without shifting the player card.
+
+The Music EQ keeps its rows in place while you scroll, even if more speaker settings finish loading. New rows appear once scrolling stops. Controls wait for a speaker reading before you can use them. A loading symbol may settle to a still hourglass while the read continues.
+
+## Switches in the Music EQ
+
+Open **EQ & Sound** to reach **Loudness**, **Trueplay**, **Surround Music** (with surrounds), **Status Light** and **Touch Controls**, where the room supports them. They sit at the bottom of the EQ card and close with it.
+
+On a soundbar room, **TV Dialog Sync** is here too. It reads the soundbar's setting even if you open Music first. **Off** removes the delay; **On** restores the last nonzero delay, or the first step if none has been saved. To choose the exact delay, use the **TV Dialog Sync** stepper on Home Theater. **TV Autoplay** and **Ungroup on Autoplay** stay on Home Theater.
 
 ## When the room is grouped
 
