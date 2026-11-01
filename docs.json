@@ -14,6 +14,7 @@
           {
             "group": "Get Started",
             "pages": [
+              "get-the-beta",
               "introduction",
               "getting-started/first-launch",
               "getting-started/permissions",
@@ -63,6 +64,7 @@
           {
             "group": "Get Started",
             "pages": [
+              "get-the-beta",
               "android/introduction",
               "android/first-launch",
               "android/permissions"
@@ -114,11 +116,11 @@
     "primary": {
       "type": "button",
       "label": "Download Beta",
-      "href": "https://testflight.apple.com/join/2D778AXH"
+      "href": "/get-the-beta"
     }
   },
   "banner": {
-    "content": "**Coming soon to the App Store.** Whole Home launch price, limited time.",
+    "content": "**Coming soon to the App Store.** Whole Home launch price, limited time. **Android testers wanted:** [join the beta](/get-the-beta).",
     "dismissible": true
   }
 }
