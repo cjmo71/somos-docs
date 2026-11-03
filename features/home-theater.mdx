@@ -11,7 +11,7 @@ When Somos InControl detects a room built around a soundbar (Arc, Arc Ultra, Bea
 All rooms — single speakers, stereo pairs, portables and soundbar setups — share the same foundation:
 
 - Volume slider with − / + and mute
-- Bass and treble EQ, Loudness
+- Bass and treble sound, Loudness
 - Subwoofer level, on/off, phase, and crossover (when a Sub is bonded and the speaker reports one)
 - Three music presets on the music page
 - Trueplay, Status Light and Touch Controls tiles
@@ -24,7 +24,7 @@ In a room without a soundbar, the bass, treble, Sub level and Loudness are on th
 
 <CardGroup cols={2}>
   <Card title="TV / Music source and the title-bar button" icon="tv">
-    At the top of a soundbar's page, the source row shows what the bar is doing — **TV** with its connection, or the music. The **Go to Music** button in the title bar opens the music page, and **Go to TV** brings you back. They change the page you are looking at, never the sound. While the bar plays music, a **Switch to TV** button on the now-playing line sends the soundbar back to its TV input — the same as pressing the input button on a remote. The source follows what the speaker is really doing, so music started elsewhere shows as music too.
+    At the top of a soundbar's page, the source row shows what the bar is doing — **TV** with its connection, or the music. The **Go to Music** button in the title bar opens the music page, and **Go to TV** brings you back. They change the page you are looking at, never the sound. While the bar plays music, a **Switch to TV audio** button on the now-playing line sends the soundbar back to its TV input — the same as pressing the input button on a remote. The source follows what the speaker is really doing, so music started elsewhere shows as music too.
   </Card>
   <Card title="Audio-format badge" icon="badge-check">
     Next to the source you'll see the connection (HDMI ARC, eARC, Optical) and the format the soundbar is decoding right now — Dolby Atmos, Dolby Digital 5.1, DTS, PCM Stereo and so on. It updates in real time, so you can confirm your TV is actually sending what you expect. While **Music** is lit, the same spot scrolls the format the music service reports for the track (**Lossless**, **Hi-Res Lossless**, **Dolby Atmos**) when there is one.
@@ -63,23 +63,23 @@ When a speaker that can't play TV on its own, such as an Era or a One, is in a g
 
 ## Two pages for a soundbar room
 
-A soundbar room has two pages. The room opens on what is playing: the **Home Theater** page for TV, the **Music** page for music. The **Go to TV** / **Go to Music** button in the title bar switches between them. On Music, **EQ & Sound**, the three music preset pills and **Speakers in this room** share one page. The mini player pins below volume as you scroll. Its EQ button opens or closes the controls in place. Switching pages does not change the sound.
+A soundbar room has two pages. The room opens on what is playing: the **Home Theater** page for TV, the **Music** page for music. The **Go to TV** / **Go to Music** button in the title bar switches between them. On Music, the three music preset pills come before the sound card, followed by **Speakers in this room**. The mini player pins below volume as you scroll. Its sound button opens or closes the controls in place. Switching pages does not change the sound.
 
 {/* screenshot: IP-01, IP-02 (both pages of a soundbar room) */}
 
-The sound you hear while music plays is music, so music's presets and EQ live on the [music page](/features/music). A room without a soundbar works this way all the time: its presets and EQ are always on the music page, and its room page keeps volume, Balance, the Sub's switch, crossover and phase, and the three switches.
+The sound you hear while music plays is music, so music's presets and sound live on the [music page](/features/music). A room without a soundbar works this way all the time: its presets and sound are always on the music page, and its room page keeps volume, Balance, the Sub's switch, crossover and phase, and the three switches.
 
 ## TV Dialog Sync
 
-On Home Theater, **TV Dialog Sync** has a stepper for choosing the delay while you watch dialogue. A soundbar's [Music page](/features/music#switches-in-the-music-eq) also has a **TV Dialog Sync** switch at the bottom of its open EQ card. **Off** removes the delay; **On** restores the last nonzero delay, or the first step if none has been saved. It reads the setting when you open Music, even if Home Theater has not been opened first.
+On Home Theater, **TV Dialog Sync** has a stepper for choosing the delay while you watch dialogue. It stays on Home Theater and does not appear in the Music sound card.
 
 **TV Autoplay** and **Ungroup on Autoplay** stay on Home Theater. **Group Audio Delay** is a separate setting for lining up other rooms with a grouped soundbar.
 
-{/* screenshot needed: 40.0.7 soundbar Music EQ with the TV Dialog Sync switch, alongside Home Theater's TV Dialog Sync stepper */}
+{/* <!-- screenshot needed: 40.0.9 Home Theater TV Dialog Sync stepper and compact preset pills; no TV delay control on Music --> */}
 
 ## Building the home theater
 
-Press and hold the room diagram on a soundbar's page to open **Home Theater Setup**, where you assign speakers to Front Left, Front Right, Surround Left, Surround Right, Subwoofer and Subwoofer 2 — including separate front speakers, which the official app doesn't offer. On an Arc Ultra or Beam Ultra, the surround slots offer only Era 100, Era 300, One, One SL and Five. See [Speaker Setup](/rooms/speaker-setup) for the full walkthrough.
+Press and hold the room diagram on a soundbar's page to open **Home Theater Setup**, where you assign speakers to Front Left, Front Right, Surround Left, Surround Right, Subwoofer and Subwoofer 2 — including separate front speakers, which the official app doesn't offer. The picker explains compatibility when you choose speakers. Somos lets the soundbar decide whether it accepts a model. Setup adds and confirms fronts first, then Sub, then surrounds. On Beam Ultra, a warning explains that added fronts stay silent while the bar keeps the front and height channels. See [Speaker Setup](/rooms/speaker-setup) for the full walkthrough.
 
 <Frame caption="Further down a soundbar room: TV Autoplay, Ungroup on Autoplay, TV Dialog Sync (minus and plus, one step at a time while you watch dialogue), and the room diagram with the soundbar, Sub and surrounds. Hold the diagram to open Home Theater Setup.">
   <img

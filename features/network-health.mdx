@@ -10,14 +10,14 @@ When a room is slow to respond or drops out, **Network health** shows which spea
 
 ## What the page shows
 
-The check runs when the page opens. You get one row per speaker:
+The check runs when the page opens. It tries the available speakers together to find the system, so one unreachable speaker does not hold up every other attempt. You get one row per speaker:
 
 - **The room and the model.**
 - **How it is connected.** **Wired**, or **Wi-Fi** with the band when the speaker reports it: **2.4 GHz**, **5 GHz** or **6 GHz**.
 - **How fast it answers**, in milliseconds.
 - **A verdict.** **Good**, **Check** or **Problem**.
 
-A speaker that answers in under 100 ms is fast. From 100 ms up to 400 ms it is slow and reads **Check**. A speaker that does not answer, answers slower than 400 ms, or was missed by the latest scan reads **Problem**.
+A speaker that answers in under 100 ms is fast. A slow answer, an unknown connection or a speaker missed by the last scan reads **Check**. **Problem** means the speaker did not answer. An answer slower than 400 ms still reads **Check**, with a note that it is very slow.
 
 Under a row that needs attention, a short line says what to try, such as moving the speaker closer to the router or to 5 GHz, or checking the router or mesh point nearest it. A speaker on 2.4 GHz that is still answering fast keeps its green verdict, with a note.
 

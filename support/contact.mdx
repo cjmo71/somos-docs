@@ -16,7 +16,7 @@ Describe what you're seeing — the more detail you include, the faster the deve
 
 ### Send the app's log
 
-When something went wrong, the log is worth more than a description. In the menu, tap **Advanced Settings**, then **Submit diagnostics**. The log comes up on screen first, in plain words, so you see what you would send. **Details** lists what you changed, like "Office: sleep timer → 30 min", and marks a change the speaker refused. Tap **Share** to send it by mail, Messages or whatever you use, or **Send to Somos** (where Mail is set up) to send it to the developer. The log holds the last few hundred lines of what the app did and what your speakers answered — action names, error codes, item ids — and never a password, a sign-in token or what you played. Send it soon after the problem; the log only keeps the recent past. From build 40.0.7, it includes clearer reasons when the free room cannot sync through iCloud and marks a refused group-volume retry. If Somos closed on its own, the log also carries the newest crash reports iOS has handed Somos (see [the app crashes](/support/troubleshooting)).
+When something went wrong, the log is worth more than a description. In the menu, tap **Advanced Settings**, then **Submit diagnostics**. The log comes up on screen first, in plain words, so you see what you would send. **Details** lists what you changed, like "Office: sleep timer → 30 min", and marks a change the speaker refused. Tap **Share** to send it by mail, Messages or whatever you use, or **Send to Somos** (where Mail is set up) to send it to the developer. The log holds up to 10,000 lines of what the app did and what your speakers answered — action names, error codes, item ids — and never a password, a sign-in token or what you played. Send it soon after the problem; the log only keeps the recent past. It includes clearer iCloud failure reasons, refused group-volume retries and setup failures. Paired speakers keep their model names, and external group-volume changes are recorded even just after a change from Somos. Saved diagnostic filenames include seconds to distinguish repeated saves. If Somos closed on its own, the log also carries the newest crash reports iOS has handed Somos (see [the app crashes](/support/troubleshooting)).
 
 <Note>
   All fields in the contact form are optional. Leave the email field blank if you don't need a reply — your feedback still reaches the developer and helps improve the app.
@@ -69,14 +69,13 @@ Somos InControl's roadmap is shaped directly by what users ask for. Open [the su
     - **Submit diagnostics** shows the log first, with plain-words Details
     - **On the Apple Watch:** a Queue page, Shuffle and Repeat, Group and Ungroup, Surrounds, Sub, Status Light, Touch Controls and Speech Boost, presets you can save from the wrist, and a small Music or Home Theater page for each room
     - **Build 40.0.5:** [dark navy widgets](/features/widget-and-siri), Lock Screen card and Dynamic Island; the Music page always shows your services; **Somos Bookworm**, the help chat; **Submit diagnostics** and **Network health** under **Advanced Settings**; new first-launch films; one tap on Speech Boost opens its levels on an Arc Ultra or Beam Ultra; a wide **Now Playing** card on the watch face; and a one-time offer to send the crash report after an unexpected close
-    - **Build 40.0.7:** the [Music page](/features/music) keeps EQ, music preset pills and the speaker map in place, with a mini player pinned below volume; EQ buttons open and close the controls; soundbar Music EQ includes **TV Dialog Sync**; seeking and [group volume](/rooms/groups) follow your drag; **Bookworm** lives only in the menu, on its own line under **Help & Support**; **SYMFONISK Table Lamp (Gen 2)** is named
+    - **Build 40.0.9:** the [Music page](/features/music) has full-card album art, a slower full-width title and preset pills above its sound card. TV delay controls stay on Home Theater. [Speaker Setup](/rooms/speaker-setup) confirms fronts, Sub and surrounds in order and warns about silent Beam Ultra fronts. You can add alarms on the Watch, choose glass or navy for Live Activity, and replay or read the intro.
   </Accordion>
 
   <Accordion title="Still to come">
     On the list, not yet started or in progress:
 
     - Crossover changes that don't stick on some hardware — the missing control was fixed in Build 35.7.4, so if the slider still doesn't appear on your system, get in touch; the questionnaire is the best way to help
-    - Premade watch faces (coming in a build soon)
     - Distance settings for surrounds
     - System information view
     - Carousel room picker instead of tabs

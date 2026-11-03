@@ -1,10 +1,10 @@
 ---
-title: "EQ, Loudness, and Trueplay: Fine-Tune Your Room Sound"
-sidebarTitle: "EQ & Trueplay"
+title: "Sound and Trueplay: Fine-tune your room"
+sidebarTitle: "Sound & Trueplay"
 description: "Bass, treble, balance, surround, height, subwoofer, Sub phase, crossover, loudness, Trueplay, status light and touch controls — every room's sound controls, and where each one lives."
 ---
 
-The EQ card in Somos InControl lets you tune every Sonos® room. On Home Theater it sits below the TV presets. On Music, **EQ & Sound** comes before the three music preset pills. Tap the row or an EQ button on the player to open or close it in place. Controls follow the room's hardware.
+The sound card in Somos InControl lets you tune every Sonos® room. On Home Theater it sits below the TV presets. On Music, the three preset pills come before the sound card. Tap the row or a sound button on the player to open or close it in place. Controls follow the room's hardware.
 
 ## Sliders
 
@@ -19,7 +19,7 @@ The EQ card in Somos InControl lets you tune every Sonos® room. On Home Theater
 | **Subwoofer** | −15 to +15 | A Sub is bonded |
 | **Crossover** | 50–110 Hz | A Sub is bonded and the room's speaker reports a crossover |
 
-Sliders update the speaker live as you drag. If a slider snaps back, the speaker rejected the value — usually because Trueplay is active for that control, the room is in a group, or the connection dropped for a moment.
+A lone slider stays centered in wide layouts. Sliders update the speaker live as you drag. If a slider snaps back, the speaker rejected the value — usually because Trueplay is active for that control, the room is in a group, or the connection dropped for a moment.
 
 Rooms with surrounds also get a **Surrounds** on/off switch under the Surround slider, and rooms with a Sub get a **Subwoofer** on/off switch that silences the Sub without unbonding it.
 
@@ -54,7 +54,7 @@ Sub phase is not part of a preset.
 
 <CardGroup cols={2}>
   <Card title="Loudness" icon="volume-high">
-    Applies a gentle EQ curve at low listening volumes so quiet music still sounds full. Available in every room that reports it.
+    Adds bass and treble at low listening volumes so quiet music still sounds full. Available in every room that reports it.
   </Card>
   <Card title="Night Sound" icon="moon">
     Soundbar rooms only. Tames loud peaks for late-night viewing. See [Home Theater](/features/home-theater).
@@ -73,13 +73,13 @@ Sub phase is not part of a preset.
   </Card>
 </CardGroup>
 
-The switch tiles line up in even rows. On iPhone they sit two to a row, and an odd one sits small and centered on its own row. On iPad they sit three to a row upright and four on its side, with a short last row centered.
+The switch tiles line up in even rows and share a height that grows to fit larger text. On iPhone they sit two to a row, and an odd one sits small and centered on its own row. On iPad they sit three to a row upright and four on its side, with a short last row centered.
 
-On the [Music page](/features/music), the switches sit at the bottom of the open EQ card. **Status Light** and **Touch Controls** are here too. A soundbar adds **TV Dialog Sync**: **Off** removes the delay, and **On** restores the last nonzero delay (or the first step). Home Theater keeps the stepper for choosing the exact delay, along with **TV Autoplay** and **Ungroup on Autoplay**.
+On the [Music page](/features/music), the switches sit at the bottom of the open sound card. **Status Light** and **Touch Controls** are here too. Rooms with surrounds also have a **Surrounds** on/off switch here, shared with Home Theater. **TV Dialog Sync**, **TV Autoplay** and **Ungroup on Autoplay** stay on Home Theater.
 
 While you scroll through Music, rows stay in place as speaker readings arrive. Any new rows appear after scrolling stops. A control stays unavailable until its reading is ready.
 
-{/* screenshot needed: 40.0.7 Music EQ open with its hardware-specific sliders and bottom switch grid, including TV Dialog Sync on a soundbar */}
+{/* <!-- screenshot needed: 40.0.9 Music sound card with Surrounds and the bottom switch grid; TV delay controls only on Home Theater --> */}
 
 On Home Theater, a grouped soundbar also has a **Group Audio Delay** stepper (see [Grouping Rooms](/rooms/groups)).
 
@@ -97,7 +97,11 @@ Trueplay is Sonos®'s room-calibration feature. When it's active, the speaker's 
 
 - **Tuned** — the room has been calibrated. The tile is an on/off switch, and flipping it applies immediately.
 - **Tune in Sonos app** — the speaker supports Trueplay but hasn't been calibrated yet. Tapping opens the official Sonos® app, which is the only place the microphone-based calibration can run.
-- **Unavailable — Why not?** — Trueplay is blocked. Tap for the reason: either the model has no room calibration at all (Port, Connect, Roam SL), or the room has **separate front speakers bonded**, which Sonos® firmware cannot tune.
+- **Unavailable / Why not?**: Trueplay is blocked. Tap **Why not?** for the reason when it is offered. Separate front speakers prevent tuning until you remove them. Some products, including Port, Connect and Roam SL, do not support room calibration.
+
+The Trueplay title and explanation wrap inside the card at larger text sizes.
+
+{/* <!-- screenshot needed: 40.0.9 Trueplay tuned, tunable and unavailable cards at larger text sizes --> */}
 
 <Info>
   Bonding separate front speakers to a soundbar (something only Somos InControl offers) makes Trueplay unavailable for that room. This is a Sonos® firmware restriction that the app cannot work around. You can keep the wider soundstage, or remove the fronts to get Trueplay back — the app warns you about this trade-off before it bonds fronts.
@@ -113,18 +117,12 @@ Trueplay is Sonos®'s room-calibration feature. When it's active, the speaker's 
 
 ## Sound settings follow the source
 
-On a soundbar, Somos InControl keeps a separate set of EQ values for **TV** and for **Music**. Switch the source with the pills at the top of the room page and the sliders move to the values you last used for that source; the TV presets on the room page and the music presets on the music page are separate for the same reason.
+On a soundbar, Somos InControl keeps a separate set of sound values for **TV** and for **Music**. Switch the source with the pills at the top of the room page and the sliders move to the values you last used for that source; the TV presets on the room page and the music presets on the music page are separate for the same reason.
 
-While **Music** is lit on a soundbar, the EQ card leaves the room page altogether. The room page keeps its header and volume, and the music EQ is in **EQ & Sound** on the [music page](/features/music). Open it there with the full or mini player's EQ button. Tap again to close it. Tap **TV** on the room page to bring back the TV EQ.
+While **Music** is lit on a soundbar, the sound card leaves the room page altogether. The room page keeps its header and volume, and the music controls are on the [music page](/features/music). Open it there with the full or mini player's sound button. Tap again to close it. Tap **TV** on the room page to bring back the TV sound card.
 
-A room with no soundbar only plays music, so its bass, treble, Sub level and Loudness live on Music. A stereo pair also has **Balance** in its Music EQ. Its room page still has Balance, the Sub's on/off switch, **Crossover** and **Sub phase**, and the Trueplay, Status Light and Touch Controls switches. The Sub and surround rows are still available for rooms that have them. See [TV rooms and music rooms](/rooms/overview#tv-rooms-and-music-rooms).
+A room with no soundbar only plays music, so its bass, treble, Sub level and Loudness live on Music. A stereo pair also has **Balance** in its Music sound card. Its room page still has Balance, the Sub's on/off switch, **Crossover** and **Sub phase**, and the Trueplay, Status Light and Touch Controls switches. The Sub and surround rows are still available for rooms that have them. See [TV rooms and music rooms](/rooms/overview#tv-rooms-and-music-rooms).
 
 ## Staying in sync
 
 Every control reads back from the speaker. A silent background resync runs about every 30 seconds so the app never drifts far from what the Sonos® app or your TV remote did, and you can pull down on the room page to force a full refresh.
-
-## A note on graphic EQ
-
-<Note>
-  Bass and treble are the only tone controls that Sonos® exposes through its local control protocol. A full graphic EQ with multiple frequency bands is not possible — this is a platform limitation, not something Somos InControl can add.
-</Note>
