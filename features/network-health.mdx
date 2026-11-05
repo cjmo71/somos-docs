@@ -12,7 +12,7 @@ When a room is slow to respond or drops out, **Network health** shows which spea
 
 The check runs when the page opens. It tries the available speakers together to find the system, so one unreachable speaker does not hold up every other attempt. You get one row per speaker:
 
-- **The room and the model.**
+- **The room and the model.** A line under it shows the speaker's model code twice: **Speaker reported** is the code the speaker gives itself (**none** if it gives none), and **Code on record** is the model code Somos has on record for that speaker. They can differ: some speakers report a different code from the one on their label.
 - **How it is connected.** **Wired**, or **Wi-Fi** with the band when the speaker reports it: **2.4 GHz**, **5 GHz** or **6 GHz**.
 - **How fast it answers**, in milliseconds.
 - **A verdict.** **Good**, **Check** or **Problem**.
@@ -34,7 +34,7 @@ Under the rows, a **summary** in plain words says how many speakers answer fast 
 ## Refresh and Share
 
 - **Refresh** checks again.
-- **Share** sends the result as text or as a PDF, through the iOS share sheet.
+- **Share** sends the result as text or as a PDF, through the iOS share sheet. From build 40.0.10 the details are laid out in columns: **Room**, **Role**, **Speaker**, **Code reported**, **Code on record**, **IP**, **Connection** (**Wired**, **Wi-Fi** or **Bonded**), **Band**, **Channel**, **ms** and **Status**. The PDF is a wide landscape page so every column fits.
 
 <Note>
   The check talks only to your speakers on your own Wi-Fi. Nothing is sent to Somos unless you share it yourself.

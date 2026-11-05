@@ -35,8 +35,8 @@ In a room without a soundbar, the bass, treble, Sub level and Loudness are on th
   <Card title="Speech Boost" icon="comment">
     Lifts dialogue above effects and music. On most soundbars it's an on/off tile; on the **Arc Ultra** it's a five-step slider (Off, Low, Medium, High, Max — Medium is roughly the old "on"). If the speaker refuses the change, the switch goes back and the app tells you instead of pretending it worked.
   </Card>
-  <Card title="Surround level and on/off" icon="speaker">
-    When surrounds are bonded: a **Surround** slider (−15 to +15) sets how loud the rears play for TV, and a **Surrounds** switch mutes them without unbonding. Music has its own **Music Level** slider and **Surround Music** tile (Ambient / Full) on the music page.
+  <Card title="Surround level" icon="speaker">
+    When surrounds are bonded, a **Surround** slider (−15 to +15) sets how loud the rears play for TV. The **Surrounds** on/off switch, which mutes them without unbonding, is in the sound sheet on the music page, beside the **Surround Music** tile (Ambient / Full). Music also has its own **Music Level** slider there.
   </Card>
   <Card title="Height channel" icon="arrow-up">
     Sets the level of the overhead (Atmos) channels (−10 to +10). Shown only where there is real height hardware — the Arc family's up-firing drivers, the Beam (Gen 2), or Era 300 satellites — never on a Ray or Playbar.
@@ -63,7 +63,7 @@ When a speaker that can't play TV on its own, such as an Era or a One, is in a g
 
 ## Two pages for a soundbar room
 
-A soundbar room has two pages. The room opens on what is playing: the **Home Theater** page for TV, the **Music** page for music. The **Go to TV** / **Go to Music** button in the title bar switches between them. On Music, the three music preset pills come before the sound card, followed by **Speakers in this room**. The mini player pins below volume as you scroll. Its sound button opens or closes the controls in place. Switching pages does not change the sound.
+A soundbar room has two pages. The room opens on what is playing: the **Home Theater** page for TV, the **Music** page for music. The **Go to TV** / **Go to Music** button in the title bar switches between them. On Music, the player has the room's volume, the three music preset pills and the song menu. The orange sliders button in the title bar opens the music sound controls and **Speakers in this room** in a half sheet. Switching pages does not change the sound.
 
 {/* screenshot: IP-01, IP-02 (both pages of a soundbar room) */}
 
@@ -73,7 +73,7 @@ The sound you hear while music plays is music, so music's presets and sound live
 
 On Home Theater, **TV Dialog Sync** has a stepper for choosing the delay while you watch dialogue. It stays on Home Theater and does not appear in the Music sound card.
 
-**TV Autoplay** and **Ungroup on Autoplay** stay on Home Theater. **Group Audio Delay** is a separate setting for lining up other rooms with a grouped soundbar.
+**TV Autoplay** and **Ungroup for TV** stay on Home Theater. **Ungroup for TV** (called **Ungroup on Autoplay** before 40.0.10) shows while TV Autoplay is on: when the TV starts, the soundbar leaves its group. **Group Audio Delay** is a separate setting for lining up other rooms with a grouped soundbar.
 
 {/* <!-- screenshot needed: 40.0.9 Home Theater TV Dialog Sync stepper and compact preset pills; no TV delay control on Music --> */}
 
@@ -81,7 +81,9 @@ On Home Theater, **TV Dialog Sync** has a stepper for choosing the delay while y
 
 Press and hold the room diagram on a soundbar's page to open **Home Theater Setup**, where you assign speakers to Front Left, Front Right, Surround Left, Surround Right, Subwoofer and Subwoofer 2 — including separate front speakers, which the official app doesn't offer. The picker explains compatibility when you choose speakers. Somos lets the soundbar decide whether it accepts a model. Setup adds and confirms fronts first, then Sub, then surrounds. On Beam Ultra, a warning explains that added fronts stay silent while the bar keeps the front and height channels. See [Speaker Setup](/rooms/speaker-setup) for the full walkthrough.
 
-<Frame caption="Further down a soundbar room: TV Autoplay, Ungroup on Autoplay, TV Dialog Sync (minus and plus, one step at a time while you watch dialogue), and the room diagram with the soundbar, Sub and surrounds. Hold the diagram to open Home Theater Setup.">
+{/* <!-- screenshot needed: 40.0.10 Home Theater bottom: TV Autoplay, Ungroup for TV, TV Dialog Sync and the new room picture with Hold to configure --> */}
+
+<Frame caption="Further down a soundbar room, in an earlier build: TV Autoplay, Ungroup on Autoplay (now Ungroup for TV), TV Dialog Sync (minus and plus, one step at a time while you watch dialogue), and the room diagram with the soundbar, Sub and surrounds. Hold the diagram to open Home Theater Setup.">
   <img
     src="/images/v3/027-tv-tiles-diagram.webp"
     alt="The Living Room page on iPhone scrolled to the bottom: TV Autoplay and Ungroup on Autoplay switches, TV Dialog Sync at 0 with minus and plus, and the room diagram with the Arc Ultra, a Subwoofer, Surround Left and Surround Right and the words Hold to configure."

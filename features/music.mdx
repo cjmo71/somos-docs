@@ -1,78 +1,109 @@
 ---
 title: "Music: Services, the Player, Presets and the Queue"
 sidebarTitle: "Music"
-description: "Browse music services and play to a room, keep the mini player beside volume, and open sound controls, presets and the speaker map on the same page."
+description: "Browse music services and play to a room, use the full player with its queue, presets and song menu, and open sound controls and the speaker map in a half sheet."
 ---
 
 Every room has a **music page**. On a soundbar, tap **Go to Music** in the title bar of the room page; on any other room, tap **Music** at the top of its page. A room that is already playing music opens on this page. From here you browse your music services and play straight to the room — the speaker streams from the service itself, and your phone is only the remote. The page is titled **Music** with the room's name under it, so you always know which room you are playing to.
 
 ## What's on the music page
 
-Volume stays at the top. Below it, the page scrolls from the services and full player to the three preset pills, the sound card and **Speakers in this room**.
+The music page is a dark navy player, laid out the way the Sonos® app lays out its own. From the top:
 
 <CardGroup cols={2}>
-  <Card title="Pinned volume" icon="volume-high">
-    The room's volume slider stays pinned at the top and collapses to a slim bar as you scroll, just like the room page.
+  <Card title="The cover" icon="image">
+    The album art shows whole, at the top of the player. Nothing is drawn over it. A cover that isn't square sits on the navy without being cropped. Turn on **Swipe art to change songs** and you can swipe the cover to skip (see [below](#swipe-the-art-to-change-songs)).
   </Card>
-  <Card title="Favorites and your music services" icon="music">
-    **Favorites**, **Playlists** and **Queue** sit above the music services. Swipe the service row sideways to see more services and **Manage services**. If none are set up, tap **Add a music service**. These rows scroll up with the page; you do not need to open a **Tap to browse** row first. When a cable is plugged into a speaker's Line In, a **Line In** tile comes first (see [Line In](#line-in)). The lit service is the one playing. See [Music Services](/features/music-services) and [Favorites & Queue](/features/favorites-and-queue).
+  <Card title="The song" icon="music">
+    The title and the artist sit below the cover, on their own lines. Long names scroll. A radio station shows the station's name as the title and, underneath, what the station says is on right now. The source line comes next: for example **Line In**, or the format of the track.
   </Card>
-  <Card title="The player" icon="play">
-    Album art fills the whole player card, with the title, artist and controls over it. Text and button contrast adapt to the cover. The song title has its own full-width line above the heart, plus and sound button, and long titles scroll slowly. You also get a progress bar you can drag, and **Shuffle**, **Previous**, **Play/Pause**, **Next** and **Repeat**. Play resumes the queue rather than just un-pausing. When what is playing came from one of your services, a **heart** and a **plus** sit below the title — keep it, or add it to the queue or one of your playlists. See [Add the playing song to a playlist](/features/favorites-and-queue#add-the-playing-song-to-a-playlist). A radio station shows the station's name as the title and, underneath, what the station says is on right now. A title too long for the line scrolls instead of being cut off.
+  <Card title="Progress and playback" icon="play">
+    A progress bar with a knob, with the elapsed time on the left and the time left on the right. Below it: **Shuffle**, **Previous**, **Play/Pause**, **Next** and **Repeat**. Play resumes the queue rather than just un-pausing. Repeat cycles through **Off**, **All** and **This song**. A radio station greys out the controls it cannot use.
+  </Card>
+  <Card title="Volume" icon="volume-high">
+    The room's volume slider sits under the playback buttons.
+  </Card>
+  <Card title="Queue, presets and the song menu" icon="list">
+    The bottom row has the **Queue** button on the left, the three music preset pills in the middle and the **…** song menu on the right. See [The queue in the player](#the-queue-in-the-player), [Music presets](#music-presets) and [The song menu](#the-song-menu).
+  </Card>
+  <Card title="Sound controls" icon="sliders">
+    The orange sliders button at the right of the title bar opens the room's sound controls in a half sheet. See [The sound sheet](#the-sound-sheet).
   </Card>
   <Card title="Go to TV" icon="tv">
     On a soundbar, **Go to TV** in the title bar takes you back to Home Theater. It changes the page you see. To send the bar back to its TV input, tap **Back to TV** when it is offered, or go to Home Theater and tap **Switch to TV audio**. See [Home Theater](/features/home-theater#two-pages-for-a-soundbar-room).
   </Card>
-  <Card title="Sound controls" icon="sliders">
-    Tap the orange sliders button on the full or mini player to open the controls in place. Tap again to close them. The sliders come first, with the switches at the bottom of the sound card. Controls follow the room's hardware: bass, treble, Sub level, Balance, Height and Music Level where available. Sub and surround controls are still here for rooms that have them. See [Sound & Trueplay](/features/eq-and-trueplay).
-  </Card>
-  <Card title="Music presets" icon="star">
-    Three compact preset pills sit above the sound card, without a **Sound Presets** heading. These are separate from a soundbar's TV presets. Tap to load; hold to save or rename. Long names scroll and stay visible between repeats. Every pill has a blue hand symbol below its name to remind you to hold it to save. See [Sound Presets](/features/sound-presets).
-  </Card>
-  <Card title="Speakers in this room" icon="speaker">
-    Below the sound card, tap **Speakers in this room** to open or close the speaker map. Press and hold the map to configure the room. See [Room Diagram](/rooms/room-diagram).
-  </Card>
-  <Card title="Queue" icon="list">
-    Tap **Queue** above the services to see what is coming up next. The current track is highlighted. Tap a track to jump to it, swipe left to remove it, or tap **Clear** to empty it (the app asks first). **Search Queue** filters the list. See [Favorites & Queue](/features/favorites-and-queue#the-queue).
-  </Card>
 </CardGroup>
 
-{/* <!-- screenshot needed: 40.0.9 full-width album art with overlaid controls; preset pills above the sound card; mini player below volume --> */}
+{/* <!-- screenshot needed: 40.0.10 Music player in the Sonos layout: whole cover, title and artist below it, progress bar, playback buttons, volume, and the Queue / presets / … row --> */}
 
-## The mini player and seek bar
+## The seek bar
 
-Scroll down and the player shrinks to a mini player pinned just under volume. **Previous**, **Play/Pause**, **Next**, **Shuffle**, **Repeat** and **sound** stay within reach. Tap its art or title to return to the full player. Shuffle shows whether it is on; Repeat cycles through **Off**, **All** and **This song**. Both players show the same state. A radio station greys out controls it cannot use.
+For a seekable song, drag the knob on the progress bar and hold it where you want. The knob and the elapsed and remaining times follow your finger. Let go to play from that point. While the song plays, the knob and the times move on their own.
 
-For a seekable song, drag the full player's progress bar and hold it where you want. The thumb and elapsed and remaining times follow your finger. Let go to play from that point. While the song plays, the thumb and times advance without shifting the player card.
+## The queue in the player
 
-The Music sound keeps its rows in place while you scroll, even if more speaker settings finish loading. New rows appear once scrolling stops. Controls wait for a speaker reading before you can use them. A loading symbol may settle to a still hourglass while the read continues.
+Tap **Queue** in the player and the queue takes the place of the cover and the song's title. The current track is highlighted. Tap a track to jump to it, swipe left to remove it, or search it with **Search Queue**. Tap the button again (it reads **Close Queue** while the queue is open) and the cover comes back. See [Favorites & Queue](/features/favorites-and-queue#the-queue).
 
-## Switches in the Music sound card
+## Music presets
 
-Open the sound card to reach **Loudness**, **Trueplay**, **Surround Music** (with surrounds), **Status Light** and **Touch Controls**, where the room supports them. They sit at the bottom of the sound card and close with it.
+The three music preset pills sit in the player's bottom row, between **Queue** and **…**. They are separate from a soundbar's TV presets. Tap to load; hold to save or rename. Long names scroll and stay visible between repeats. Every pill has a blue hand symbol below its name to remind you to hold it to save. The same three pills are also at the top of the sound sheet. See [Sound Presets](/features/sound-presets).
 
-A room with surrounds also has a **Surrounds** on/off switch here. It uses the same setting as Home Theater. **TV Dialog Sync**, **TV Autoplay** and **Ungroup on Autoplay** stay on Home Theater.
+## The song menu
 
-The switch cards keep a shared height and grow for larger text. If the speaker refuses a change, the control returns to its confirmed setting. The reset button stays inside the open sound card and disappears when you close it.
+Tap **…** in the player for the song menu. It shows the song with its cover, then:
+
+- **Save to Favorites** (or **Remove from Favorites**) — when what is playing came from one of your music services.
+- **Add to queue** and **Add to playlist** — when it is a song from one of your services. See [Favorites & Queue](/features/favorites-and-queue).
+- **Crossfade** — a switch that shows whether the room fades one song into the next. If the speaker refuses a change, the switch goes back to where it was and a red line says the change didn't work. If the speaker doesn't report it, the menu says **Crossfade state unavailable**.
+- **Sleep timer** — opens the [sleep timer](/features/sleep-timer) for this room, to set it or turn it off.
+
+Tap **Done** to close the menu.
+
+{/* <!-- screenshot needed: 40.0.10 Song actions menu with Save to Favorites, Add to queue, Add to playlist, Crossfade and Sleep timer --> */}
+
+## The sound sheet
+
+Tap the orange sliders button at the right of the title bar. A navy half sheet rises over the player with the room's name at the top. It holds, from the top:
+
+- the three music preset pills,
+- the sound controls: the sliders first (bass, treble, Sub level, Balance, Height and Music Level, where the room has them), then the switches and the reset button,
+- **Speakers in this room** — tap it to open or close the speaker map. Press and hold the map to configure the room. See [Room Diagram](/rooms/room-diagram).
+
+Scroll the sheet to reach everything. Drag the small grey handle at the top to make the sheet taller or shorter. To go back to the big player, tap the orange button again, or tap the small player's cover or title at the bottom of the sheet. The small player there also has **Previous**, **Play/Pause** and **Next**.
+
+Controls wait for a speaker reading before you can use them. A loading symbol may settle to a still hourglass while the read continues. See [Sound & Trueplay](/features/eq-and-trueplay).
+
+{/* <!-- screenshot needed: 40.0.10 navy sound sheet at half height: preset pills, sliders, switches with Surrounds and Surround Music on one row, Speakers in this room, small player at the bottom --> */}
+
+## Switches in the sound sheet
+
+The sound sheet has **Loudness**, **Trueplay**, **Status Light** and **Touch Controls**, where the room supports them. They sit two to a row; an odd last one sits on the left.
+
+A room with surrounds also has a **Surrounds** on/off switch and the **Surround Music** tile, side by side on one row. The Surrounds switch is only on the music page; Home Theater no longer has one. **TV Dialog Sync**, **TV Autoplay** and **Ungroup for TV** stay on Home Theater.
+
+The switch cards share a height and grow for larger text. If the speaker refuses a change, the control returns to its confirmed setting.
 
 ## When the room is grouped
 
-The music page of a grouped room shows who it is grouped with (for example **Office grouped with Era Right S**) and the **Group** slider under the room's own volume, just like the room page. Its presets are the group leader's. See [Grouping Rooms](/rooms/groups).
+The music page of a grouped room shows who it is grouped with (for example **Office grouped with Era Right S**) and the **Group** slider at the top of the page. The room's own volume stays in the player. Its presets are the group leader's. See [Grouping Rooms](/rooms/groups).
 
 ## Browsing and playing
 
 <Steps>
+  <Step title="Lower the player">
+    Tap **Hide player** at the top of the player, or pull it down. The player drops to a small player with the room's volume, sitting over the room tabs at the bottom. **Favorites**, **Playlists**, **Queue** and your music services appear in a row at the top. Swipe the row sideways to see more services and **Manage services**. If none are set up, tap **Add a music service**. When a cable is plugged into a speaker's Line In, a **Line In** tile comes first (see [Line In](#line-in)). The lit service is the one playing.
+  </Step>
   <Step title="Tap a music service">
-    The music page slides down out of the way, leaving a handle at the bottom that shows what is playing, and the service's own page opens above it — its shelves, rows and stations, laid out the way the service asks.
+    The service's own page opens above the small player — its shelves, rows and stations, laid out the way the service asks. The small player's volume stays in reach while you browse.
   </Step>
   <Step title="Find something">
     Scroll the service's page, open an album or a playlist in place, or use the **Search** field at the top — it searches with the service's own categories (songs, albums, artists, playlists, stations, whatever that service offers) and the results replace the page until you clear the field.
   </Step>
   <Step title="Play it">
-    Tap a song, album, playlist or station. It plays on the room, and the music page comes back up with the player and the queue. Tap the **plus** on a song instead to add it to the end of the queue without interrupting what is playing; tap the **heart** to keep it in your Favorites.
+    Tap a song, album, playlist or station. It plays on the room, and the player comes back up. Tap the **plus** on a song instead to add it to the end of the queue without interrupting what is playing; tap the **heart** to keep it in your Favorites.
   </Step>
-  <Step title="Go back and forth">
-    The handle at the top of the raised page reads **Back to browse** (or **Back to favorites**) — tap it or pull it down to return to the service's page. Pull the handle up to bring the player back. The handle is only there after you opened a service's page yourself; when music was started elsewhere and the service simply lit up, the player has no handle to go back to. The back arrow in the top-left corner returns to the room page.
+  <Step title="Go back to the player">
+    Tap the small player's cover or title, or pull it up, to bring the big player back. The back arrow in the top-left corner returns to the room page.
   </Step>
 </Steps>
 
@@ -109,7 +140,7 @@ Rooms with surrounds get two extra controls that only apply to music, matching t
   Playback controls also live on the [Live Activity](/features/live-activity): play/pause, previous and next appear on the Lock Screen and in the Dynamic Island whenever the room is playing music.
 </Tip>
 
-<Frame caption="Top: Surround Music sets how the rear speakers play music, Ambient or Full. Bottom: a stereo pair has Balance on its music sound card; move it toward the left or right speaker, or back to Center.">
+<Frame caption="Top: Surround Music sets how the rear speakers play music, Ambient or Full. Bottom: a stereo pair has Balance in its sound sheet on Music; move it toward the left or right speaker, or back to Center.">
   <div style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 420px), 1fr))", gap: "16px", justifyItems: "center", width: "100%"}}>
   <img
     src="/images/v3/058-surround-music.webp"
@@ -120,7 +151,7 @@ Rooms with surrounds get two extra controls that only apply to music, matching t
 
   <img
     src="/images/v3/061-balance.webp"
-    alt="The Balance slider on a stereo pair's music sound card, set to Center."
+    alt="The Balance slider for a stereo pair's music sound, set to Center."
     width="420"
     style={{width: "420px", maxWidth: "100%", height: "auto"}}
   />

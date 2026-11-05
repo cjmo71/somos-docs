@@ -4,7 +4,7 @@ sidebarTitle: "Sound & Trueplay"
 description: "Bass, treble, balance, surround, height, subwoofer, Sub phase, crossover, loudness, Trueplay, status light and touch controls — every room's sound controls, and where each one lives."
 ---
 
-The sound card in Somos InControl lets you tune every Sonos® room. On Home Theater it sits below the TV presets. On Music, the three preset pills come before the sound card. Tap the row or a sound button on the player to open or close it in place. Controls follow the room's hardware.
+The sound card in Somos InControl lets you tune every Sonos® room. On Home Theater it sits below the TV presets. On Music, the orange sliders button in the title bar opens the same controls in a navy half sheet, under the three music preset pills; tap it again to close the sheet. Controls follow the room's hardware.
 
 ## Sliders
 
@@ -21,9 +21,11 @@ The sound card in Somos InControl lets you tune every Sonos® room. On Home Thea
 
 A lone slider stays centered in wide layouts. Sliders update the speaker live as you drag. If a slider snaps back, the speaker rejected the value — usually because Trueplay is active for that control, the room is in a group, or the connection dropped for a moment.
 
-Rooms with surrounds also get a **Surrounds** on/off switch under the Surround slider, and rooms with a Sub get a **Subwoofer** on/off switch that silences the Sub without unbonding it.
+Rooms with a Sub get a **Subwoofer** on/off switch that silences the Sub without unbonding it. Rooms with surrounds have a **Surrounds** on/off switch in the sound sheet on [Music](/features/music#switches-in-the-sound-sheet); Home Theater no longer has one.
 
-<Frame caption="A soundbar room on iPhone, scrolled to the sound sliders: Surround (red), Speech Boost as a level, Height, Crossover in hertz, then the Subwoofer switch and Sub phase. Briefly hold a slider before you drag it, so a scroll through the page doesn't change the sound.">
+{/* <!-- screenshot needed: 40.0.10 Home Theater sound sliders without the Surrounds switch (the picture below still shows it) --> */}
+
+<Frame caption="A soundbar room on iPhone, scrolled to the sound sliders: Surround (red), Speech Boost as a level, Height, Crossover in hertz, then the Subwoofer switch and Sub phase. Briefly hold a slider before you drag it, so a scroll through the page doesn't change the sound. (This picture is from an earlier build, which still had a Surrounds switch here.)">
   <img
     src="/images/v3/016-sound-sliders.webp"
     alt="The Living Room page on iPhone, Arc Ultra on TV in Dolby Atmos, scrolled down: Surround +3, Speech Boost Medium, Height +1, Crossover 86 Hz, the Subwoofer switch on, Sub phase with Normal and Reversed and the note Set by Trueplay while Trueplay is on, and the Surrounds and Loudness switches."
@@ -75,15 +77,19 @@ Sub phase is not part of a preset.
 
 The switch tiles line up in even rows and share a height that grows to fit larger text. On iPhone they sit two to a row, and an odd one sits small and centered on its own row. On iPad they sit three to a row upright and four on its side, with a short last row centered.
 
-On the [Music page](/features/music), the switches sit at the bottom of the open sound card. **Status Light** and **Touch Controls** are here too. Rooms with surrounds also have a **Surrounds** on/off switch here, shared with Home Theater. **TV Dialog Sync**, **TV Autoplay** and **Ungroup on Autoplay** stay on Home Theater.
+On the [Music page](/features/music), the switches are in the sound sheet, two to a row, with an odd last one on the left. **Status Light** and **Touch Controls** are here too. Rooms with surrounds have the **Surrounds** on/off switch and the **Surround Music** tile side by side on one row. **TV Dialog Sync**, **TV Autoplay** and **Ungroup for TV** stay on Home Theater.
+
+Every switch card has a thin outline, and its title stays on one line unless you use the largest text sizes. The on/off switches answer to a taller touch than they look.
 
 While you scroll through Music, rows stay in place as speaker readings arrive. Any new rows appear after scrolling stops. A control stays unavailable until its reading is ready.
 
-{/* <!-- screenshot needed: 40.0.9 Music sound card with Surrounds and the bottom switch grid; TV delay controls only on Home Theater --> */}
+{/* <!-- screenshot needed: 40.0.10 Music sound sheet switch grid with Surrounds and Surround Music on one row --> */}
 
 On Home Theater, a grouped soundbar also has a **Group Audio Delay** stepper (see [Grouping Rooms](/rooms/groups)).
 
-<Frame caption="The switch tiles on a soundbar room: Surrounds, Loudness, Night Sound, Trueplay, Status Light, Touch Controls, TV Autoplay and Ungroup on Autoplay. The Surrounds tile turns the rear speakers on or off; their level is the separate Surround slider.">
+{/* <!-- screenshot needed: 40.0.10 Home Theater switch tiles: Loudness, Night Sound, Trueplay, Status Light, Touch Controls, TV Autoplay and Ungroup for TV, no Surrounds tile --> */}
+
+<Frame caption="The switch tiles on a soundbar room in an earlier build. In 40.0.10 the Surrounds tile has moved to the sound sheet on Music, and Ungroup on Autoplay reads Ungroup for TV.">
   <img
     src="/images/v3/019-switch-tiles.webp"
     alt="The Living Room page on iPhone scrolled to the switch tiles: Surrounds on, Loudness on, Night Sound off, Trueplay on, Status Light on, Touch Controls on, TV Autoplay on and Ungroup on Autoplay on, under the Subwoofer switch and Sub phase row."
@@ -96,18 +102,18 @@ On Home Theater, a grouped soundbar also has a **Group Audio Delay** stepper (se
 Trueplay is Sonos®'s room-calibration feature. When it's active, the speaker's sound is tuned to the acoustic properties of the room it's in. The Trueplay tile in the toggle grid shows one of three states:
 
 - **Tuned** — the room has been calibrated. The tile is an on/off switch, and flipping it applies immediately.
-- **Tune in Sonos app** — the speaker supports Trueplay but hasn't been calibrated yet. Tapping opens the official Sonos® app, which is the only place the microphone-based calibration can run.
-- **Unavailable / Why not?**: Trueplay is blocked. Tap **Why not?** for the reason when it is offered. Separate front speakers prevent tuning until you remove them. Some products, including Port, Connect and Roam SL, do not support room calibration.
+- **Trueplay ↗** — the speaker supports Trueplay but hasn't been calibrated yet. The tile shows the Trueplay title with an arrow; tap it to open the official Sonos® app, which is the only place the microphone-based calibration can run.
+- **Why not?**: Trueplay is blocked. Tap **Why not?** for the reason when it is offered. Separate front speakers prevent tuning until you remove them. Some products, including Port, Connect and Roam SL, do not support room calibration.
 
 The Trueplay title and explanation wrap inside the card at larger text sizes.
 
-{/* <!-- screenshot needed: 40.0.9 Trueplay tuned, tunable and unavailable cards at larger text sizes --> */}
+{/* <!-- screenshot needed: 40.0.10 Trueplay tuned, Trueplay ↗ and Why not? cards, at default and larger text sizes --> */}
 
 <Info>
   Bonding separate front speakers to a soundbar (something only Somos InControl offers) makes Trueplay unavailable for that room. This is a Sonos® firmware restriction that the app cannot work around. You can keep the wider soundstage, or remove the fronts to get Trueplay back — the app warns you about this trade-off before it bonds fronts.
 </Info>
 
-<Frame caption="The Trueplay tile shows the room's Trueplay state. Where a tuning profile exists it is an on/off switch; otherwise the tile says tuning has to be done in the Sonos app.">
+<Frame caption="The Trueplay tile shows the room's Trueplay state. Where a tuning profile exists it is an on/off switch; otherwise the tile links to the Sonos app, where tuning is done.">
   <img
     src="/images/v3/024-trueplay-tile.webp"
     alt="The Trueplay tile, close up, with its switch turned on."
@@ -119,9 +125,9 @@ The Trueplay title and explanation wrap inside the card at larger text sizes.
 
 On a soundbar, Somos InControl keeps a separate set of sound values for **TV** and for **Music**. Switch the source with the pills at the top of the room page and the sliders move to the values you last used for that source; the TV presets on the room page and the music presets on the music page are separate for the same reason.
 
-While **Music** is lit on a soundbar, the sound card leaves the room page altogether. The room page keeps its header and volume, and the music controls are on the [music page](/features/music). Open it there with the full or mini player's sound button. Tap again to close it. Tap **TV** on the room page to bring back the TV sound card.
+While **Music** is lit on a soundbar, the sound card leaves the room page altogether. The room page keeps its header and volume, and the music controls are on the [music page](/features/music). Open it there with the orange sliders button in the title bar. Tap it again to close it. Tap **TV** on the room page to bring back the TV sound card.
 
-A room with no soundbar only plays music, so its bass, treble, Sub level and Loudness live on Music. A stereo pair also has **Balance** in its Music sound card. Its room page still has Balance, the Sub's on/off switch, **Crossover** and **Sub phase**, and the Trueplay, Status Light and Touch Controls switches. The Sub and surround rows are still available for rooms that have them. See [TV rooms and music rooms](/rooms/overview#tv-rooms-and-music-rooms).
+A room with no soundbar only plays music, so its bass, treble, Sub level and Loudness live on Music. A stereo pair also has **Balance** in its Music sound sheet. Its room page still has Balance, the Sub's on/off switch, **Crossover** and **Sub phase**, and the Trueplay, Status Light and Touch Controls switches. The Sub and surround rows are still available for rooms that have them. See [TV rooms and music rooms](/rooms/overview#tv-rooms-and-music-rooms).
 
 ## Staying in sync
 
