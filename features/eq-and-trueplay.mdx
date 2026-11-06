@@ -21,11 +21,11 @@ The sound card in Somos InControl lets you tune every Sonos® room. On Home Thea
 
 A lone slider stays centered in wide layouts. Sliders update the speaker live as you drag. If a slider snaps back, the speaker rejected the value — usually because Trueplay is active for that control, the room is in a group, or the connection dropped for a moment.
 
-Rooms with a Sub get a **Subwoofer** on/off switch that silences the Sub without unbonding it. Rooms with surrounds have a **Surrounds** on/off switch in the sound sheet on [Music](/features/music#switches-in-the-sound-sheet); Home Theater no longer has one.
+Rooms with a Sub get a **Subwoofer** on/off card that silences the Sub without unbonding it, and rooms with surrounds get a **Surrounds** on/off card. On Home Theater both are cards in the switch grid below the sliders: **Surrounds** comes first, beside the **Surround Music** tile (Ambient / Full) on the same row, then **Subwoofer**, all before Loudness. The sound sheet on [Music](/features/music#switches-in-the-sound-sheet) has the same cards.
 
-{/* <!-- screenshot needed: 40.0.10 Home Theater sound sliders without the Surrounds switch (the picture below still shows it) --> */}
+{/* <!-- screenshot needed: 40.0.12 Home Theater sound sliders ending with Sub phase, no Subwoofer or Surrounds switch rows (the picture below predates 40.0.12) --> */}
 
-<Frame caption="A soundbar room on iPhone, scrolled to the sound sliders: Surround (red), Speech Boost as a level, Height, Crossover in hertz, then the Subwoofer switch and Sub phase. Briefly hold a slider before you drag it, so a scroll through the page doesn't change the sound. (This picture is from an earlier build, which still had a Surrounds switch here.)">
+<Frame caption="A soundbar room on iPhone, scrolled to the sound sliders: Surround (red), Speech Boost as a level, Height, Crossover in hertz, then the Subwoofer switch and Sub phase. Briefly hold a slider before you drag it, so a scroll through the page doesn't change the sound. (This picture predates 40.0.12: the Subwoofer and Surrounds switches are now cards in the switch grid below.)">
   <img
     src="/images/v3/016-sound-sliders.webp"
     alt="The Living Room page on iPhone, Arc Ultra on TV in Dolby Atmos, scrolled down: Surround +3, Speech Boost Medium, Height +1, Crossover 86 Hz, the Subwoofer switch on, Sub phase with Normal and Reversed and the note Set by Trueplay while Trueplay is on, and the Surrounds and Loudness switches."
@@ -35,7 +35,7 @@ Rooms with a Sub get a **Subwoofer** on/off switch that silences the Sub without
 
 ## Sub phase
 
-Every room with a Sub — a Sub, a Sub Mini, any generation — has a **Sub phase** switch under the Subwoofer on/off switch, with two positions: **Normal** and **Reversed**. It is the same setting the Sonos® app calls Sub Phase. Flip it and the bass changes at once; if the Sub sounds thin or hollow from where you sit, try the other position and keep the one that sounds fuller.
+Every room with a Sub — a Sub, a Sub Mini, any generation — has a **Sub phase** switch as the last row of the sound sliders (under **Crossover** when the room has it), with two positions: **Normal** and **Reversed**. It is the same setting the Sonos® app calls Sub Phase. Flip it and the bass changes at once; if the Sub sounds thin or hollow from where you sit, try the other position and keep the one that sounds fuller.
 
 Two things to know:
 
@@ -44,7 +44,7 @@ Two things to know:
 
 Sub phase is not part of a preset.
 
-<Frame caption="Sub phase under the Subwoofer switch. Left: greyed out while Trueplay is on. Right: Trueplay off, set to Normal.">
+<Frame caption="Sub phase at the foot of the sound sliders. Left: greyed out while Trueplay is on. Right: Trueplay off, set to Normal. (This picture predates 40.0.12, when a Subwoofer switch row still sat above Sub phase.)">
   <img
     src="https://somosincontrol.com/somos-incontrol/assets/shots/12-sub-phase.png"
     alt="Two Living Room pages side by side. Both show Volume, Bass, Treble and Subwoofer sliders, a Subwoofer switch and a Sub phase row with Normal and Reversed. On the left the row is greyed out with the note Set by Trueplay while Trueplay is on; on the right it is active with Normal selected."
@@ -77,19 +77,19 @@ Sub phase is not part of a preset.
 
 The switch tiles line up in even rows and share a height that grows to fit larger text. On iPhone they sit two to a row, and an odd one sits small and centered on its own row. On iPad they sit three to a row upright and four on its side, with a short last row centered.
 
-On the [Music page](/features/music), the switches are in the sound sheet, two to a row, with an odd last one on the left. **Status Light** and **Touch Controls** are here too. Rooms with surrounds have the **Surrounds** on/off switch and the **Surround Music** tile side by side on one row. **TV Dialog Sync**, **TV Autoplay** and **Ungroup for TV** stay on Home Theater.
+On the [Music page](/features/music), the switches are in the sound sheet, two to a row, with an odd last one on the left. **Status Light** and **Touch Controls** are here too. Rooms with surrounds have the **Surrounds** on/off card and the **Surround Music** tile side by side on the first row. A room with a bonded Sub has the **Subwoofer** on/off card here too. **TV Dialog Sync**, **TV Autoplay** and **Ungroup for TV** stay on Home Theater.
 
 Every switch card has a thin outline, and its title stays on one line unless you use the largest text sizes. The on/off switches answer to a taller touch than they look.
 
 While you scroll through Music, rows stay in place as speaker readings arrive. Any new rows appear after scrolling stops. A control stays unavailable until its reading is ready.
 
-{/* <!-- screenshot needed: 40.0.10 Music sound sheet switch grid with Surrounds and Surround Music on one row --> */}
+{/* <!-- screenshot needed: 40.0.12 Music sound sheet switch grid with Surrounds and Surround Music on the first row and the Subwoofer card --> */}
 
 On Home Theater, a grouped soundbar also has a **Group Audio Delay** stepper (see [Grouping Rooms](/rooms/groups)).
 
-{/* <!-- screenshot needed: 40.0.10 Home Theater switch tiles: Loudness, Night Sound, Trueplay, Status Light, Touch Controls, TV Autoplay and Ungroup for TV, no Surrounds tile --> */}
+{/* <!-- screenshot needed: 40.0.12 Home Theater switch tiles: Surrounds and Surround Music on the first row, then Subwoofer, Loudness, Night Sound, Trueplay, Status Light, Touch Controls, TV Autoplay and Ungroup for TV --> */}
 
-<Frame caption="The switch tiles on a soundbar room in an earlier build. In 40.0.10 the Surrounds tile has moved to the sound sheet on Music, and Ungroup on Autoplay reads Ungroup for TV.">
+<Frame caption="The switch tiles on a soundbar room in an earlier build. Since 40.0.12 the Surrounds tile comes first, beside a Surround Music tile, and a Subwoofer tile replaces the Subwoofer switch row; Ungroup on Autoplay reads Ungroup for TV.">
   <img
     src="/images/v3/019-switch-tiles.webp"
     alt="The Living Room page on iPhone scrolled to the switch tiles: Surrounds on, Loudness on, Night Sound off, Trueplay on, Status Light on, Touch Controls on, TV Autoplay on and Ungroup on Autoplay on, under the Subwoofer switch and Sub phase row."
