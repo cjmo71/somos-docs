@@ -26,7 +26,7 @@ Open it, pick a room, and you're one tap from volume, presets, EQ, and Trueplay.
 
 A big, responsive volume card that's one tap from your home screen — no ads, no "what's new," no loading spinner. Turn on Live Activity in the menu (top-left) for volume buttons right on your Lock Screen and Dynamic Island.
 
-#### 🎛 Real EQ controls
+#### 🎛 Sound profile
 
 Bass, treble, loudness, and Trueplay in every room — plus subwoofer, height, Speech Boost, and Night Sound where the room has them. All in one glance, no hunting through nested menus.
 
